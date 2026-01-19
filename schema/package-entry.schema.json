@@ -1,0 +1,191 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vixcpp.github.io/registry/schema/package-entry.schema.json",
+  "title": "Vix Registry Package Entry (V1)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "name",
+    "namespace",
+    "repo",
+    "license",
+    "type",
+    "manifestPath",
+    "versions"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._-]{0,63}$",
+      "description": "Package short name (no spaces)."
+    },
+    "namespace": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]{0,63}$",
+      "description": "Namespace/owner (e.g., vixcpp)."
+    },
+    "displayName": {
+      "type": "string",
+      "minLength": 1
+    },
+    "description": {
+      "type": "string"
+    },
+    "keywords": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "license": {
+      "type": "string",
+      "minLength": 1
+    },
+    "repo": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "url"
+      ],
+      "properties": {
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "subdir": {
+          "type": "string",
+          "description": "If the package lives in a mono-repo, subdir points to its folder."
+        },
+        "defaultBranch": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "header-only",
+        "cmake",
+        "vix-module"
+      ],
+      "description": "How Vix should integrate/build this package."
+    },
+    "manifestPath": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Path to vix.json within the repo (usually 'vix.json' or 'path/to/vix.json' in mono-repos)."
+    },
+    "homepage": {
+      "type": "string",
+      "format": "uri"
+    },
+    "documentation": {
+      "type": "string",
+      "format": "uri"
+    },
+    "maintainers": {
+      "type": "array",
+      "description": "Optional maintainer list (for contact / signatures later).",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "email": {
+            "type": "string",
+            "format": "email"
+          },
+          "github": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "versions": {
+      "type": "object",
+      "description": "SemVer -> resolved git reference (tag + commit SHA).",
+      "propertyNames": {
+        "pattern": "^\\d+\\.\\d+\\.\\d+(-[0-9A-Za-z.-]+)?$"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "tag",
+          "commit"
+        ],
+        "properties": {
+          "tag": {
+            "type": "string",
+            "minLength": 1
+          },
+          "commit": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{7,40}$",
+            "description": "Git commit SHA (short or full)."
+          },
+          "yanked": {
+            "type": "boolean",
+            "description": "If true, the version should not be selected by default."
+          },
+          "notes": {
+            "type": "string"
+          },
+          "publishedAt": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      }
+    },
+    "mirrors": {
+      "type": "array",
+      "description": "Optional mirror git URLs (V2+ use; allowed in V1).",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "uniqueItems": true
+    },
+    "constraints": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "minVixVersion": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$"
+        },
+        "minCppStandard": {
+          "type": "string",
+          "enum": [
+            "c++17",
+            "c++20",
+            "c++23"
+          ]
+        },
+        "platforms": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "linux",
+              "macos",
+              "windows"
+            ]
+          },
+          "uniqueItems": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "name": "Vix Registry",
+  "id": "vixcpp-registry",
+  "specVersion": "1.0.0",
+  "description": "Git-based index for Vix packages. Packages are hosted in Git repositories; this registry stores metadata and version->commit mappings.",
+  "homepage": "https://github.com/vixcpp/registry",
+  "index": {
+    "format": "json-per-package",
+    "path": "index",
+    "fileNaming": "{namespace}.{name}.json"
+  },
+  "defaults": {
+    "primaryVcs": "git",
+    "preferredHost": "github",
+    "manifestFile": "vix.json",
+    "versionTagPrefix": "v"
+  },
+  "sync": {
+    "recommendedTtlSeconds": 3600,
+    "allowOfflineSearch": true
+  },
+  "security": {
+    "baseline": {
+      "requireCommitPinning": true,
+      "requireLicense": true,
+      "requireManifest": true
+    },
+    "signatures": {
+      "enabled": false,
+      "type": "minisign",
+      "keyDistribution": "registry"
+    }
+  },
+  "schemas": {
+    "packageEntry": "schema/package-entry.schema.json",
+    "registryMeta": "schema/registry.schema.json"
+  },
+  "namespaces": {
+    "policyPath": "namespaces",
+    "defaultPolicy": {
+      "ownership": "open",
+      "requireReview": false
+    }
+  }
+}
