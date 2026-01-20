@@ -9,7 +9,7 @@
     "registry",
     "vix"
   ],
-  "latest": "0.4.0",
+  "latest": "0.5.0",
   "license": "MIT",
   "maintainers": [
     {
@@ -45,6 +45,11 @@
       "commit": "f7db5f4c6e755e51e1fd58379d0a861330ecb0fe",
       "notes": "Add max_depth helper",
       "tag": "v0.4.0"
+    },
+    "0.5.0": {
+      "commit": "b184d0cf2220f825ca41139bede5543c5e717df4",
+      "notes": "Add index_by_id helper",
+      "tag": "v0.5.0"
     }
   }
 }
