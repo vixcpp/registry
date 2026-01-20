@@ -1,8 +1,7 @@
 {
-  "name": "tree",
-  "namespace": "gaspardkirira",
-  "displayName": "tree",
   "description": "Tiny header-only example library for demonstrating the Vix Registry workflow.",
+  "displayName": "tree",
+  "homepage": "https://github.com/GaspardKirira/tree",
   "keywords": [
     "c++",
     "header-only",
@@ -10,31 +9,37 @@
     "registry",
     "vix"
   ],
+  "latest": "0.5.0",
   "license": "MIT",
-  "repo": {
-    "url": "https://github.com/GaspardKirira/tree",
-    "defaultBranch": "main"
-  },
-  "type": "header-only",
-  "manifestPath": "vix.json",
-  "homepage": "https://github.com/GaspardKirira/tree",
   "maintainers": [
     {
-      "name": "Gaspard Kirira",
-      "github": "GaspardKirira"
+      "github": "GaspardKirira",
+      "name": "Gaspard Kirira"
     }
   ],
-  "latest": "0.2.0",
+  "manifestPath": "vix.json",
+  "name": "tree",
+  "namespace": "gaspardkirira",
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/GaspardKirira/tree"
+  },
+  "type": "header-only",
   "versions": {
     "0.1.0": {
-      "tag": "v0.1.0",
       "commit": "ffcf9d703e6113f5ac5887c99b45baaccf7e4937",
-      "notes": "Initial demo release"
+      "notes": "Initial demo release",
+      "tag": "v0.1.0"
     },
     "0.2.0": {
-      "tag": "v0.2.0",
       "commit": "b79ba53ca60a78a3c4b7baaa1da728907ee0a5fa",
-      "notes": "Add count_leaves helper"
+      "notes": "Add count_leaves helper",
+      "tag": "v0.2.0"
+    },
+    "0.5.0": {
+      "commit": "b184d0cf2220f825ca41139bede5543c5e717df4",
+      "notes": "Add index_by_id helper",
+      "tag": "v0.5.0"
     }
   }
 }
