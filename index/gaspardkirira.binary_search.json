@@ -1,0 +1,29 @@
+{
+  "description": "",
+  "displayName": "binary_search",
+  "homepage": "https://github.com/Gaspardkirira/binary_search",
+  "keywords": [],
+  "latest": "0.1.1",
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "",
+      "name": ""
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "binary_search",
+  "namespace": "gaspardkirira",
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/Gaspardkirira/binary_search"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.1": {
+      "commit": "b2cc3302637f336f2a798f8bf4e855c4b20f7522",
+      "notes": "Fix registry id + publishable commit",
+      "tag": "v0.1.1"
+    }
+  }
+}
