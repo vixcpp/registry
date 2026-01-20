@@ -40,6 +40,11 @@
       "commit": "45e404323209ada82a096b93f6e798832e9eef7b",
       "notes": "Add count_nodes helper",
       "tag": "v0.3.0"
+    },
+    "0.4.0": {
+      "commit": "f7db5f4c6e755e51e1fd58379d0a861330ecb0fe",
+      "notes": "Add max_depth helper",
+      "tag": "v0.4.0"
     }
   }
 }
