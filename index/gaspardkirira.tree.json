@@ -24,11 +24,17 @@
       "github": "GaspardKirira"
     }
   ],
+  "latest": "0.2.0",
   "versions": {
     "0.1.0": {
       "tag": "v0.1.0",
       "commit": "ffcf9d703e6113f5ac5887c99b45baaccf7e4937",
       "notes": "Initial demo release"
+    },
+    "0.2.0": {
+      "tag": "v0.2.0",
+      "commit": "b79ba53ca60a78a3c4b7baaa1da728907ee0a5fa",
+      "notes": "Add count_leaves helper"
     }
   }
 }
