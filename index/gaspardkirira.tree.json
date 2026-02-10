@@ -1,7 +1,6 @@
 {
   "description": "Tiny header-only example library for demonstrating the Vix Registry workflow.",
   "displayName": "tree",
-  "readme": "# tree\n\nA tiny header-only example library for the Vix Registry demo.\n\n## Usage\n- Include headers from `include/`\n- Example in `examples/basic.cpp`\n\n---\n\n## License\n\nMIT © [Gaspard Kirira Authors](https://github.com/Gaspardkirira/tree)\n",
   "homepage": "https://github.com/GaspardKirira/tree",
   "keywords": [
     "c++",
@@ -10,7 +9,7 @@
     "registry",
     "vix"
   ],
-  "latest": "0.7.0",
+  "latest": "0.7.1",
   "license": "MIT",
   "maintainers": [
     {
@@ -21,6 +20,7 @@
   "manifestPath": "vix.json",
   "name": "tree",
   "namespace": "gaspardkirira",
+  "readme": "# tree\n\nA tiny header-only example library for the Vix Registry demo.\n\n## Usage\n- Include headers from `include/`\n- Example in `examples/basic.cpp`\n\n---\n\n## License\n\nMIT © [Gaspard Kirira Authors](https://github.com/Gaspardkirira/tree)\n",
   "repo": {
     "defaultBranch": "main",
     "url": "https://github.com/GaspardKirira/tree"
@@ -51,6 +51,11 @@
       "commit": "18363babf297b4050d2585596238012faee65d52",
       "notes": "Add tree helper",
       "tag": "v0.7.0"
+    },
+    "0.7.1": {
+      "commit": "5f650ab896593c169f91dd722aaa72185db90f8c",
+      "notes": "Update README with code examples",
+      "tag": "v0.7.1"
     }
   }
 }
