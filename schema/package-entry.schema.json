@@ -31,6 +31,10 @@
     "description": {
       "type": "string"
     },
+    "readme": {
+      "type": "string",
+      "description": "Optional README content rendered on the package show page."
+    },
     "keywords": {
       "type": "array",
       "items": {

@@ -1,6 +1,7 @@
 {
   "description": "Tiny header-only example library for demonstrating the Vix Registry workflow.",
   "displayName": "tree",
+  "readme": "# tree\n\nA tiny header-only example library for the Vix Registry demo.\n\n## Usage\n- Include headers from `include/`\n- Example in `examples/basic.cpp`\n\n---\n\n## License\n\nMIT © [Gaspard Kirira Authors](https://github.com/Gaspardkirira/tree)\n",
   "homepage": "https://github.com/GaspardKirira/tree",
   "keywords": [
     "c++",
