@@ -3,7 +3,7 @@
   "displayName": "binary_search",
   "homepage": "https://github.com/Gaspardkirira/binary_search",
   "keywords": [],
-  "latest": "0.1.1",
+  "latest": "0.1.2",
   "license": "MIT",
   "maintainers": [
     {
@@ -24,6 +24,11 @@
       "commit": "b2cc3302637f336f2a798f8bf4e855c4b20f7522",
       "notes": "Fix registry id + publishable commit",
       "tag": "v0.1.1"
+    },
+    "0.1.2": {
+      "commit": "adf2cd3c9b9784014223e4b33055521717b5fb84",
+      "notes": "Update README",
+      "tag": "v0.1.2"
     }
   }
 }
