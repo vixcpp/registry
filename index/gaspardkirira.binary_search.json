@@ -1,55 +1,9 @@
 {
-  "name": "binary_search",
-  "namespace": "gaspardkirira",
-  "displayName": "binary_search",
-  "description": "Minimal header-only binary search utilities for C++ (beginner-friendly).",
-  "keywords": [
-    "algorithm",
-    "binary-search",
-    "cpp",
-    "header-only",
-    "competitive-programming"
-  ],
-  "license": "MIT",
-  "type": "header-only",
-  "manifestPath": "vix.json",
-  "homepage": "https://github.com/Gaspardkirira/binary_search",
-  "documentation": "https://github.com/Gaspardkirira/binary_search#readme",
-  "repo": {
-    "url": "https://github.com/Gaspardkirira/binary_search",
-    "defaultBranch": "main"
-  },
-  "maintainers": [
-    {
-      "name": "Gaspard Kirira",
-      "github": "Gaspardkirira"
-    }
-  ],
-  "exports": {
-    "modules": [
-      "binary_search.hpp"
-    ],
-    "headers": [
-      "binary_search.hpp"
-    ],
-    "namespaces": []
-  },
   "api": {
     "format": "vix-api-1",
-    "path": "vix.api.json",
     "generatedBy": "manual",
+    "path": "vix.api.json",
     "updatedAt": "2026-02-18T00:00:00Z"
-  },
-  "dependencies": {
-    "registry": [],
-    "git": [],
-    "system": []
-  },
-  "quality": {
-    "hasDocs": true,
-    "hasExamples": true,
-    "hasTests": false,
-    "ci": []
   },
   "constraints": {
     "minCppStandard": "c++17",
@@ -59,18 +13,71 @@
       "windows"
     ]
   },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Minimal header-only binary search utilities for C++ (beginner-friendly).",
+  "displayName": "binary_search",
+  "documentation": "https://github.com/Gaspardkirira/binary_search#readme",
+  "exports": {
+    "headers": [
+      "binary_search.hpp"
+    ],
+    "modules": [
+      "binary_search.hpp"
+    ],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/Gaspardkirira/binary_search",
+  "keywords": [
+    "algorithm",
+    "binary-search",
+    "cpp",
+    "header-only",
+    "competitive-programming"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "Gaspardkirira",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "binary_search",
+  "namespace": "gaspardkirira",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": false
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/Gaspardkirira/binary_search"
+  },
+  "type": "header-only",
   "versions": {
     "0.1.1": {
-      "tag": "v0.1.1",
       "commit": "b2cc3302637f336f2a798f8bf4e855c4b20f7522",
+      "notes": "Fix registry id + publishable commit",
       "publishedAt": "2026-02-18T00:00:00Z",
-      "notes": "Fix registry id + publishable commit"
+      "tag": "v0.1.1"
     },
     "0.1.2": {
-      "tag": "v0.1.2",
       "commit": "adf2cd3c9b9784014223e4b33055521717b5fb84",
+      "notes": "Update README",
       "publishedAt": "2026-02-18T00:00:00Z",
-      "notes": "Update README"
+      "tag": "v0.1.2"
+    },
+    "0.1.3": {
+      "commit": "5bd13f2289adf21ddf160aff46052bdbc17855a6",
+      "notes": "Update vix.json",
+      "publishedAt": "2026-02-18T09:42:13Z",
+      "status": "published",
+      "tag": "v0.1.3"
     }
   }
 }
