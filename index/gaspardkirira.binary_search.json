@@ -1,34 +1,76 @@
 {
-  "description": "",
-  "displayName": "binary_search",
-  "homepage": "https://github.com/Gaspardkirira/binary_search",
-  "keywords": [],
-  "latest": "0.1.2",
-  "license": "MIT",
-  "maintainers": [
-    {
-      "github": "",
-      "name": ""
-    }
-  ],
-  "manifestPath": "vix.json",
   "name": "binary_search",
   "namespace": "gaspardkirira",
-  "repo": {
-    "defaultBranch": "main",
-    "url": "https://github.com/Gaspardkirira/binary_search"
-  },
+  "displayName": "binary_search",
+  "description": "Minimal header-only binary search utilities for C++ (beginner-friendly).",
+  "keywords": [
+    "algorithm",
+    "binary-search",
+    "cpp",
+    "header-only",
+    "competitive-programming"
+  ],
+  "license": "MIT",
   "type": "header-only",
+  "manifestPath": "vix.json",
+  "homepage": "https://github.com/Gaspardkirira/binary_search",
+  "documentation": "https://github.com/Gaspardkirira/binary_search#readme",
+  "repo": {
+    "url": "https://github.com/Gaspardkirira/binary_search",
+    "defaultBranch": "main"
+  },
+  "maintainers": [
+    {
+      "name": "Gaspard Kirira",
+      "github": "Gaspardkirira"
+    }
+  ],
+  "exports": {
+    "modules": [
+      "binary_search.hpp"
+    ],
+    "headers": [
+      "binary_search.hpp"
+    ],
+    "namespaces": []
+  },
+  "api": {
+    "format": "vix-api-1",
+    "path": "vix.api.json",
+    "generatedBy": "manual",
+    "updatedAt": "2026-02-18T00:00:00Z"
+  },
+  "dependencies": {
+    "registry": [],
+    "git": [],
+    "system": []
+  },
+  "quality": {
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": false,
+    "ci": []
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
   "versions": {
     "0.1.1": {
+      "tag": "v0.1.1",
       "commit": "b2cc3302637f336f2a798f8bf4e855c4b20f7522",
-      "notes": "Fix registry id + publishable commit",
-      "tag": "v0.1.1"
+      "publishedAt": "2026-02-18T00:00:00Z",
+      "notes": "Fix registry id + publishable commit"
     },
     "0.1.2": {
+      "tag": "v0.1.2",
       "commit": "adf2cd3c9b9784014223e4b33055521717b5fb84",
-      "notes": "Update README",
-      "tag": "v0.1.2"
+      "publishedAt": "2026-02-18T00:00:00Z",
+      "notes": "Update README"
     }
   }
 }

@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://vixcpp.github.io/registry/schema/package-entry.schema.json",
-  "title": "Vix Registry Package Entry (V1)",
+  "title": "Vix Registry Package Entry (V1.1)",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -26,17 +26,20 @@
     },
     "displayName": {
       "type": "string",
-      "minLength": 1
+      "minLength": 1,
+      "description": "Human-friendly name shown in the UI."
     },
     "description": {
-      "type": "string"
+      "type": "string",
+      "description": "Short package summary (1-2 sentences)."
     },
     "readme": {
       "type": "string",
-      "description": "Optional README content rendered on the package show page."
+      "description": "Optional README content rendered on the package show page. Prefer markdown."
     },
     "keywords": {
       "type": "array",
+      "description": "Search keywords/tags.",
       "items": {
         "type": "string",
         "minLength": 1
@@ -45,7 +48,8 @@
     },
     "license": {
       "type": "string",
-      "minLength": 1
+      "minLength": 1,
+      "description": "SPDX identifier recommended (e.g., MIT, Apache-2.0)."
     },
     "repo": {
       "type": "object",
@@ -56,7 +60,8 @@
       "properties": {
         "url": {
           "type": "string",
-          "format": "uri"
+          "format": "uri",
+          "description": "Git repository URL."
         },
         "subdir": {
           "type": "string",
@@ -64,7 +69,8 @@
         },
         "defaultBranch": {
           "type": "string",
-          "minLength": 1
+          "minLength": 1,
+          "description": "Default branch to use when resolving files (e.g., main)."
         }
       }
     },
@@ -84,11 +90,13 @@
     },
     "homepage": {
       "type": "string",
-      "format": "uri"
+      "format": "uri",
+      "description": "Optional homepage URL."
     },
     "documentation": {
       "type": "string",
-      "format": "uri"
+      "format": "uri",
+      "description": "Optional docs URL (site or docs root)."
     },
     "maintainers": {
       "type": "array",
@@ -112,6 +120,169 @@
             "type": "string",
             "minLength": 1
           }
+        }
+      }
+    },
+    "exports": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Optional export surface for Overview/Files tabs (helps render a rich UI like JSR).",
+      "properties": {
+        "modules": {
+          "type": "array",
+          "description": "Public entrypoints (logical modules). Example: 'vix/sync/wal.hpp'.",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "headers": {
+          "type": "array",
+          "description": "Public header paths for the Files tab. Example: 'include/vix/sync/wal.hpp'.",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "namespaces": {
+          "type": "array",
+          "description": "Main namespaces exposed by this package. Example: 'vix::sync'.",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "api": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Optional machine-readable API index to show function/class descriptions (API tab / Overview symbols).",
+      "properties": {
+        "format": {
+          "type": "string",
+          "enum": [
+            "vix-api-1"
+          ],
+          "description": "API index format identifier."
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Path in repo to API index JSON (example: 'vix.api.json' or '.vix/api.json')."
+        },
+        "generatedBy": {
+          "type": "string",
+          "description": "Optional generator identifier (example: 'vix-docgen 0.1')."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "When the API index was last generated."
+        }
+      }
+    },
+    "dependencies": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Optional dependencies shown in the Dependencies tab.",
+      "properties": {
+        "registry": {
+          "type": "array",
+          "description": "Dependencies on other registry packages.",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name"
+            ],
+            "properties": {
+              "name": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Registry package id (suggested: 'namespace.name', example: 'vixcpp.core')."
+              },
+              "version": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Version constraint (MVP: exact or caret range)."
+              },
+              "optional": {
+                "type": "boolean",
+                "description": "If true, dependency is optional."
+              }
+            }
+          }
+        },
+        "git": {
+          "type": "array",
+          "description": "Direct git dependencies (non-registry).",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "url"
+            ],
+            "properties": {
+              "url": {
+                "type": "string",
+                "format": "uri",
+                "description": "Git URL."
+              },
+              "ref": {
+                "type": "string",
+                "description": "Git ref (tag/branch/commit)."
+              },
+              "subdir": {
+                "type": "string",
+                "description": "Subdirectory if mono-repo."
+              }
+            }
+          }
+        },
+        "system": {
+          "type": "array",
+          "description": "System dependencies (informational). Example: 'openssl', 'zlib'.",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "quality": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Optional quality signals used by the Score tab (score itself is computed by the site).",
+      "properties": {
+        "hasDocs": {
+          "type": "boolean",
+          "description": "Package has documentation content (docs site or embedded README)."
+        },
+        "hasExamples": {
+          "type": "boolean",
+          "description": "Package contains runnable examples."
+        },
+        "hasTests": {
+          "type": "boolean",
+          "description": "Package contains tests."
+        },
+        "ci": {
+          "type": "array",
+          "description": "Platforms validated by CI.",
+          "items": {
+            "type": "string",
+            "enum": [
+              "linux",
+              "macos",
+              "windows"
+            ]
+          },
+          "uniqueItems": true
         }
       }
     },
@@ -143,11 +314,13 @@
             "description": "If true, the version should not be selected by default."
           },
           "notes": {
-            "type": "string"
+            "type": "string",
+            "description": "Optional release notes for this version."
           },
           "publishedAt": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "description": "Publish timestamp (ISO 8601)."
           }
         }
       }
@@ -164,10 +337,12 @@
     "constraints": {
       "type": "object",
       "additionalProperties": false,
+      "description": "Compatibility constraints shown in Overview.",
       "properties": {
         "minVixVersion": {
           "type": "string",
-          "pattern": "^\\d+\\.\\d+\\.\\d+$"
+          "pattern": "^\\d+\\.\\d+\\.\\d+$",
+          "description": "Minimum Vix version required."
         },
         "minCppStandard": {
           "type": "string",
@@ -175,10 +350,12 @@
             "c++17",
             "c++20",
             "c++23"
-          ]
+          ],
+          "description": "Minimum C++ standard required."
         },
         "platforms": {
           "type": "array",
+          "description": "Supported platforms.",
           "items": {
             "type": "string",
             "enum": [
