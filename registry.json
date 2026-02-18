@@ -1,8 +1,8 @@
 {
   "name": "Vix Registry",
   "id": "vixcpp-registry",
-  "specVersion": "1.0.0",
-  "description": "Git-based index for Vix packages. Packages are hosted in Git repositories; this registry stores metadata and version->commit mappings.",
+  "specVersion": "1.1.0",
+  "description": "Git-based index for Vix packages. Packages are hosted in Git repositories; this registry stores metadata, version->commit mappings and rich UI metadata (exports, api, dependencies, quality).",
   "homepage": "https://github.com/vixcpp/registry",
   "index": {
     "format": "json-per-package",
