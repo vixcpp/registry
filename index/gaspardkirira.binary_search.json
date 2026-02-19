@@ -78,6 +78,13 @@
       "publishedAt": "2026-02-18T09:42:13Z",
       "status": "published",
       "tag": "v0.1.3"
+    },
+    "0.1.4": {
+      "commit": "c0defa78fcb168f7ffa855ea6814ca661891a9c8",
+      "notes": "Add doxygen",
+      "publishedAt": "2026-02-19T17:27:53Z",
+      "status": "published",
+      "tag": "v0.1.4"
     }
   }
 }
