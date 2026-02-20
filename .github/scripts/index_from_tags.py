@@ -5,9 +5,17 @@ import sys
 import time
 from pathlib import Path
 import urllib.request
+from urllib.parse import urlparse
 
 INDEX_DIR = Path("index")
+
+# Accept:
+#  - v1.2.3
+#  - v1.2.3-rc.1
+#  - v1.2.3+build.5
+# Captures "1.2.3" (without the leading v)
 TAG_RE = re.compile(r"^v(\d+\.\d+\.\d+)(?:[-+].*)?$")
+
 
 def http_get(url: str, token: str):
     req = urllib.request.Request(url)
@@ -17,6 +25,7 @@ def http_get(url: str, token: str):
         req.add_header("Authorization", f"Bearer {token}")
     with urllib.request.urlopen(req, timeout=30) as resp:
         return resp.getcode(), resp.headers, resp.read()
+
 
 def gh_list_tags(owner: str, repo: str, token: str):
     tags = []
@@ -36,23 +45,57 @@ def gh_list_tags(owner: str, repo: str, token: str):
         time.sleep(0.2)
     return tags
 
-def parse_repo_url(url: str):
-    # supports https://github.com/owner/repo and git@github.com:owner/repo
-    u = url.strip()
-    if u.endswith(".git"):
-        u = u[:-4]
-    if u.startswith("git@github.com:"):
-        path = u[len("git@github.com:"):]
-    elif "github.com/" in u:
-        path = u.split("github.com/", 1)[1]
-    else:
+
+def parse_repo_url(repo_url: str):
+    """
+    Extract (owner, repo) from:
+      - https://github.com/Owner/Repo
+      - https://github.com/Owner/Repo.git
+      - git@github.com:Owner/Repo.git
+      - ssh://git@github.com/Owner/Repo.git
+
+    Returns tuple(str owner, str repo) preserving case, or None.
+    """
+    if not repo_url:
         return None
-    if "/" not in path:
+
+    u = repo_url.strip()
+    if not u:
         return None
-    owner, repo = path.split("/", 1)
+
+    # git@github.com:Owner/Repo(.git)
+    m = re.match(r"^git@github\.com:([^/]+)/(.+?)(?:\.git)?$", u)
+    if m:
+        owner = m.group(1).strip()
+        repo = m.group(2).strip()
+        if owner and repo:
+            return owner, repo
+        return None
+
+    # ssh://git@github.com/Owner/Repo(.git) OR https://github.com/Owner/Repo(.git)
+    try:
+        p = urlparse(u)
+    except Exception:
+        return None
+
+    if (p.netloc or "").lower() != "github.com":
+        return None
+
+    path = (p.path or "").strip("/")
+    parts = [x for x in path.split("/") if x]
+    if len(parts) < 2:
+        return None
+
+    owner = parts[0].strip()
+    repo = parts[1].strip()
+    if repo.endswith(".git"):
+        repo = repo[:-4]
+
     if not owner or not repo:
         return None
-    return owner.lower(), repo.lower()
+
+    return owner, repo
+
 
 def main():
     token = os.environ.get("GH_TOKEN", "")
@@ -69,14 +112,18 @@ def main():
         repo_url = (((entry.get("repo") or {}).get("url")) or "").strip()
         parsed = parse_repo_url(repo_url)
         if not parsed:
+            print(f"[warn] {entry_path.name}: cannot parse github repo from url={repo_url!r}")
             continue
 
         owner, repo = parsed
+
         try:
             tags = gh_list_tags(owner, repo, token)
         except Exception as e:
             print(f"[warn] {entry_path.name}: cannot list tags for {owner}/{repo}: {e}")
             continue
+
+        print(f"[info] {entry_path.name}: repo={owner}/{repo} tags={len(tags)}")
 
         versions = entry.get("versions")
         if not isinstance(versions, dict):
@@ -89,12 +136,19 @@ def main():
             m = TAG_RE.match(name)
             if not m or not sha:
                 continue
-            ver = m.group(1)
+            ver = m.group(1)  # "1.2.3"
             new_versions[ver] = {"tag": name, "commit": sha}
 
-        # keep stable ordering when dumping
-        if new_versions != versions:
-            entry["versions"] = new_versions
+        print(f"[info] {entry_path.name}: matched_versions={len(new_versions)}")
+        if tags and not new_versions:
+            sample = [((t.get("name") or "").strip()) for t in tags[:10]]
+            print(f"[warn] {entry_path.name}: tags found but none matched TAG_RE. sample={sample}")
+
+        # Ensure stable JSON output: sort versions keys
+        new_versions_sorted = dict(sorted(new_versions.items(), key=lambda kv: kv[0]))
+
+        if new_versions_sorted != versions:
+            entry["versions"] = new_versions_sorted
             with entry_path.open("w", encoding="utf-8") as f:
                 json.dump(entry, f, indent=2, ensure_ascii=False)
                 f.write("\n")
@@ -102,6 +156,7 @@ def main():
 
     print(f"updated entries: {changed}")
     return 0
+
 
 if __name__ == "__main__":
     raise SystemExit(main())
