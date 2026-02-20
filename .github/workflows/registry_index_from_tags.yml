@@ -34,10 +34,12 @@ jobs:
         run: |
           python .github/scripts/index_from_tags.py
 
-      - name: Create PR with changes (if any)
+      - name: Create or update PR and enable auto-merge (if changes)
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          set -euo pipefail
+
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
@@ -47,6 +49,7 @@ jobs:
           fi
 
           BRANCH="bot/registry-index-from-tags"
+
           # reset branch from current main
           git switch -C "$BRANCH"
 
@@ -54,14 +57,27 @@ jobs:
           git commit -m "registry: update versions from tags"
           git push -u origin "$BRANCH" --force
 
-          # create PR if not exists, otherwise update body (no-op)
+          # If PR exists, reuse it; otherwise create it
+          PR_URL=""
           if gh pr view "$BRANCH" --repo "${{ github.repository }}" >/dev/null 2>&1; then
-            echo "PR already exists for $BRANCH"
+            PR_URL="$(gh pr view "$BRANCH" --repo "${{ github.repository }}" --json url -q .url)"
+            echo "PR already exists: $PR_URL"
           else
-            gh pr create \
+            PR_URL="$(gh pr create \
               --repo "${{ github.repository }}" \
               --base main \
               --head "$BRANCH" \
               --title "registry: update versions from tags" \
-              --body "Automated update of index versions from Git tags."
+              --body "Automated update of index versions from Git tags." \
+              --json url -q .url)"
+            echo "PR created: $PR_URL"
           fi
+
+          # Ensure auto-merge is enabled (squash)
+          # If branch was force-pushed, auto-merge may be disabled again; re-enable it every run.
+          gh pr edit "$PR_URL" --repo "${{ github.repository }}" --enable-auto-merge --squash
+
+          # Optional: add a label to make it easy to filter
+          # gh pr edit "$PR_URL" --repo "${{ github.repository }}" --add-label "bot"
+
+          echo "Auto-merge enabled for: $PR_URL"
