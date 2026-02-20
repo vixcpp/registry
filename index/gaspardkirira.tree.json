@@ -1,0 +1,53 @@
+{
+  "description": "",
+  "displayName": "tree",
+  "homepage": "https://github.com/GaspardKirira/tree",
+  "keywords": [],
+  "license": "MIT",
+  "manifestPath": "vix.json",
+  "name": "tree",
+  "namespace": "gaspardkirira",
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/GaspardKirira/tree"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "tag": "v0.1.0",
+      "commit": "ffcf9d703e6113f5ac5887c99b45baaccf7e4937"
+    },
+    "0.2.0": {
+      "tag": "v0.2.0",
+      "commit": "b79ba53ca60a78a3c4b7baaa1da728907ee0a5fa"
+    },
+    "0.3.0": {
+      "tag": "v0.3.0",
+      "commit": "45e404323209ada82a096b93f6e798832e9eef7b"
+    },
+    "0.4.0": {
+      "tag": "v0.4.0",
+      "commit": "f7db5f4c6e755e51e1fd58379d0a861330ecb0fe"
+    },
+    "0.5.0": {
+      "tag": "v0.5.0",
+      "commit": "b184d0cf2220f825ca41139bede5543c5e717df4"
+    },
+    "0.6.0": {
+      "tag": "v0.6.0",
+      "commit": "6d6a9abdf1b80a85b2f97832153b754f9f746629"
+    },
+    "0.7.0": {
+      "tag": "v0.7.0",
+      "commit": "18363babf297b4050d2585596238012faee65d52"
+    },
+    "0.7.1": {
+      "tag": "v0.7.1",
+      "commit": "5f650ab896593c169f91dd722aaa72185db90f8c"
+    },
+    "0.7.2": {
+      "tag": "v0.7.2",
+      "commit": "4e729d736440c5cfcae5e70ab1879273387a7ed6"
+    }
+  }
+}
