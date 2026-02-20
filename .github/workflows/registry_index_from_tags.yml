@@ -37,7 +37,7 @@ jobs:
 
       - name: Create or update PR and try auto-merge (if changes)
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.REGISTRY_BOT_TOKEN }}
         run: |
           set -euo pipefail
 
