@@ -29,6 +29,24 @@ def run(cmd: list[str], check: bool = True, capture: bool = True) -> str:
         raise SystemExit(p.returncode)
     return (p.stdout or "").strip()
 
+def tag_points_to_commit(repo_url: str, tag: str, commit: str) -> bool:
+    # Get tag ref (may be tag object hash for annotated tags)
+    out = git_ls_remote(repo_url, f"refs/tags/{tag}")
+    if not out.strip():
+        return False
+
+    # Parse returned hash
+    tag_hash = out.splitlines()[0].split("\t", 1)[0].strip()
+
+    # Peeled commit exists only for annotated tags
+    peeled = git_ls_remote(repo_url, f"refs/tags/{tag}^{{}}").strip()
+    if peeled:
+        peeled_hash = peeled.splitlines()[0].split("\t", 1)[0].strip()
+        return peeled_hash.lower() == commit.lower()
+
+    # Lightweight tag: tag hash is the commit hash
+    return tag_hash.lower() == commit.lower()
+
 def gh_api(path: str) -> dict:
     # requires GH_TOKEN
     out = run(["gh", "api", "-H", "Accept: application/vnd.github+json", path], check=True, capture=True)
@@ -120,8 +138,11 @@ def validate_entry_file(path: Path) -> None:
         if not tag_exists(repo_url, tag):
             raise SystemExit(f"Tag not found on remote: {repo_url} {tag} (file {path}, version {ver})")
 
-        if not commit_exists(repo_url, commit):
-            raise SystemExit(f"Commit not found on remote: {repo_url} {commit} (file {path}, version {ver})")
+        if not tag_points_to_commit(repo_url, tag, commit):
+            raise SystemExit(
+                f"Tag does not point to commit: {repo_url} {tag} -> {commit} "
+                f"(file {path}, version {ver})"
+            )
 
 def pr_mergeable_or_fail(repo: str, pr_number: str) -> None:
     # mergeable can be null initially, so retry a bit
