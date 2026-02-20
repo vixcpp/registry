@@ -6,6 +6,7 @@ import time
 from pathlib import Path
 import urllib.request
 import subprocess
+from typing import Optional
 
 INDEX_DIR = Path("index")
 TAG_RE = re.compile(r"^v(\d+\.\d+\.\d+)(?:[-+].*)?$")
@@ -23,7 +24,7 @@ def run(cmd: list[str]) -> str:
     p = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
     return (p.stdout or "").strip()
 
-def resolve_tag_commit(repo_url: str, tag: str) -> str | None:
+def resolve_tag_commit(repo_url: str, tag: str) -> Optional[str]:
     # Annotated tags: use peeled commit via ^{}
     out = run(["git", "ls-remote", repo_url, f"refs/tags/{tag}^{{}}"])
     if out:
