@@ -72,6 +72,7 @@ jobs:
           if [ -n "${PR_URL}" ]; then
             echo "OPEN PR exists: ${PR_URL}"
           else
+            # gh pr create --json is not supported on some gh versions in Actions
             PR_URL="$(
               gh pr create \
                 --repo "${{ github.repository }}" \
@@ -79,7 +80,7 @@ jobs:
                 --head "$BRANCH" \
                 --title "registry: update versions from tags" \
                 --body "Automated update of index versions from Git tags." \
-                --json url -q .url
+              | tail -n 1
             )"
             echo "PR created: ${PR_URL}"
           fi
