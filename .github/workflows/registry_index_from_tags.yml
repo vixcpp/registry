@@ -55,30 +55,39 @@ jobs:
           git switch -C "$BRANCH"
 
           git add index/*.json
-          git commit -m "registry: update versions from tags"
+          git commit -m "registry: update versions from tags" || true
           git push -u origin "$BRANCH" --force
 
-          # If PR exists, reuse it; otherwise create it
-          PR_URL=""
-          if gh pr view "$BRANCH" --repo "${{ github.repository }}" >/dev/null 2>&1; then
-            PR_URL="$(gh pr view "$BRANCH" --repo "${{ github.repository }}" --json url -q .url)"
-            echo "PR already exists: $PR_URL"
-          else
-            PR_URL="$(gh pr create \
+          # IMPORTANT: only reuse an OPEN PR for this head branch
+          PR_URL="$(
+            gh pr list \
               --repo "${{ github.repository }}" \
-              --base main \
               --head "$BRANCH" \
-              --title "registry: update versions from tags" \
-              --body "Automated update of index versions from Git tags." \
-              --json url -q .url)"
-            echo "PR created: $PR_URL"
+              --state open \
+              --json url \
+              -q '.[0].url' \
+            || true
+          )"
+
+          if [ -n "${PR_URL}" ]; then
+            echo "OPEN PR exists: ${PR_URL}"
+          else
+            PR_URL="$(
+              gh pr create \
+                --repo "${{ github.repository }}" \
+                --base main \
+                --head "$BRANCH" \
+                --title "registry: update versions from tags" \
+                --body "Automated update of index versions from Git tags." \
+                --json url -q .url
+            )"
+            echo "PR created: ${PR_URL}"
           fi
 
-          # Try enabling auto-merge in the most compatible way.
-          # Do NOT fail the workflow if this cannot be enabled (policy/checks/gh version).
+          # Try enabling auto-merge (squash). Do not fail if policy/checks block it.
           if gh pr merge "$PR_URL" --repo "${{ github.repository }}" --squash --auto >/dev/null 2>&1; then
-            echo "Auto-merge enabled (squash) for: $PR_URL"
+            echo "Auto-merge enabled (squash) for: ${PR_URL}"
           else
             echo "Could not enable auto-merge automatically."
-            echo "PR pending manual merge: $PR_URL"
+            echo "PR pending manual merge: ${PR_URL}"
           fi
