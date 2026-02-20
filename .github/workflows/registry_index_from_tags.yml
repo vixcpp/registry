@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 concurrency:
   group: registry-index-from-tags
@@ -15,6 +16,7 @@ concurrency:
 jobs:
   build-index:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout main
         uses: actions/checkout@v4
@@ -32,7 +34,9 @@ jobs:
         run: |
           python .github/scripts/index_from_tags.py
 
-      - name: Commit changes (if any)
+      - name: Create PR with changes (if any)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -42,6 +46,22 @@ jobs:
             exit 0
           fi
 
+          BRANCH="bot/registry-index-from-tags"
+          # reset branch from current main
+          git switch -C "$BRANCH"
+
           git add index/*.json
           git commit -m "registry: update versions from tags"
-          git push
+          git push -u origin "$BRANCH" --force
+
+          # create PR if not exists, otherwise update body (no-op)
+          if gh pr view "$BRANCH" --repo "${{ github.repository }}" >/dev/null 2>&1; then
+            echo "PR already exists for $BRANCH"
+          else
+            gh pr create \
+              --repo "${{ github.repository }}" \
+              --base main \
+              --head "$BRANCH" \
+              --title "registry: update versions from tags" \
+              --body "Automated update of index versions from Git tags."
+          fi
