@@ -13,19 +13,21 @@
   },
   "type": "header-only",
   "versions": {
-    "0.1.0": {
-      "commit": "3a1580b571127ebe68c02d98eef74bfb73047caf",
-      "notes": "Add strings Helpers",
-      "publishedAt": "2026-02-20T11:09:13Z",
-      "status": "published",
-      "tag": "v0.1.0"
+    "0.1.3": {
+      "tag": "v0.1.3",
+      "commit": "ba2e99b14ab75653fff60da3b2d3009976c760fb"
+    },
+    "0.1.2": {
+      "tag": "v0.1.2",
+      "commit": "9540449caf057fbe6564ae5c68260738be95b002"
     },
     "0.1.1": {
-      "commit": "8002338771f59f8911705dc8d52973b445150978",
-      "notes": "Update README",
-      "publishedAt": "2026-02-20T11:16:52Z",
-      "status": "published",
-      "tag": "v0.1.1"
+      "tag": "v0.1.1",
+      "commit": "8002338771f59f8911705dc8d52973b445150978"
+    },
+    "0.1.0": {
+      "tag": "v0.1.0",
+      "commit": "3a1580b571127ebe68c02d98eef74bfb73047caf"
     }
   }
 }

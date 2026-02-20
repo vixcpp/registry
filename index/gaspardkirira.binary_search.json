@@ -60,31 +60,25 @@
   },
   "type": "header-only",
   "versions": {
-    "0.1.1": {
-      "commit": "b2cc3302637f336f2a798f8bf4e855c4b20f7522",
-      "notes": "Fix registry id + publishable commit",
-      "publishedAt": "2026-02-18T00:00:00Z",
-      "tag": "v0.1.1"
-    },
-    "0.1.2": {
-      "commit": "adf2cd3c9b9784014223e4b33055521717b5fb84",
-      "notes": "Update README",
-      "publishedAt": "2026-02-18T00:00:00Z",
-      "tag": "v0.1.2"
+    "0.1.4": {
+      "tag": "v0.1.4",
+      "commit": "c0defa78fcb168f7ffa855ea6814ca661891a9c8"
     },
     "0.1.3": {
-      "commit": "5bd13f2289adf21ddf160aff46052bdbc17855a6",
-      "notes": "Update vix.json",
-      "publishedAt": "2026-02-18T09:42:13Z",
-      "status": "published",
-      "tag": "v0.1.3"
+      "tag": "v0.1.3",
+      "commit": "5bd13f2289adf21ddf160aff46052bdbc17855a6"
     },
-    "0.1.4": {
-      "commit": "c0defa78fcb168f7ffa855ea6814ca661891a9c8",
-      "notes": "Add doxygen",
-      "publishedAt": "2026-02-19T17:27:53Z",
-      "status": "published",
-      "tag": "v0.1.4"
+    "0.1.2": {
+      "tag": "v0.1.2",
+      "commit": "adf2cd3c9b9784014223e4b33055521717b5fb84"
+    },
+    "0.1.1": {
+      "tag": "v0.1.1",
+      "commit": "b2cc3302637f336f2a798f8bf4e855c4b20f7522"
+    },
+    "0.1.0": {
+      "tag": "v0.1.0",
+      "commit": "71fe0bf0cca3aeeb2944d18f5d6796b5a4f03d84"
     }
   }
 }
