@@ -13,6 +13,21 @@ PKG_NS_RE = re.compile(r"^[a-z0-9][a-z0-9_.-]{0,63}$")
 PKG_NAME_RE = re.compile(r"^[a-z0-9][a-z0-9_.-]{0,63}$")
 SEMVER_RE = re.compile(r"^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:[-+][0-9A-Za-z.-]+)?$")
 
+def tag_points_to_commit(repo_url: str, tag: str, commit: str) -> bool:
+    # For annotated tags, peeled ref gives the commit
+    out = git_ls_remote(repo_url, f"refs/tags/{tag}^{{}}")
+    if out:
+        got = out.splitlines()[0].split("\t", 1)[0].strip()
+        return got.lower() == commit.lower()
+
+    # For lightweight tags, direct ref hash is the commit
+    out = git_ls_remote(repo_url, f"refs/tags/{tag}")
+    if out:
+        got = out.splitlines()[0].split("\t", 1)[0].strip()
+        return got.lower() == commit.lower()
+
+    return False
+
 def run(cmd: list[str], check: bool = True, capture: bool = True) -> str:
     p = subprocess.run(
         cmd,
@@ -120,8 +135,10 @@ def validate_entry_file(path: Path) -> None:
         if not tag_exists(repo_url, tag):
             raise SystemExit(f"Tag not found on remote: {repo_url} {tag} (file {path}, version {ver})")
 
-        if not commit_exists(repo_url, commit):
-            raise SystemExit(f"Commit not found on remote: {repo_url} {commit} (file {path}, version {ver})")
+        if not tag_points_to_commit(repo_url, tag, commit):
+            raise SystemExit(
+                f"Tag does not point to commit: {repo_url} {tag} -> {commit} (file {path}, version {ver})"
+            )
 
 def pr_mergeable_or_fail(repo: str, pr_number: str) -> None:
     # mergeable can be null initially, so retry a bit
