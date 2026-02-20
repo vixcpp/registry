@@ -1,4 +1,4 @@
-name: Registry auto-merge (conditional)
+name: Registry auto-merge
 
 on:
   pull_request:
@@ -26,6 +26,10 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
           fetch-depth: 0
 
+      - name: Fetch main
+        run: |
+          git fetch origin main --prune --no-tags
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
@@ -39,9 +43,11 @@ jobs:
         run: |
           python .github/scripts/validate_registry_pr.py
 
-      - name: Merge PR (squash + delete branch)
+      - name: Merge PR
         env:
-          PR_NUMBER: ${{ github.event.pull_request.number }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh pr merge "$PR_NUMBER" --squash --delete-branch --repo "${{ github.repository }}"
+          gh pr merge "${{ github.event.pull_request.number }}" \
+            --squash \
+            --delete-branch \
+            --repo "${{ github.repository }}"

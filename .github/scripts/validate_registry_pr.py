@@ -37,11 +37,42 @@ def gh_api(path: str) -> dict:
     return json.loads(out)
 
 
-def list_changed_files() -> list[str]:
-    # compare base..head
+def list_changed_files_with_status() -> list[tuple[str, str]]:
+    """
+    Returns list of (status, path) for changes vs origin/main merge-base.
+
+    status is one of:
+      - "A" added
+      - "M" modified
+      - "D" deleted
+
+    Rename/copy changes are rejected to keep registry PRs simple and auditable.
+    """
     base = run(["git", "merge-base", "HEAD", "origin/main"])
-    out = run(["git", "diff", "--name-only", f"{base}..HEAD"])
-    return [f.strip() for f in out.splitlines() if f.strip()]
+    out = run(["git", "diff", "--name-status", f"{base}..HEAD"])
+
+    items: list[tuple[str, str]] = []
+    for line in out.splitlines():
+        line = line.strip()
+        if not line:
+            continue
+
+        parts = line.split("\t", 1)
+        if len(parts) != 2:
+            continue
+
+        st, path = parts[0].strip(), parts[1].strip()
+
+        # Disallow renames/copies for strictness
+        if st.startswith("R") or st.startswith("C"):
+            raise SystemExit(f"Disallowed change type in PR: {st} {path}")
+
+        if st not in ("A", "M", "D"):
+            raise SystemExit(f"Unsupported change status: {st} {path}")
+
+        items.append((st, path))
+
+    return items
 
 
 def load_json(path: Path) -> dict:
@@ -138,7 +169,6 @@ def validate_entry_file(path: Path) -> None:
         if not tag_exists(repo_url, tag):
             raise SystemExit(f"Tag not found on remote: {repo_url} {tag} (file {path}, version {ver})")
 
-        # We do NOT validate "commit exists" via ls-remote <sha> because it's unreliable.
         # Tag existence + tag->commit (peeled when annotated) is sufficient.
         if not tag_points_to_commit(repo_url, tag, commit):
             raise SystemExit(
@@ -169,25 +199,30 @@ def main() -> int:
         print("Missing PR_NUMBER or REPO env", file=sys.stderr)
         return 1
 
-    changed = list_changed_files()
+    changed = list_changed_files_with_status()
     if not changed:
         raise SystemExit("No changed files detected")
 
     # Only allow changes inside index/**/*.json
-    allowed: list[str] = []
-    for f in changed:
+    allowed: list[tuple[str, str]] = []
+    for st, f in changed:
         if f.startswith("index/") and f.endswith(".json"):
-            allowed.append(f)
+            allowed.append((st, f))
         else:
-            raise SystemExit(f"Disallowed file change in PR: {f}")
+            raise SystemExit(f"Disallowed file change in PR: {st} {f}")
 
     if not allowed:
         raise SystemExit("No index/**/*.json changes found")
 
-    for rel in allowed:
+    # Validate added/modified entries. Deleted entries are allowed (unpublish).
+    for st, rel in allowed:
+        if st == "D":
+            continue
+
         p = ROOT / rel
         if not p.exists():
             raise SystemExit(f"Changed file missing in workspace: {rel}")
+
         validate_entry_file(p)
 
     pr_mergeable_or_fail(repo, pr_number)
