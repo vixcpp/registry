@@ -32,9 +32,10 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          set -euo pipefail
           python .github/scripts/index_from_tags.py
 
-      - name: Create or update PR and enable auto-merge (if changes)
+      - name: Create or update PR and try auto-merge (if changes)
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -73,11 +74,11 @@ jobs:
             echo "PR created: $PR_URL"
           fi
 
-          # Ensure auto-merge is enabled (squash)
-          # If branch was force-pushed, auto-merge may be disabled again; re-enable it every run.
-          gh pr edit "$PR_URL" --repo "${{ github.repository }}" --enable-auto-merge --squash
-
-          # Optional: add a label to make it easy to filter
-          # gh pr edit "$PR_URL" --repo "${{ github.repository }}" --add-label "bot"
-
-          echo "Auto-merge enabled for: $PR_URL"
+          # Try enabling auto-merge in the most compatible way.
+          # Do NOT fail the workflow if this cannot be enabled (policy/checks/gh version).
+          if gh pr merge "$PR_URL" --repo "${{ github.repository }}" --squash --auto >/dev/null 2>&1; then
+            echo "Auto-merge enabled (squash) for: $PR_URL"
+          else
+            echo "Could not enable auto-merge automatically."
+            echo "PR pending manual merge: $PR_URL"
+          fi
