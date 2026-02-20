@@ -24,12 +24,21 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
           fetch-depth: 0
 
+      - name: Detect changed files
+        id: changes
+        uses: tj-actions/changed-files@v45
+        with:
+          files: |
+            index/**/*.json
+
       - name: Setup Python
+        if: ${{ steps.changes.outputs.any_changed == 'true' }}
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
       - name: Validate registry PR
+        if: ${{ steps.changes.outputs.any_changed == 'true' }}
         env:
           PR_NUMBER: ${{ github.event.pull_request.number }}
           REPO: ${{ github.repository }}
@@ -38,8 +47,14 @@ jobs:
           python .github/scripts/validate_registry_pr.py
 
       - name: Merge PR (squash + delete branch)
+        if: ${{ steps.changes.outputs.any_changed == 'true' }}
         env:
           PR_NUMBER: ${{ github.event.pull_request.number }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gh pr merge "$PR_NUMBER" --squash --delete-branch --repo "${{ github.repository }}"
+
+      - name: Skip (no index changes)
+        if: ${{ steps.changes.outputs.any_changed != 'true' }}
+        run: |
+          echo "No index/*.json changes in this PR. Skipping registry validation and auto-merge."
