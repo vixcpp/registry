@@ -5,6 +5,7 @@ import sys
 import time
 from pathlib import Path
 import urllib.request
+import subprocess
 
 INDEX_DIR = Path("index")
 TAG_RE = re.compile(r"^v(\d+\.\d+\.\d+)(?:[-+].*)?$")
@@ -17,6 +18,23 @@ def http_get(url: str, token: str):
         req.add_header("Authorization", f"Bearer {token}")
     with urllib.request.urlopen(req, timeout=30) as resp:
         return resp.getcode(), resp.headers, resp.read()
+
+def run(cmd: list[str]) -> str:
+    p = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+    return (p.stdout or "").strip()
+
+def resolve_tag_commit(repo_url: str, tag: str) -> str | None:
+    # Annotated tags: use peeled commit via ^{}
+    out = run(["git", "ls-remote", repo_url, f"refs/tags/{tag}^{{}}"])
+    if out:
+        return out.splitlines()[0].split("\t", 1)[0].strip()
+
+    # Lightweight tags: direct ref hash is the commit
+    out = run(["git", "ls-remote", repo_url, f"refs/tags/{tag}"])
+    if out:
+        return out.splitlines()[0].split("\t", 1)[0].strip()
+
+    return None
 
 def gh_list_tags(owner: str, repo: str, token: str):
     tags = []
@@ -85,12 +103,16 @@ def main():
         new_versions = {}
         for t in tags:
             name = (t.get("name") or "").strip()
-            sha = ((t.get("commit") or {}).get("sha") or "").strip()
             m = TAG_RE.match(name)
-            if not m or not sha:
+            if not m:
                 continue
+
+            commit = resolve_tag_commit(repo_url, name)
+            if not commit:
+                continue
+
             ver = m.group(1)
-            new_versions[ver] = {"tag": name, "commit": sha}
+            new_versions[ver] = {"tag": name, "commit": commit}
 
         # keep stable ordering when dumping
         if new_versions != versions:
