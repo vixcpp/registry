@@ -1,12 +1,59 @@
 {
-  "description": "",
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "manual",
+    "path": "vix.api.json",
+    "updatedAt": "2026-02-21T00:00:00Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Header-only command-line argument parsing utilities for modern C++.",
   "displayName": "argparse",
+  "documentation": "https://github.com/GaspardKirira/argparse#readme",
+  "exports": {
+    "headers": [
+      "argparse/argparse.hpp"
+    ],
+    "modules": [
+      "argparse/argparse.hpp"
+    ],
+    "namespaces": []
+  },
   "homepage": "https://github.com/GaspardKirira/argparse",
-  "keywords": [],
+  "keywords": [
+    "cli",
+    "argparse",
+    "command-line",
+    "cpp",
+    "header-only"
+  ],
   "license": "MIT",
+  "maintainers": [
+    {
+      "github": "Gaspardkirira",
+      "name": "Gaspard Kirira"
+    }
+  ],
   "manifestPath": "vix.json",
   "name": "argparse",
   "namespace": "gaspardkirira",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": false
+  },
   "repo": {
     "defaultBranch": "main",
     "url": "https://github.com/GaspardKirira/argparse"

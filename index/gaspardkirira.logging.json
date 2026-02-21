@@ -1,12 +1,59 @@
 {
-  "description": "",
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "manual",
+    "path": "vix.api.json",
+    "updatedAt": "2026-02-21T00:00:00Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Header-only lightweight logging utilities for modern C++.",
   "displayName": "logging",
+  "documentation": "https://github.com/GaspardKirira/logging#readme",
+  "exports": {
+    "headers": [
+      "logging/logging.hpp"
+    ],
+    "modules": [
+      "logging/logging.hpp"
+    ],
+    "namespaces": []
+  },
   "homepage": "https://github.com/GaspardKirira/logging",
-  "keywords": [],
+  "keywords": [
+    "logging",
+    "logger",
+    "debug",
+    "cpp",
+    "header-only"
+  ],
   "license": "MIT",
+  "maintainers": [
+    {
+      "github": "Gaspardkirira",
+      "name": "Gaspard Kirira"
+    }
+  ],
   "manifestPath": "vix.json",
   "name": "logging",
   "namespace": "gaspardkirira",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": false
+  },
   "repo": {
     "defaultBranch": "main",
     "url": "https://github.com/GaspardKirira/logging"

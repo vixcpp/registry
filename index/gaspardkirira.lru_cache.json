@@ -1,12 +1,59 @@
 {
-  "description": "",
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "manual",
+    "path": "vix.api.json",
+    "updatedAt": "2026-02-21T00:00:00Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Header-only LRU (Least Recently Used) cache implementation for modern C++.",
   "displayName": "lru_cache",
+  "documentation": "https://github.com/GaspardKirira/lru_cache#readme",
+  "exports": {
+    "headers": [
+      "lru_cache/lru_cache.hpp"
+    ],
+    "modules": [
+      "lru_cache/lru_cache.hpp"
+    ],
+    "namespaces": []
+  },
   "homepage": "https://github.com/GaspardKirira/lru_cache",
-  "keywords": [],
+  "keywords": [
+    "cache",
+    "lru",
+    "data-structure",
+    "cpp",
+    "header-only"
+  ],
   "license": "MIT",
+  "maintainers": [
+    {
+      "github": "Gaspardkirira",
+      "name": "Gaspard Kirira"
+    }
+  ],
   "manifestPath": "vix.json",
   "name": "lru_cache",
   "namespace": "gaspardkirira",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": false
+  },
   "repo": {
     "defaultBranch": "main",
     "url": "https://github.com/GaspardKirira/lru_cache"

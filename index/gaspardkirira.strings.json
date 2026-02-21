@@ -1,12 +1,59 @@
 {
-  "description": "",
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "manual",
+    "path": "vix.api.json",
+    "updatedAt": "2026-02-21T00:00:00Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Header-only string utility helpers for modern C++.",
   "displayName": "strings",
+  "documentation": "https://github.com/GaspardKirira/strings#readme",
+  "exports": {
+    "headers": [
+      "strings/strings.hpp"
+    ],
+    "modules": [
+      "strings/strings.hpp"
+    ],
+    "namespaces": []
+  },
   "homepage": "https://github.com/GaspardKirira/strings",
-  "keywords": [],
+  "keywords": [
+    "string",
+    "text",
+    "utilities",
+    "cpp",
+    "header-only"
+  ],
   "license": "MIT",
+  "maintainers": [
+    {
+      "github": "Gaspardkirira",
+      "name": "Gaspard Kirira"
+    }
+  ],
   "manifestPath": "vix.json",
   "name": "strings",
   "namespace": "gaspardkirira",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": false
+  },
   "repo": {
     "defaultBranch": "main",
     "url": "https://github.com/GaspardKirira/strings"

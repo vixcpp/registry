@@ -23,10 +23,10 @@
   "documentation": "https://github.com/Gaspardkirira/binary_search#readme",
   "exports": {
     "headers": [
-      "binary_search.hpp"
+      "binary_search/binary_search.hpp"
     ],
     "modules": [
-      "binary_search.hpp"
+      "binary_search/binary_search.hpp"
     ],
     "namespaces": []
   },
