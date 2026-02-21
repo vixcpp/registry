@@ -1,0 +1,21 @@
+{
+  "description": "",
+  "displayName": "json_helpers",
+  "homepage": "https://github.com/GaspardKirira/json_helpers",
+  "keywords": [],
+  "license": "MIT",
+  "manifestPath": "vix.json",
+  "name": "json_helpers",
+  "namespace": "gaspardkirira",
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/GaspardKirira/json_helpers"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "30749a8725785b50d26c25cef4fdcacbf34b11f2",
+      "tag": "v0.1.0"
+    }
+  }
+}
