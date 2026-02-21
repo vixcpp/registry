@@ -12,5 +12,10 @@
     "url": "https://github.com/GaspardKirira/result"
   },
   "type": "header-only",
-  "versions": {}
+  "versions": {
+    "0.1.0": {
+      "tag": "v0.1.0",
+      "commit": "0def041310467ea5f787eb8593b82092e55ab321"
+    }
+  }
 }
