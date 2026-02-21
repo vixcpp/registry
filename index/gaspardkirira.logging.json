@@ -1,0 +1,16 @@
+{
+  "description": "",
+  "displayName": "logging",
+  "homepage": "https://github.com/GaspardKirira/logging",
+  "keywords": [],
+  "license": "MIT",
+  "manifestPath": "vix.json",
+  "name": "logging",
+  "namespace": "gaspardkirira",
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/GaspardKirira/logging"
+  },
+  "type": "header-only",
+  "versions": {}
+}
