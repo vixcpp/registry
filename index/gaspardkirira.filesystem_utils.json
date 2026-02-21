@@ -1,0 +1,21 @@
+{
+  "description": "",
+  "displayName": "filesystem_utils",
+  "homepage": "https://github.com/GaspardKirira/filesystem_utils",
+  "keywords": [],
+  "license": "MIT",
+  "manifestPath": "vix.json",
+  "name": "filesystem_utils",
+  "namespace": "gaspardkirira",
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/GaspardKirira/filesystem_utils"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "b4114adec020431e725ac32374054b793e269e68",
+      "tag": "v0.1.0"
+    }
+  }
+}
