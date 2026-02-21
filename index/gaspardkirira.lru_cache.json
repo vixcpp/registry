@@ -1,0 +1,21 @@
+{
+  "description": "",
+  "displayName": "lru_cache",
+  "homepage": "https://github.com/GaspardKirira/lru_cache",
+  "keywords": [],
+  "license": "MIT",
+  "manifestPath": "vix.json",
+  "name": "lru_cache",
+  "namespace": "gaspardkirira",
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/GaspardKirira/lru_cache"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "e46711f8ed0cadc7304ff1ba172ae074bcd976be",
+      "tag": "v0.1.0"
+    }
+  }
+}
