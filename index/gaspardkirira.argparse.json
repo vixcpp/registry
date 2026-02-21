@@ -1,0 +1,21 @@
+{
+  "description": "",
+  "displayName": "argparse",
+  "homepage": "https://github.com/GaspardKirira/argparse",
+  "keywords": [],
+  "license": "MIT",
+  "manifestPath": "vix.json",
+  "name": "argparse",
+  "namespace": "gaspardkirira",
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/GaspardKirira/argparse"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "00f7ee34f3ca00f821975c825a842c17d50ee3d4",
+      "tag": "v0.1.0"
+    }
+  }
+}
