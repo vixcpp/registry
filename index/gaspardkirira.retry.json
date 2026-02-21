@@ -1,0 +1,21 @@
+{
+  "description": "",
+  "displayName": "retry",
+  "homepage": "https://github.com/GaspardKirira/retry",
+  "keywords": [],
+  "license": "MIT",
+  "manifestPath": "vix.json",
+  "name": "retry",
+  "namespace": "gaspardkirira",
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/GaspardKirira/retry"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "3b0b9d13f7e0c6769177e11d0b65e09a7e865d6a",
+      "tag": "v0.1.0"
+    }
+  }
+}
