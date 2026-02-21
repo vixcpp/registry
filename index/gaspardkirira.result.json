@@ -1,0 +1,16 @@
+{
+  "description": "",
+  "displayName": "result",
+  "homepage": "https://github.com/GaspardKirira/result",
+  "keywords": [],
+  "license": "MIT",
+  "manifestPath": "vix.json",
+  "name": "result",
+  "namespace": "gaspardkirira",
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/GaspardKirira/result"
+  },
+  "type": "header-only",
+  "versions": {}
+}
