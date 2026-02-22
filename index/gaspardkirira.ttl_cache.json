@@ -1,0 +1,66 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-02-22T08:58:38Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "A tiny header-only C++ library.",
+  "displayName": "ttl_cache",
+  "documentation": "https://github.com/GaspardKirira/ttl_cache#readme",
+  "exports": {
+    "headers": [
+      "ttl_cache/ttl_cache.hpp"
+    ],
+    "modules": [
+      "ttl_cache/ttl_cache.hpp"
+    ],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/GaspardKirira/ttl_cache",
+  "keywords": [
+    "cpp",
+    "header-only",
+    "vix"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "gaspardkirira",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "ttl_cache",
+  "namespace": "gaspardkirira",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/GaspardKirira/ttl_cache"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "3ffba647b01bce3bbad0ade0480e9587cf40d46c",
+      "tag": "v0.1.0"
+    }
+  }
+}
