@@ -1,0 +1,66 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-02-22T08:33:17Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "A tiny header-only C++ library.",
+  "displayName": "ring_buffer",
+  "documentation": "https://github.com/GaspardKirira/ring_buffer#readme",
+  "exports": {
+    "headers": [
+      "ring_buffer/ring_buffer.hpp"
+    ],
+    "modules": [
+      "ring_buffer/ring_buffer.hpp"
+    ],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/GaspardKirira/ring_buffer",
+  "keywords": [
+    "cpp",
+    "header-only",
+    "vix"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "gaspardkirira",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "ring_buffer",
+  "namespace": "gaspardkirira",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/GaspardKirira/ring_buffer"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "a80a8b0fc1a2d27c18202ff57d26a51aa793e5c1",
+      "tag": "v0.1.0"
+    }
+  }
+}
