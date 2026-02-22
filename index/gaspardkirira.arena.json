@@ -1,0 +1,66 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-02-22T09:09:21Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "A tiny header-only C++ library.",
+  "displayName": "arena",
+  "documentation": "https://github.com/GaspardKirira/arena#readme",
+  "exports": {
+    "headers": [
+      "arena/arena.hpp"
+    ],
+    "modules": [
+      "arena/arena.hpp"
+    ],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/GaspardKirira/arena",
+  "keywords": [
+    "cpp",
+    "header-only",
+    "vix"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "gaspardkirira",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "arena",
+  "namespace": "gaspardkirira",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/GaspardKirira/arena"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "3468487ae1e81607109e939ee4ba1b98f7b831d2",
+      "tag": "v0.1.0"
+    }
+  }
+}
