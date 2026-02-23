@@ -1,0 +1,66 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-02-23T09:14:43Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "A tiny header-only C++ library.",
+  "displayName": "md_renderer",
+  "documentation": "https://github.com/GaspardKirira/md_renderer#readme",
+  "exports": {
+    "headers": [
+      "md_renderer/md_renderer.hpp"
+    ],
+    "modules": [
+      "md_renderer/md_renderer.hpp"
+    ],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/GaspardKirira/md_renderer",
+  "keywords": [
+    "cpp",
+    "header-only",
+    "vix"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "gaspardkirira",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "md_renderer",
+  "namespace": "gaspardkirira",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/GaspardKirira/md_renderer"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "19264422a18271186b66f2b55ce955585823487a",
+      "tag": "v0.1.0"
+    }
+  }
+}
