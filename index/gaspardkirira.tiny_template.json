@@ -1,0 +1,66 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-02-23T09:10:13Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "A tiny header-only C++ library.",
+  "displayName": "tiny_template",
+  "documentation": "https://github.com/GaspardKirira/tiny_template#readme",
+  "exports": {
+    "headers": [
+      "tiny_template/tiny_template.hpp"
+    ],
+    "modules": [
+      "tiny_template/tiny_template.hpp"
+    ],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/GaspardKirira/tiny_template",
+  "keywords": [
+    "cpp",
+    "header-only",
+    "vix"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "gaspardkirira",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "tiny_template",
+  "namespace": "gaspardkirira",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/GaspardKirira/tiny_template"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "c258cdd08422d31aca2bda1ed299060ec3fd3c00",
+      "tag": "v0.1.0"
+    }
+  }
+}
