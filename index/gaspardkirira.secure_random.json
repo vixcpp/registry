@@ -1,0 +1,66 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-02-24T13:44:10Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "A tiny header-only C++ library.",
+  "displayName": "secure_random",
+  "documentation": "https://github.com/GaspardKirira/secure_random#readme",
+  "exports": {
+    "headers": [
+      "secure_random/secure_random.hpp"
+    ],
+    "modules": [
+      "secure_random/secure_random.hpp"
+    ],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/GaspardKirira/secure_random",
+  "keywords": [
+    "cpp",
+    "header-only",
+    "vix"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "gaspardkirira",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "secure_random",
+  "namespace": "gaspardkirira",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/GaspardKirira/secure_random"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "5c30c58e553fc4fe2c470405f86f8264ef45dea1",
+      "tag": "v0.1.0"
+    }
+  }
+}
