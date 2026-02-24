@@ -1,0 +1,68 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-02-24T13:54:07Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Minimal UUID v4 generator for modern C++.",
+  "displayName": "uuid",
+  "documentation": "https://github.com/GaspardKirira/uuid#readme",
+  "exports": {
+    "headers": [
+      "uuid/uuid.hpp"
+    ],
+    "modules": [
+      "uuid/uuid.hpp"
+    ],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/GaspardKirira/uuid",
+  "keywords": [
+    "cpp",
+    "uuid",
+    "uuidv4",
+    "header-only",
+    "vix"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "gaspardkirira",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "uuid",
+  "namespace": "gaspardkirira",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/GaspardKirira/uuid"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "5027c0238b573511782a7ed9e7359ce6e92cf453",
+      "tag": "v0.1.0"
+    }
+  }
+}
