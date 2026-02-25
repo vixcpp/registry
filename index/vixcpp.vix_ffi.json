@@ -1,0 +1,65 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-02-25T08:07:52Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Stable C ABI infrastructure and binding toolkit for Vix Registry libraries (FFI v1).",
+  "displayName": "vix_ffi",
+  "documentation": "https://github.com/vixcpp/vix-ffi#readme",
+  "exports": {
+    "headers": [],
+    "modules": [],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/vixcpp/vix-ffi",
+  "keywords": [
+    "cpp",
+    "ffi",
+    "abi",
+    "ctypes",
+    "cmake",
+    "vix"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "vixcpp",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "vix_ffi",
+  "namespace": "vixcpp",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/vixcpp/vix-ffi"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "52c37db9a0da669a429ace396466381b6a4f0808",
+      "tag": "v0.1.0"
+    }
+  }
+}
