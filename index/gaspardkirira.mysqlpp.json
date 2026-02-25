@@ -1,0 +1,66 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-02-25T14:40:03Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "A tiny header-only C++ library.",
+  "displayName": "mysqlpp",
+  "documentation": "https://github.com/GaspardKirira/mysqlpp#readme",
+  "exports": {
+    "headers": [
+      "mysqlpp/mysqlpp.hpp"
+    ],
+    "modules": [
+      "mysqlpp/mysqlpp.hpp"
+    ],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/GaspardKirira/mysqlpp",
+  "keywords": [
+    "cpp",
+    "header-only",
+    "vix"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "gaspardkirira",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "mysqlpp",
+  "namespace": "gaspardkirira",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/GaspardKirira/mysqlpp"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "84646afa72a24173ef9b3750506bb397bbb2b939",
+      "tag": "v0.1.0"
+    }
+  }
+}
