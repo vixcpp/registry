@@ -1,0 +1,66 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-02-26T13:37:46Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "A tiny header-only C++ library.",
+  "displayName": "sliding_window",
+  "documentation": "https://github.com/GaspardKirira/sliding_window#readme",
+  "exports": {
+    "headers": [
+      "sliding_window/sliding_window.hpp"
+    ],
+    "modules": [
+      "sliding_window/sliding_window.hpp"
+    ],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/GaspardKirira/sliding_window",
+  "keywords": [
+    "cpp",
+    "header-only",
+    "vix"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "gaspardkirira",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "sliding_window",
+  "namespace": "gaspardkirira",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/GaspardKirira/sliding_window"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "3c44cfffdd25a359da6e9bf15842f23c7dfba887",
+      "tag": "v0.1.0"
+    }
+  }
+}
