@@ -1,0 +1,66 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-02-26T11:08:12Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "A tiny header-only C++ library.",
+  "displayName": "prefix_tools",
+  "documentation": "https://github.com/GaspardKirira/prefix_tools#readme",
+  "exports": {
+    "headers": [
+      "prefix_tools/prefix_tools.hpp"
+    ],
+    "modules": [
+      "prefix_tools/prefix_tools.hpp"
+    ],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/GaspardKirira/prefix_tools",
+  "keywords": [
+    "cpp",
+    "header-only",
+    "vix"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "gaspardkirira",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "prefix_tools",
+  "namespace": "gaspardkirira",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/GaspardKirira/prefix_tools"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "5376801d40e99cd3db16288f30241f64d61bda6b",
+      "tag": "v0.1.0"
+    }
+  }
+}
