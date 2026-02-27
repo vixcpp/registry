@@ -1,0 +1,66 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-02-27T12:58:10Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "A tiny header-only C++ library.",
+  "displayName": "graph_basics",
+  "documentation": "https://github.com/GaspardKirira/graph_basics#readme",
+  "exports": {
+    "headers": [
+      "graph_basics/graph_basics.hpp"
+    ],
+    "modules": [
+      "graph_basics/graph_basics.hpp"
+    ],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/GaspardKirira/graph_basics",
+  "keywords": [
+    "cpp",
+    "header-only",
+    "vix"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "gaspardkirira",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "graph_basics",
+  "namespace": "gaspardkirira",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/GaspardKirira/graph_basics"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "83f0b75fc46c5e781413c19bcc7a49842180f8db",
+      "tag": "v0.1.0"
+    }
+  }
+}
