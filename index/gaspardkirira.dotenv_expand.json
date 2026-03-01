@@ -1,0 +1,66 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-01T09:54:49Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "A tiny header-only C++ library.",
+  "displayName": "dotenv_expand",
+  "documentation": "https://github.com/GaspardKirira/dotenv_expand#readme",
+  "exports": {
+    "headers": [
+      "dotenv_expand/dotenv_expand.hpp"
+    ],
+    "modules": [
+      "dotenv_expand/dotenv_expand.hpp"
+    ],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/GaspardKirira/dotenv_expand",
+  "keywords": [
+    "cpp",
+    "header-only",
+    "vix"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "gaspardkirira",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "dotenv_expand",
+  "namespace": "gaspardkirira",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/GaspardKirira/dotenv_expand"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "86fb1d95d2a86fa7b4215aa5f1e385bf90b37513",
+      "tag": "v0.1.0"
+    }
+  }
+}
