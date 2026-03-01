@@ -1,0 +1,66 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-01T08:39:32Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "A tiny header-only C++ library.",
+  "displayName": "mime",
+  "documentation": "https://github.com/GaspardKirira/mime#readme",
+  "exports": {
+    "headers": [
+      "mime/mime.hpp"
+    ],
+    "modules": [
+      "mime/mime.hpp"
+    ],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/GaspardKirira/mime",
+  "keywords": [
+    "cpp",
+    "header-only",
+    "vix"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "gaspardkirira",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "mime",
+  "namespace": "gaspardkirira",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/GaspardKirira/mime"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "a4b53e5ddd4ebb625353c3e2c778df3f860948c1",
+      "tag": "v0.1.0"
+    }
+  }
+}
