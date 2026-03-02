@@ -1,0 +1,69 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-02T13:41:20Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "REST-oriented API application kit built on top of vix/web_app.",
+  "displayName": "api_app",
+  "documentation": "https://github.com/vixcpp/api_app#readme",
+  "exports": {
+    "headers": [
+      "api_app/api_app.hpp"
+    ],
+    "modules": [
+      "api_app/api_app.hpp"
+    ],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/vixcpp/api_app",
+  "keywords": [
+    "cpp",
+    "vix",
+    "api",
+    "rest",
+    "http",
+    "backend"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "vix",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "api_app",
+  "namespace": "vix",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/vixcpp/api_app"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "8182b5da11cccb4fb66aba523974ff0c5823f711",
+      "tag": "v0.1.0"
+    }
+  }
+}
