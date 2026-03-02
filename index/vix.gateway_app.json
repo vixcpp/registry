@@ -1,0 +1,70 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-02T13:53:27Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "API gateway kit built on top of vix/api_app for routing, auth, and edge policies.",
+  "displayName": "gateway_app",
+  "documentation": "https://github.com/vixcpp/gateway_app#readme",
+  "exports": {
+    "headers": [
+      "gateway_app/gateway_app.hpp"
+    ],
+    "modules": [
+      "gateway_app/gateway_app.hpp"
+    ],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/vixcpp/gateway_app",
+  "keywords": [
+    "cpp",
+    "vix",
+    "gateway",
+    "reverse-proxy",
+    "api",
+    "routing",
+    "rate-limit"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "vix",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "gateway_app",
+  "namespace": "vix",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/vixcpp/gateway_app"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "642e67a5501fe71d4235be8ab3dad5c16f47c166",
+      "tag": "v0.1.0"
+    }
+  }
+}
