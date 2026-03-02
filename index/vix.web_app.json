@@ -1,0 +1,69 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-02T13:29:53Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "HTTP web application kit built on top of vix/app lifecycle foundation.",
+  "displayName": "web_app",
+  "documentation": "https://github.com/vixcpp/web_app#readme",
+  "exports": {
+    "headers": [
+      "web_app/web_app.hpp"
+    ],
+    "modules": [
+      "web_app/web_app.hpp"
+    ],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/vixcpp/web_app",
+  "keywords": [
+    "cpp",
+    "vix",
+    "web",
+    "http",
+    "application",
+    "runtime"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "vix",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "web_app",
+  "namespace": "vix",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/vixcpp/web_app"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "9aad4cc1c767d5a2a54f4f00f436acd4315e413b",
+      "tag": "v0.1.0"
+    }
+  }
+}
