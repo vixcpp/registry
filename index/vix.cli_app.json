@@ -1,0 +1,73 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-04T13:39:50Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Command-line application scaffold for Vix built on top of vix/app.",
+  "displayName": "cli_app",
+  "documentation": "https://github.com/vixcpp/cli_app#readme",
+  "exports": {
+    "headers": [
+      "cli_app/cli_app.hpp"
+    ],
+    "modules": [
+      "cli_app/cli_app.hpp"
+    ],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/vixcpp/cli_app",
+  "keywords": [
+    "cpp",
+    "vix",
+    "cli",
+    "command-line",
+    "argparse",
+    "commands",
+    "flags",
+    "logging",
+    "lifecycle",
+    "tooling"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "vix",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "cli_app",
+  "namespace": "vix",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/vixcpp/cli_app"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.2.0": {
+      "commit": "47adab13d5242b0b48f0237c4e826173ef93889c",
+      "tag": "v0.2.0"
+    }
+  }
+}
