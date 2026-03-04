@@ -1,0 +1,71 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-04T11:48:15Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Realtime kit built on top of vix/api_app for WebSocket, SSE, auth hooks, presence, and event routing.",
+  "displayName": "realtime_app",
+  "documentation": "https://github.com/vixcpp/realtime_app#readme",
+  "exports": {
+    "headers": [
+      "realtime_app/realtime_app.hpp"
+    ],
+    "modules": [
+      "realtime_app/realtime_app.hpp"
+    ],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/vixcpp/realtime_app",
+  "keywords": [
+    "cpp",
+    "vix",
+    "realtime",
+    "websocket",
+    "sse",
+    "events",
+    "presence",
+    "notifications"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "vix",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "realtime_app",
+  "namespace": "vix",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/vixcpp/realtime_app"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "f78c3eba083ef0cda476680ccb93cbc0e4257a9e",
+      "tag": "v0.1.0"
+    }
+  }
+}
