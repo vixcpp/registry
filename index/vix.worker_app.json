@@ -1,0 +1,71 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-04T12:08:28Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Background worker kit built on top of vix/app for jobs, queues, retries, and scheduled tasks.",
+  "displayName": "worker_app",
+  "documentation": "https://github.com/vixcpp/worker_app#readme",
+  "exports": {
+    "headers": [
+      "worker_app/worker_app.hpp"
+    ],
+    "modules": [
+      "worker_app/worker_app.hpp"
+    ],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/vixcpp/worker_app",
+  "keywords": [
+    "cpp",
+    "vix",
+    "worker",
+    "jobs",
+    "queue",
+    "background",
+    "tasks",
+    "retry"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "vix",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "worker_app",
+  "namespace": "vix",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/vixcpp/worker_app"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "f11883b2bf888463957823918b31424794319a42",
+      "tag": "v0.1.0"
+    }
+  }
+}
