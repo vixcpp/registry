@@ -1,0 +1,71 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-05T12:38:36Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Geohash encoding and decoding for geospatial indexing.",
+  "displayName": "geo_hash",
+  "documentation": "https://github.com/GaspardKirira/geo_hash#readme",
+  "exports": {
+    "headers": [
+      "geo_hash/geo_hash.hpp"
+    ],
+    "modules": [
+      "geo_hash/geo_hash.hpp"
+    ],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/GaspardKirira/geo_hash",
+  "keywords": [
+    "cpp",
+    "geohash",
+    "geospatial",
+    "spatial-index",
+    "latitude-longitude",
+    "location",
+    "header-only",
+    "vix"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "gaspardkirira",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "geo_hash",
+  "namespace": "gaspardkirira",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/GaspardKirira/geo_hash"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "fc7204bfb6bbe258a73ddbaee68a7ec897537b6a",
+      "tag": "v0.1.0"
+    }
+  }
+}
