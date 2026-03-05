@@ -1,0 +1,72 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-05T14:07:05Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Minimal header-only bcrypt password hashing and verification utilities for C++.",
+  "displayName": "bcrypt",
+  "documentation": "https://github.com/GaspardKirira/bcrypt#readme",
+  "exports": {
+    "headers": [
+      "bcrypt/bcrypt.hpp"
+    ],
+    "modules": [
+      "bcrypt/bcrypt.hpp"
+    ],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/GaspardKirira/bcrypt",
+  "keywords": [
+    "bcrypt",
+    "password",
+    "hashing",
+    "authentication",
+    "security",
+    "crypto",
+    "cpp",
+    "header-only",
+    "vix"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "gk",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "bcrypt",
+  "namespace": "gk",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/GaspardKirira/bcrypt"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "5cdcb007c419e47a7542bde5ca81a6727b5fc932",
+      "tag": "v0.1.0"
+    }
+  }
+}
