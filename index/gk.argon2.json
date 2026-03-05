@@ -1,0 +1,73 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-05T14:21:50Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Minimal header-only Argon2 password hashing and verification utilities for C++.",
+  "displayName": "argon2",
+  "documentation": "https://github.com/GaspardKirira/argon2#readme",
+  "exports": {
+    "headers": [
+      "argon2/argon2.hpp"
+    ],
+    "modules": [
+      "argon2/argon2.hpp"
+    ],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/GaspardKirira/argon2",
+  "keywords": [
+    "argon2",
+    "password",
+    "hashing",
+    "authentication",
+    "security",
+    "crypto",
+    "memory-hard",
+    "cpp",
+    "header-only",
+    "vix"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "gk",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "argon2",
+  "namespace": "gk",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/GaspardKirira/argon2"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "a72f6cb25e848f58ca6bfcffb075b3bb9f00ebea",
+      "tag": "v0.1.0"
+    }
+  }
+}
