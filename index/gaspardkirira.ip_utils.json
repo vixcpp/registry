@@ -1,0 +1,71 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-05T12:45:52Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Utilities for parsing, validating, and manipulating IPv4 and IPv6 addresses in modern C++.",
+  "displayName": "ip_utils",
+  "documentation": "https://github.com/GaspardKirira/ip_utils#readme",
+  "exports": {
+    "headers": [
+      "ip_utils/ip_utils.hpp"
+    ],
+    "modules": [
+      "ip_utils/ip_utils.hpp"
+    ],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/GaspardKirira/ip_utils",
+  "keywords": [
+    "cpp",
+    "ip",
+    "ipv4",
+    "ipv6",
+    "network",
+    "address-parsing",
+    "header-only",
+    "vix"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "gaspardkirira",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "ip_utils",
+  "namespace": "gaspardkirira",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/GaspardKirira/ip_utils"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "db952a8a2c84bf4dfd3de45913d006a77c3bcd8c",
+      "tag": "v0.1.0"
+    }
+  }
+}
