@@ -1,0 +1,72 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-05T13:26:39Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Minimal header-only FTP client for file transfer automation with basic FTP commands and TCP networking.",
+  "displayName": "ftp_client",
+  "documentation": "https://github.com/GaspardKirira/ftp_client#readme",
+  "exports": {
+    "headers": [
+      "ftp_client/ftp_client.hpp"
+    ],
+    "modules": [
+      "ftp_client/ftp_client.hpp"
+    ],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/GaspardKirira/ftp_client",
+  "keywords": [
+    "ftp",
+    "file-transfer",
+    "network",
+    "tcp",
+    "client",
+    "automation",
+    "cpp",
+    "header-only",
+    "vix"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "gaspardkirira",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "ftp_client",
+  "namespace": "gaspardkirira",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/GaspardKirira/ftp_client"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "457b0a70bb1725b88b66dea97574f9ee8a61deda",
+      "tag": "v0.1.0"
+    }
+  }
+}
