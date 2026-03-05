@@ -1,0 +1,73 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-05T13:40:12Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Minimal header-only OAuth2 helpers for token flows such as client credentials and refresh tokens.",
+  "displayName": "oauth2",
+  "documentation": "https://github.com/GaspardKirira/oauth2#readme",
+  "exports": {
+    "headers": [
+      "oauth2/oauth2.hpp"
+    ],
+    "modules": [
+      "oauth2/oauth2.hpp"
+    ],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/GaspardKirira/oauth2",
+  "keywords": [
+    "oauth2",
+    "authentication",
+    "authorization",
+    "token",
+    "client-credentials",
+    "refresh-token",
+    "security",
+    "cpp",
+    "header-only",
+    "vix"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "gk",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "oauth2",
+  "namespace": "gk",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/GaspardKirira/oauth2"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "1cc16d21284f7d86efbb9ffa78a021e2f83dcb11",
+      "tag": "v0.1.0"
+    }
+  }
+}
