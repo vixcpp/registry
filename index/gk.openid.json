@@ -1,0 +1,74 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-05T13:54:22Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Minimal header-only OpenID Connect utilities for verifying ID tokens and handling basic OIDC flows.",
+  "displayName": "openid",
+  "documentation": "https://github.com/GaspardKirira/openid#readme",
+  "exports": {
+    "headers": [
+      "openid/openid.hpp"
+    ],
+    "modules": [
+      "openid/openid.hpp"
+    ],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/GaspardKirira/openid",
+  "keywords": [
+    "openid",
+    "oidc",
+    "openid-connect",
+    "identity",
+    "authentication",
+    "id-token",
+    "jwt",
+    "security",
+    "cpp",
+    "header-only",
+    "vix"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "gk",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "openid",
+  "namespace": "gk",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/GaspardKirira/openid"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "bcb0a981dba9270d11ec644a38faef0787e3ec87",
+      "tag": "v0.1.0"
+    }
+  }
+}
