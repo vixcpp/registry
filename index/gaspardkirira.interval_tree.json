@@ -1,0 +1,71 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-05T12:27:18Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Interval tree for fast point and range overlap queries in modern C++.",
+  "displayName": "interval_tree",
+  "documentation": "https://github.com/GaspardKirira/interval_tree#readme",
+  "exports": {
+    "headers": [
+      "interval_tree/interval_tree.hpp"
+    ],
+    "modules": [
+      "interval_tree/interval_tree.hpp"
+    ],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/GaspardKirira/interval_tree",
+  "keywords": [
+    "cpp",
+    "interval-tree",
+    "range-query",
+    "overlap-detection",
+    "data-structures",
+    "algorithms",
+    "header-only",
+    "vix"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "gaspardkirira",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "interval_tree",
+  "namespace": "gaspardkirira",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/GaspardKirira/interval_tree"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "7f38614808650a0db482278e6aede013793fa2aa",
+      "tag": "v0.1.0"
+    }
+  }
+}
