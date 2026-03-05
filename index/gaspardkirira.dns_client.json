@@ -1,0 +1,73 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-05T12:59:19Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Minimal header-only DNS resolver for A and AAAA lookups with configurable server, timeout, and async support.",
+  "displayName": "dns_client",
+  "documentation": "https://github.com/GaspardKirira/dns_client#readme",
+  "exports": {
+    "headers": [
+      "dns_client/dns_client.hpp"
+    ],
+    "modules": [
+      "dns_client/dns_client.hpp"
+    ],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/GaspardKirira/dns_client",
+  "keywords": [
+    "dns",
+    "resolver",
+    "network",
+    "udp",
+    "ipv4",
+    "ipv6",
+    "async",
+    "cpp",
+    "header-only",
+    "vix"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "gaspardkirira",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "dns_client",
+  "namespace": "gaspardkirira",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/GaspardKirira/dns_client"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "069cba47cff3b5e4827d710c83869a2febd182e4",
+      "tag": "v0.1.0"
+    }
+  }
+}
