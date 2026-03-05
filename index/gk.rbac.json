@@ -1,0 +1,73 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-05T14:37:08Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Minimal Role-Based Access Control (RBAC) utilities for C++.",
+  "displayName": "rbac",
+  "documentation": "https://github.com/GaspardKirira/rbac#readme",
+  "exports": {
+    "headers": [
+      "rbac/rbac.hpp"
+    ],
+    "modules": [
+      "rbac/rbac.hpp"
+    ],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/GaspardKirira/rbac",
+  "keywords": [
+    "rbac",
+    "authorization",
+    "access-control",
+    "roles",
+    "permissions",
+    "security",
+    "auth",
+    "cpp",
+    "header-only",
+    "vix"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "gk",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "rbac",
+  "namespace": "gk",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/GaspardKirira/rbac"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "47adcd277bf4be74a74063add4a7b74a767d9aac",
+      "tag": "v0.1.0"
+    }
+  }
+}
