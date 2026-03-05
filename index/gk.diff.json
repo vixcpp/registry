@@ -1,0 +1,71 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-05T15:01:19Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Minimal text diff and patch generation utilities for C++.",
+  "displayName": "diff",
+  "documentation": "https://github.com/GaspardKirira/diff#readme",
+  "exports": {
+    "headers": [
+      "diff/diff.hpp"
+    ],
+    "modules": [
+      "diff/diff.hpp"
+    ],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/GaspardKirira/diff",
+  "keywords": [
+    "diff",
+    "patch",
+    "text-diff",
+    "difference",
+    "algorithm",
+    "cpp",
+    "header-only",
+    "vix"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "gk",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "diff",
+  "namespace": "gk",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/GaspardKirira/diff"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "cd6a3c5410448e526e3fe664acc60e496612cbc4",
+      "tag": "v0.1.0"
+    }
+  }
+}
