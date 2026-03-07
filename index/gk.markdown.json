@@ -1,0 +1,72 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-07T13:24:26Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Minimal Markdown to HTML converter for C++.",
+  "displayName": "markdown",
+  "documentation": "https://github.com/GaspardKirira/markdown#readme",
+  "exports": {
+    "headers": [
+      "markdown/markdown.hpp"
+    ],
+    "modules": [
+      "markdown/markdown.hpp"
+    ],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/GaspardKirira/markdown",
+  "keywords": [
+    "markdown",
+    "markdown-parser",
+    "markdown-to-html",
+    "html",
+    "text-processing",
+    "rendering",
+    "cpp",
+    "header-only",
+    "vix"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "gk",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "markdown",
+  "namespace": "gk",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/GaspardKirira/markdown"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "a72c471b7fc278000b706f3f6cdac878d9ed6b4d",
+      "tag": "v0.1.0"
+    }
+  }
+}
