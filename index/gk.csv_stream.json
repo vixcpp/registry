@@ -1,0 +1,72 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-09T09:47:59Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Streaming CSV reader for large files in C++.",
+  "displayName": "csv_stream",
+  "documentation": "https://github.com/GaspardKirira/csv_stream#readme",
+  "exports": {
+    "headers": [
+      "csv_stream/csv_stream.hpp"
+    ],
+    "modules": [
+      "csv_stream/csv_stream.hpp"
+    ],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/GaspardKirira/csv_stream",
+  "keywords": [
+    "csv",
+    "csv-parser",
+    "csv-reader",
+    "streaming",
+    "data-processing",
+    "file-processing",
+    "cpp",
+    "header-only",
+    "vix"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "gk",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "csv_stream",
+  "namespace": "gk",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/GaspardKirira/csv_stream"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "8cb50a2208a723771aa8b58da8d5ebb0852a81c1",
+      "tag": "v0.1.0"
+    }
+  }
+}
