@@ -1,0 +1,71 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-09T09:36:54Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Short unique ID generator for compact identifiers in C++.",
+  "displayName": "uuid_short",
+  "documentation": "https://github.com/GaspardKirira/uuid_short#readme",
+  "exports": {
+    "headers": [
+      "uuid_short/uuid_short.hpp"
+    ],
+    "modules": [
+      "uuid_short/uuid_short.hpp"
+    ],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/GaspardKirira/uuid_short",
+  "keywords": [
+    "uuid",
+    "short-id",
+    "identifier",
+    "unique-id",
+    "random-id",
+    "cpp",
+    "header-only",
+    "vix"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "gk",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "uuid_short",
+  "namespace": "gk",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/GaspardKirira/uuid_short"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "0c61bbcb5f0c09622cca0dc427af157e2a49b141",
+      "tag": "v0.1.0"
+    }
+  }
+}
