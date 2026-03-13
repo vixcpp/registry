@@ -1,0 +1,69 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-13T16:21:47Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Low-level, zero-overhead type conversion utilities for C++ (string to int, enum, bool, etc.) with explicit error handling.",
+  "displayName": "conversion",
+  "documentation": "https://github.com/vixcpp/conversion#readme",
+  "exports": {
+    "headers": [],
+    "modules": [],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/vixcpp/conversion",
+  "keywords": [
+    "cpp",
+    "vix",
+    "conversion",
+    "type",
+    "string",
+    "int",
+    "enum",
+    "bool",
+    "header-only",
+    "utilities"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "vix",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "conversion",
+  "namespace": "vix",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/vixcpp/conversion"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "28083315b6451f4a5922f5d41bbd263b427a1e6e",
+      "tag": "v0.1.0"
+    }
+  }
+}
