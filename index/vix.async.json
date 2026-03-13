@@ -1,0 +1,67 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-13T16:18:14Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Low-level async runtime (scheduler, coroutines, timers, thread pool) for Vix.cpp",
+  "displayName": "async",
+  "documentation": "https://github.com/vixcpp/async#readme",
+  "exports": {
+    "headers": [],
+    "modules": [],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/vixcpp/async",
+  "keywords": [
+    "cpp",
+    "vix",
+    "async",
+    "coroutines",
+    "scheduler",
+    "thread-pool",
+    "timers",
+    "runtime"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "vix",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "async",
+  "namespace": "vix",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/vixcpp/async"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "fe823949166e1eb5ec03ab34d4533b4699677893",
+      "tag": "v0.1.0"
+    }
+  }
+}
