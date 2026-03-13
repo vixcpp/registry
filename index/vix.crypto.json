@@ -1,0 +1,72 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-13T16:29:34Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Modern cryptography primitives for Vix. Explicit, auditable, dependency-light crypto building blocks for secure runtimes.",
+  "displayName": "crypto",
+  "documentation": "https://github.com/vixcpp/crypto#readme",
+  "exports": {
+    "headers": [],
+    "modules": [],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/vixcpp/crypto",
+  "keywords": [
+    "cpp",
+    "vix",
+    "crypto",
+    "cryptography",
+    "hash",
+    "hmac",
+    "aead",
+    "keys",
+    "signature",
+    "random",
+    "kdf",
+    "security",
+    "dependency-light"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "vix",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "crypto",
+  "namespace": "vix",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/vixcpp/crypto"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "3aae951795504a4a909c739bde7de223c1b29bcf",
+      "tag": "v0.1.0"
+    }
+  }
+}
