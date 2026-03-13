@@ -1,0 +1,72 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-13T16:28:57Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Core utilities and components for Vix.cpp: HTTP, server, router, threading, timers, console, printing, session, and application framework.",
+  "displayName": "core",
+  "documentation": "https://github.com/vixcpp/core#readme",
+  "exports": {
+    "headers": [],
+    "modules": [],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/vixcpp/core",
+  "keywords": [
+    "cpp",
+    "vix",
+    "core",
+    "http",
+    "server",
+    "router",
+    "threadpool",
+    "timers",
+    "console",
+    "print",
+    "session",
+    "app",
+    "framework"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "vix",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "core",
+  "namespace": "vix",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": false,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/vixcpp/core"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "b6aa1cf39fdeb62333e3c7c663ee648fdd70602c",
+      "tag": "v0.1.0"
+    }
+  }
+}
