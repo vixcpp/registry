@@ -1,0 +1,68 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-13T16:14:10Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "HTTP cache engine for Vix. Pluggable cache stores, cache policies, and keying strategies for high-performance HTTP response caching.",
+  "displayName": "cache",
+  "documentation": "https://github.com/vixcpp/cache#readme",
+  "exports": {
+    "headers": [],
+    "modules": [],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/vixcpp/cache",
+  "keywords": [
+    "cpp",
+    "vix",
+    "cache",
+    "http",
+    "memory",
+    "file",
+    "lru",
+    "performance",
+    "caching"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "vix",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "cache",
+  "namespace": "vix",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": false,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/vixcpp/cache"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "8f71da92b4f8a014e5a8373495115ca163ec56e4",
+      "tag": "v0.1.0"
+    }
+  }
+}
