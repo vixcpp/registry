@@ -1,0 +1,67 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-13T16:37:36Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Header-only JSON library for Vix.cpp: parsing, dumping, conversion, and JPath querying.",
+  "displayName": "json",
+  "documentation": "https://github.com/vixcpp/json#readme",
+  "exports": {
+    "headers": [],
+    "modules": [],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/vixcpp/json",
+  "keywords": [
+    "cpp",
+    "vix",
+    "json",
+    "header-only",
+    "parsing",
+    "dumping",
+    "conversion",
+    "jpath"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "vix",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "json",
+  "namespace": "vix",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": false
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/vixcpp/json"
+  },
+  "type": "header-only",
+  "versions": {
+    "1.10.0": {
+      "commit": "b522fb01e6369053e8d36312f3ca18552add41a4",
+      "tag": "v1.10.0"
+    }
+  }
+}
