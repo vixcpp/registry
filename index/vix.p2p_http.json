@@ -1,0 +1,67 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-14T06:56:27Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "HTTP layer for Vix P2P networking: P2PHttp server, middleware, routing, and options handling.",
+  "displayName": "p2p_http",
+  "documentation": "https://github.com/vixcpp/p2p_http#readme",
+  "exports": {
+    "headers": [],
+    "modules": [],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/vixcpp/p2p_http",
+  "keywords": [
+    "cpp",
+    "vix",
+    "p2p",
+    "http",
+    "server",
+    "routing",
+    "middleware",
+    "network"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "vix",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "p2p_http",
+  "namespace": "vix",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": false
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/vixcpp/p2p_http"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "de501c6c7512d631f92cea56b35263eb542e0579",
+      "tag": "v0.1.0"
+    }
+  }
+}
