@@ -1,0 +1,69 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-14T06:47:34Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Peer-to-peer networking module for Vix.cpp: node discovery, messaging, routing, edge synchronization, and transport protocols.",
+  "displayName": "p2p",
+  "documentation": "https://github.com/vixcpp/p2p#readme",
+  "exports": {
+    "headers": [],
+    "modules": [],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/vixcpp/p2p",
+  "keywords": [
+    "cpp",
+    "vix",
+    "p2p",
+    "peer-to-peer",
+    "network",
+    "discovery",
+    "edge-sync",
+    "messaging",
+    "routing",
+    "transport"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "vix",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "p2p",
+  "namespace": "vix",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": false,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/vixcpp/p2p"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.9.0": {
+      "commit": "14dfc4466b020f0f8383178ce1f0b898a0c9dcdc",
+      "tag": "v0.9.0"
+    }
+  }
+}
