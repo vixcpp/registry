@@ -1,0 +1,68 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-14T06:20:26Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Header-only validation utilities for Vix.cpp: rules, schemas, models, forms, and error handling.",
+  "displayName": "validation",
+  "documentation": "https://github.com/vixcpp/validation#readme",
+  "exports": {
+    "headers": [],
+    "modules": [],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/vixcpp/validation",
+  "keywords": [
+    "cpp",
+    "vix",
+    "validation",
+    "header-only",
+    "rules",
+    "schema",
+    "form",
+    "errors",
+    "utilities"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "vix",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "validation",
+  "namespace": "vix",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/vixcpp/validation"
+  },
+  "type": "header-only",
+  "versions": {
+    "1.0.0": {
+      "commit": "7be590e900b3e2225c1713793e3bef61e6aa8933",
+      "tag": "v1.0.0"
+    }
+  }
+}
