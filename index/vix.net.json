@@ -1,0 +1,65 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-14T07:00:29Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Networking utilities for Vix.cpp: network probing and diagnostics.",
+  "displayName": "net",
+  "documentation": "https://github.com/vixcpp/net#readme",
+  "exports": {
+    "headers": [],
+    "modules": [],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/vixcpp/net",
+  "keywords": [
+    "cpp",
+    "vix",
+    "network",
+    "probe",
+    "diagnostics",
+    "utilities"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "vix",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "net",
+  "namespace": "vix",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": false,
+    "hasTests": false
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/vixcpp/net"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "bff0221ad7bdafa8ecf897e0bb0e562f8b6a57e2",
+      "tag": "v0.1.0"
+    }
+  }
+}
