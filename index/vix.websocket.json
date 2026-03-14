@@ -1,0 +1,69 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-14T06:41:20Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "WebSocket runtime and utilities for Vix.cpp: client/server, long-polling, message store, metrics, session and router handling.",
+  "displayName": "websocket",
+  "documentation": "https://github.com/vixcpp/websocket#readme",
+  "exports": {
+    "headers": [],
+    "modules": [],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/vixcpp/websocket",
+  "keywords": [
+    "cpp",
+    "vix",
+    "websocket",
+    "client",
+    "server",
+    "long-polling",
+    "message-store",
+    "metrics",
+    "router",
+    "session"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "vix",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "websocket",
+  "namespace": "vix",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": false
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/vixcpp/websocket"
+  },
+  "type": "header-only",
+  "versions": {
+    "1.10.0": {
+      "commit": "45e5a09f62064b5e0a9135b92f33ba3c7eead5b3",
+      "tag": "v1.10.0"
+    }
+  }
+}
