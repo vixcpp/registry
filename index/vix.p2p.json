@@ -61,9 +61,85 @@
   },
   "type": "header-only",
   "versions": {
+    "0.0.1": {
+      "tag": "v0.0.1",
+      "commit": "d56ec142f395a7393b3237fc8bb342550ffa2e25"
+    },
+    "0.1.0": {
+      "tag": "v0.1.0",
+      "commit": "a1e2621f803e501d68f7202e9ec26f910394234a"
+    },
+    "0.1.1": {
+      "tag": "v0.1.1",
+      "commit": "75f71beb193ed0d372808260770067c9ccef7f52"
+    },
+    "0.2.0": {
+      "tag": "v0.2.0",
+      "commit": "d9b14bda7f7b1ca9e0cd8e73119879311620f8d4"
+    },
+    "0.3.0": {
+      "tag": "v0.3.0",
+      "commit": "8b4a232a650d4542024d0bb0508d0595ddd77796"
+    },
+    "0.4.0": {
+      "tag": "v0.4.0",
+      "commit": "a7be3e0c7b55670979ed3ac2a597489b76caac23"
+    },
+    "0.5.0": {
+      "tag": "v0.5.0",
+      "commit": "66772d3e7334be90ac164035e07d3934cca07e68"
+    },
+    "0.5.1": {
+      "tag": "v0.5.1",
+      "commit": "aebfd93dd594219971c991fee9b3f90276ecd85f"
+    },
+    "0.6.0": {
+      "tag": "v0.6.0",
+      "commit": "b37254a7b8c0db39cd887496a9b00a736299ae9c"
+    },
+    "0.6.1": {
+      "tag": "v0.6.1",
+      "commit": "108dfd7e5cc9f371d7cdb3a97933c0a1f2e69060"
+    },
+    "0.7.0": {
+      "tag": "v0.7.0",
+      "commit": "2fa8e4b7d60589a3532b23a383b07a9fabc6ab53"
+    },
+    "0.7.1": {
+      "tag": "v0.7.1",
+      "commit": "52eec402f2da0075c1d7e6388c0b8ba8dbf0df48"
+    },
+    "0.7.2": {
+      "tag": "v0.7.2",
+      "commit": "8953e52e4f28f2763c4295ee0db169faea482565"
+    },
+    "0.7.3": {
+      "tag": "v0.7.3",
+      "commit": "c9bbd452160863f03e5a8628cff93fd7caf4ede7"
+    },
+    "0.7.4": {
+      "tag": "v0.7.4",
+      "commit": "87550dc02331c8be95d7c5ceb216025232b94a67"
+    },
+    "0.7.5": {
+      "tag": "v0.7.5",
+      "commit": "30fc04bc4f108a169f6d6c529a529b969e0443b4"
+    },
+    "0.7.6": {
+      "tag": "v0.7.6",
+      "commit": "fc3ef1d450c06949e78543a7faa4aea1c591b337"
+    },
+    "0.7.7": {
+      "tag": "v0.7.7",
+      "commit": "b648b769298d71eed36b5d122c60ccf6aa0d0537"
+    },
+    "0.8.0": {
+      "tag": "v0.8.0",
+      "commit": "c9f5972b741a9d92e2dbb0c5154f5a8c80a08e6e"
+    },
     "0.9.0": {
-      "commit": "14dfc4466b020f0f8383178ce1f0b898a0c9dcdc",
-      "tag": "v0.9.0"
+      "tag": "v0.9.0",
+      "commit": "14dfc4466b020f0f8383178ce1f0b898a0c9dcdc"
     }
   }
 }
