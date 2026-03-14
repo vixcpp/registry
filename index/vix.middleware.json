@@ -1,0 +1,69 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-14T06:53:34Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Middleware utilities for Vix.cpp: HTTP cache, auth, security, observability, pipelines, periodic tasks, and static content bridging.",
+  "displayName": "middleware",
+  "documentation": "https://github.com/vixcpp/middleware#readme",
+  "exports": {
+    "headers": [],
+    "modules": [],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/vixcpp/middleware",
+  "keywords": [
+    "cpp",
+    "vix",
+    "middleware",
+    "http",
+    "auth",
+    "security",
+    "observability",
+    "pipeline",
+    "cache",
+    "static-content"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "vix",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "middleware",
+  "namespace": "vix",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": false,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/vixcpp/middleware"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "ebe48b96ea595344f5dc99b41603b0a7556f6cf7",
+      "tag": "v0.1.0"
+    }
+  }
+}
