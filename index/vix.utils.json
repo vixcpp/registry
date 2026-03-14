@@ -1,0 +1,68 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-14T06:07:41Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "General utility components for Vix.cpp: logging, UUID, environment utilities, validation, scope guards, and helper types.",
+  "displayName": "utils",
+  "documentation": "https://github.com/vixcpp/utils#readme",
+  "exports": {
+    "headers": [],
+    "modules": [],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/vixcpp/utils",
+  "keywords": [
+    "cpp",
+    "vix",
+    "utils",
+    "logging",
+    "uuid",
+    "validation",
+    "env",
+    "helpers",
+    "utilities"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "vix",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "utils",
+  "namespace": "vix",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/vixcpp/utils"
+  },
+  "type": "header-only",
+  "versions": {
+    "1.0.0": {
+      "commit": "52b17884a858b69b8e45af16f7546ec7f6756b29",
+      "tag": "v1.0.0"
+    }
+  }
+}
