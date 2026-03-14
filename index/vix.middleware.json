@@ -62,8 +62,76 @@
   "type": "header-only",
   "versions": {
     "0.1.0": {
-      "commit": "ebe48b96ea595344f5dc99b41603b0a7556f6cf7",
-      "tag": "v0.1.0"
+      "tag": "v0.1.0",
+      "commit": "ebe48b96ea595344f5dc99b41603b0a7556f6cf7"
+    },
+    "0.1.1": {
+      "tag": "v0.1.1",
+      "commit": "32e000ca0a9315d7eb63c158c01a0beb3f073849"
+    },
+    "1.0.0": {
+      "tag": "v1.0.0",
+      "commit": "37856d42640c816e9361e9202d06c85947785493"
+    },
+    "1.1.0": {
+      "tag": "v1.1.0",
+      "commit": "7c86b4eba5d39cf9cc2dc17abb401d4b765521f9"
+    },
+    "1.1.1": {
+      "tag": "v1.1.1",
+      "commit": "0ec3f182125b057dbdf0b389a2406438090f0436"
+    },
+    "1.2.0": {
+      "tag": "v1.2.0",
+      "commit": "63c91ac2eac230983fba4fdbdf704b156e5a1e25"
+    },
+    "1.3.0": {
+      "tag": "v1.3.0",
+      "commit": "e8e48e4a091b31f671d9a7219549559a5aa50cd4"
+    },
+    "1.3.1": {
+      "tag": "v1.3.1",
+      "commit": "2121a238bcf1e4047b04cea084e676aa4bc0dc2d"
+    },
+    "1.4.0": {
+      "tag": "v1.4.0",
+      "commit": "8f2e42fdbcd9b333a6b94c710217f0a3efac04c7"
+    },
+    "1.5.0": {
+      "tag": "v1.5.0",
+      "commit": "62108f30b1550dc0e581633ea6d1a25552c952d7"
+    },
+    "1.5.1": {
+      "tag": "v1.5.1",
+      "commit": "381671ad2dad62d71c0803e59989d9ab6c19dbd7"
+    },
+    "1.5.2": {
+      "tag": "v1.5.2",
+      "commit": "c58066fa3718192c394bafe5302d7ba7a662b3b1"
+    },
+    "1.6.0": {
+      "tag": "v1.6.0",
+      "commit": "7eda882964f4c33b8976404bc0dab41fd678a4e4"
+    },
+    "1.6.1": {
+      "tag": "v1.6.1",
+      "commit": "e2adec4bedf4c1370bc682df6493a1ba23268d4d"
+    },
+    "1.7.0": {
+      "tag": "v1.7.0",
+      "commit": "264da371797321ded3225e99ae839f0599205d80"
+    },
+    "1.7.1": {
+      "tag": "v1.7.1",
+      "commit": "1872527ecc4a127d4c71bfc469048ee893022481"
+    },
+    "1.8.0": {
+      "tag": "v1.8.0",
+      "commit": "f75a32442cab51dd20958bcf6e2d2bb4b210ab8d"
+    },
+    "1.9.0": {
+      "tag": "v1.9.0",
+      "commit": "44fc45d8e3c611352f3827d88788751505748856"
     }
   }
 }
