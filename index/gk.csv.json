@@ -1,0 +1,69 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-14T09:02:07Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Modern, header-only C++20 library for robust and high-performance CSV parsing and writing, with full support for quoted fields, custom separators, comments, and large datasets.",
+  "displayName": "csv",
+  "documentation": "https://github.com/GaspardKirira/csv#readme",
+  "exports": {
+    "headers": [
+      "csv/csv.hpp"
+    ],
+    "modules": [
+      "csv/csv.hpp"
+    ],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/GaspardKirira/csv",
+  "keywords": [
+    "cpp",
+    "header-only",
+    "csv",
+    "parsing",
+    "serialization",
+    "vix"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "gk",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "csv",
+  "namespace": "gk",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/GaspardKirira/csv"
+  },
+  "type": "header-only",
+  "versions": {
+    "1.0.0": {
+      "commit": "2c5211a7dc9bcf7233ac4532671d9d4d1e389f16",
+      "tag": "v1.0.0"
+    }
+  }
+}
