@@ -1,0 +1,66 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-16T13:54:58Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "QR code generator (PNG/SVG output).",
+  "displayName": "qr",
+  "documentation": "https://github.com/GaspardKirira/qr#readme",
+  "exports": {
+    "headers": [
+      "qr/qr.hpp"
+    ],
+    "modules": [
+      "qr/qr.hpp"
+    ],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/GaspardKirira/qr",
+  "keywords": [
+    "cpp",
+    "header-only",
+    "vix"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "gk",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "qr",
+  "namespace": "gk",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/GaspardKirira/qr"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "d85f1e074822e4c6213f199c2cadc1d222fc5c95",
+      "tag": "v0.1.0"
+    }
+  }
+}
