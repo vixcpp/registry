@@ -1,0 +1,75 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-18T15:08:46Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Production-grade C++ header-only library for email address parsing, validation, and normalization with RFC-aware rules.",
+  "displayName": "email",
+  "documentation": "https://github.com/GaspardKirira/email#readme",
+  "exports": {
+    "headers": [
+      "email/email.hpp"
+    ],
+    "modules": [
+      "email/email.hpp"
+    ],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/GaspardKirira/email",
+  "keywords": [
+    "cpp",
+    "email",
+    "email-validation",
+    "email-parser",
+    "rfc",
+    "rfc5322",
+    "validation",
+    "parser",
+    "normalization",
+    "string",
+    "header-only",
+    "vix"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "gk",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "email",
+  "namespace": "gk",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/GaspardKirira/email"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "a463ca30004d37383bb3bde867fd9cc045766dc6",
+      "tag": "v0.1.0"
+    }
+  }
+}
