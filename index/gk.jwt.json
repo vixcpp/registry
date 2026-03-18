@@ -1,0 +1,69 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-18T14:45:40Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Minimal HS256 JWT implementation for modern C++.",
+  "displayName": "jwt",
+  "documentation": "https://github.com/GaspardKirira/jwt#readme",
+  "exports": {
+    "headers": [
+      "jwt/jwt.hpp"
+    ],
+    "modules": [
+      "jwt/jwt.hpp"
+    ],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/GaspardKirira/jwt",
+  "keywords": [
+    "cpp",
+    "header-only",
+    "vix",
+    "jwt",
+    "hs256",
+    "auth"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "gk",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "jwt",
+  "namespace": "gk",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/GaspardKirira/jwt"
+  },
+  "type": "header-only",
+  "versions": {
+    "1.0.0": {
+      "commit": "735390fe7b2a6f0b42ba45995801ad28864efe69",
+      "tag": "v1.0.0"
+    }
+  }
+}
