@@ -1,0 +1,65 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-19T17:34:02Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "High-performance header-only JSON parser and serializer for C++20.",
+  "displayName": "json",
+  "documentation": "https://github.com/cnerium/json#readme",
+  "exports": {
+    "headers": [],
+    "modules": [],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/cnerium/json",
+  "keywords": [
+    "json",
+    "c++",
+    "header-only",
+    "parser",
+    "serialization",
+    "performance"
+  ],
+  "license": "Apache-2.0",
+  "maintainers": [
+    {
+      "github": "cnerium",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "json",
+  "namespace": "cnerium",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/cnerium/json"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "cdab9ec49242e44d452afad74814ce69a63ad028",
+      "tag": "v0.1.0"
+    }
+  }
+}
