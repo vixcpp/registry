@@ -71,9 +71,37 @@
   },
   "type": "header-only",
   "versions": {
+    "0.1.0": {
+      "tag": "v0.1.0",
+      "commit": "9518d9b557baf953796ac409644eff4211dea834"
+    },
+    "0.2.0": {
+      "tag": "v0.2.0",
+      "commit": "90db48ed2c2738ff4a9ebcfa4fa2b78496203010"
+    },
+    "0.3.0": {
+      "tag": "v0.3.0",
+      "commit": "b7b8636c9c57b1e5ccbe8cb8aa20d0cbb1010f79"
+    },
+    "0.4.0": {
+      "tag": "v0.4.0",
+      "commit": "522b515928e29d232056da4ccbb83fad55621c07"
+    },
+    "0.5.0": {
+      "tag": "v0.5.0",
+      "commit": "82b0ed6f7738944be2b33b463d8d3d970553923e"
+    },
+    "0.6.0": {
+      "tag": "v0.6.0",
+      "commit": "66094dc8c0ecf1cfaec40e91795e18b063a10725"
+    },
+    "1.0.0": {
+      "tag": "v1.0.0",
+      "commit": "fab3b9c71fc3b80bba2080317f02f747be1a0697"
+    },
     "1.1.0": {
-      "commit": "94b2a73a9a779b5d10af416e8f336e70e63fac38",
-      "tag": "v1.1.0"
+      "tag": "v1.1.0",
+      "commit": "94b2a73a9a779b5d10af416e8f336e70e63fac38"
     }
   }
 }
