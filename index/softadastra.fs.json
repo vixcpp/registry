@@ -1,0 +1,81 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-19T13:55:44Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Filesystem observation and change detection layer for Softadastra. Provides snapshotting, diffing, file events, and cross-platform watchers designed for reliable, offline-first synchronization systems.",
+  "displayName": "fs",
+  "documentation": "https://github.com/softadastra/fs#readme",
+  "exports": {
+    "headers": [],
+    "modules": [],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/softadastra/fs",
+  "keywords": [
+    "softadastra",
+    "fs",
+    "filesystem",
+    "watcher",
+    "file-watching",
+    "snapshot",
+    "diff",
+    "file-events",
+    "inotify",
+    "polling",
+    "cross-platform",
+    "synchronization",
+    "offline-first",
+    "deterministic",
+    "change-detection",
+    "file-monitoring",
+    "c++",
+    "cpp",
+    "c++20",
+    "systems",
+    "infrastructure",
+    "library"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "softadastra",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "fs",
+  "namespace": "softadastra",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/softadastra/fs"
+  },
+  "type": "header-only",
+  "versions": {
+    "1.0.0": {
+      "commit": "91cf8a75d9933ef9618834352f8b872fd96b7bf5",
+      "tag": "v1.0.0"
+    }
+  }
+}
