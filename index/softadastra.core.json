@@ -1,0 +1,79 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-19T14:00:34Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Foundational primitives for Softadastra systems: types, errors, ids, time, hash, and config. Designed for deterministic, dependency-free, offline-first architectures.",
+  "displayName": "core",
+  "documentation": "https://github.com/softadastra/core#readme",
+  "exports": {
+    "headers": [],
+    "modules": [],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/softadastra/core",
+  "keywords": [
+    "softadastra",
+    "core",
+    "foundation",
+    "primitives",
+    "types",
+    "error-handling",
+    "ids",
+    "time",
+    "hash",
+    "config",
+    "deterministic",
+    "offline-first",
+    "no-dependencies",
+    "c++",
+    "cpp",
+    "c++20",
+    "cross-platform",
+    "systems",
+    "infrastructure",
+    "library"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "softadastra",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "core",
+  "namespace": "softadastra",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/softadastra/core"
+  },
+  "type": "header-only",
+  "versions": {
+    "1.1.0": {
+      "commit": "94b2a73a9a779b5d10af416e8f336e70e63fac38",
+      "tag": "v1.1.0"
+    }
+  }
+}
