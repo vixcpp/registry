@@ -1,0 +1,83 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-20T14:47:48Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Write-Ahead Log (WAL) engine for Softadastra. Provides durable, ordered, and deterministic persistence of operations with support for encoding, decoding, streaming reads, and replay. Designed as the core event sourcing layer for offline-first and distributed systems.",
+  "displayName": "wal",
+  "documentation": "https://github.com/softadastra/wal#readme",
+  "exports": {
+    "headers": [],
+    "modules": [],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/softadastra/wal",
+  "keywords": [
+    "softadastra",
+    "wal",
+    "write-ahead-log",
+    "event-sourcing",
+    "persistence",
+    "durability",
+    "log",
+    "append-only",
+    "replay",
+    "streaming",
+    "encoding",
+    "decoder",
+    "storage",
+    "deterministic",
+    "offline-first",
+    "distributed-systems",
+    "recovery",
+    "replication",
+    "c++",
+    "cpp",
+    "c++20",
+    "systems",
+    "infrastructure",
+    "library"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "softadastra",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "wal",
+  "namespace": "softadastra",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/softadastra/wal"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "29b57d6826bc2c1b38d9c3d9ba24b7aab09f14ef",
+      "tag": "v0.1.0"
+    }
+  }
+}
