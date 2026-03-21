@@ -78,8 +78,12 @@
   "type": "header-only",
   "versions": {
     "0.1.0": {
-      "commit": "69fc4dcfb4db2cd43b83d601e858c9bd8a167080",
-      "tag": "v0.1.0"
+      "tag": "v0.1.0",
+      "commit": "69fc4dcfb4db2cd43b83d601e858c9bd8a167080"
+    },
+    "0.2.0": {
+      "tag": "v0.2.0",
+      "commit": "513757feac7187f54a74155a254d3c19067afac4"
     }
   }
 }
