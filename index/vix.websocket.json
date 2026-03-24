@@ -105,6 +105,18 @@
       "tag": "v1.10.0",
       "commit": "45e5a09f62064b5e0a9135b92f33ba3c7eead5b3"
     },
+    "1.11.0": {
+      "tag": "v1.11.0",
+      "commit": "30b51ac1de995da3653f02a03f460653b9db262a"
+    },
+    "1.11.1": {
+      "tag": "v1.11.1",
+      "commit": "9ced801a6d19aaea11b903b6d4a6b2fe2aa0306e"
+    },
+    "1.11.2": {
+      "tag": "v1.11.2",
+      "commit": "4e8201bc50bfbe88e10a55bb15d85318ff23d6d1"
+    },
     "1.2.0": {
       "tag": "v1.2.0",
       "commit": "e85047fda91162e3442c9fb3c9e500e818c1ef6d"
