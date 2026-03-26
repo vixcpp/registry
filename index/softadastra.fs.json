@@ -108,6 +108,10 @@
     "1.7.0": {
       "tag": "v1.7.0",
       "commit": "e7282569fb44a33746708261b8014d1e3f2793fa"
+    },
+    "1.8.0": {
+      "tag": "v1.8.0",
+      "commit": "75c87ffdbc9e3e0ad51afce4a4bde7df8faf9da6"
     }
   }
 }
