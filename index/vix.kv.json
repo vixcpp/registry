@@ -1,0 +1,81 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-26T10:36:24Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Durable local-first key-value engine for Vix, powered by Softadastra Store. Provides structured keys, value encoding, deterministic operations, and a simple developer-facing API for reliable embedded state.",
+  "displayName": "kv",
+  "documentation": "https://github.com/vixcpp/kv#readme",
+  "exports": {
+    "headers": [],
+    "modules": [],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/vixcpp/kv",
+  "keywords": [
+    "vix",
+    "kv",
+    "key-value",
+    "storage",
+    "database",
+    "local-first",
+    "offline-first",
+    "durability",
+    "state",
+    "embedded",
+    "store",
+    "wal",
+    "softadastra",
+    "deterministic",
+    "recovery",
+    "persistence",
+    "c++",
+    "cpp",
+    "c++20",
+    "systems",
+    "infrastructure",
+    "library"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "vix",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "kv",
+  "namespace": "vix",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/vixcpp/kv"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "28b9ef8180e3c8a77166dac8f33dde8da5c2b5ba",
+      "tag": "v0.1.0"
+    }
+  }
+}
