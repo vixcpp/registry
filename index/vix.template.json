@@ -97,6 +97,10 @@
     "0.4.0": {
       "tag": "v0.4.0",
       "commit": "94ae54599986e01fda3a83a498bb83bc02c04cc1"
+    },
+    "0.5.0": {
+      "tag": "v0.5.0",
+      "commit": "e1d5bd4d05ab8b86c9341eac0310b00ea0d4faa9"
     }
   }
 }
