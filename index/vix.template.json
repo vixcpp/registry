@@ -1,0 +1,74 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-27T07:32:17Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Lightweight C++ template engine for Vix with filters, control flow, and fast rendering.",
+  "displayName": "template",
+  "documentation": "https://github.com/vixcpp/template#readme",
+  "exports": {
+    "headers": [],
+    "modules": [],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/vixcpp/template",
+  "keywords": [
+    "vix",
+    "template",
+    "engine",
+    "rendering",
+    "html",
+    "text",
+    "templates",
+    "filters",
+    "parser",
+    "lexer",
+    "ast",
+    "c++",
+    "cpp",
+    "c++20",
+    "library"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "vix",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "template",
+  "namespace": "vix",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/vixcpp/template"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.3.0": {
+      "commit": "0a5ccaccb0d61652c7d2469b4e7c9c19a6f7b880",
+      "tag": "v0.3.0"
+    }
+  }
+}
