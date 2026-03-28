@@ -59,9 +59,77 @@
   },
   "type": "header-only",
   "versions": {
+    "1.0.0": {
+      "tag": "v1.0.0",
+      "commit": "00f62b4d662ce3a0cf26fc89f295ad20edac6554"
+    },
+    "1.1.0": {
+      "tag": "v1.1.0",
+      "commit": "3fa3c06f8c8dd26ad8d42163b9a70ca9af7ff273"
+    },
+    "1.1.1": {
+      "tag": "v1.1.1",
+      "commit": "98a9f64302365c3d9a02ae42db3bb8fb56323a9f"
+    },
+    "1.2.0": {
+      "tag": "v1.2.0",
+      "commit": "8caec96530c771d1d29249636a200058def310ea"
+    },
+    "1.2.1": {
+      "tag": "v1.2.1",
+      "commit": "abc3b09d2688ed98c06543d31dd5a9bcd2dc7a69"
+    },
+    "1.3.0": {
+      "tag": "v1.3.0",
+      "commit": "67b4c0667c9fc511c4fb0ef5aedc4ddc30a23249"
+    },
+    "1.4.0": {
+      "tag": "v1.4.0",
+      "commit": "bd73070086e5484836526f157dd721913c65b1fb"
+    },
+    "1.4.1": {
+      "tag": "v1.4.1",
+      "commit": "e0fa0dfdf9fdc1c4eebee181f3bc942a0080eb8e"
+    },
+    "1.4.2": {
+      "tag": "v1.4.2",
+      "commit": "f5e4b6af827ca634f7f4d2aa55ec285f007f407d"
+    },
+    "1.5.0": {
+      "tag": "v1.5.0",
+      "commit": "e63da9b21138a87620dd80c0074b066717083c4b"
+    },
+    "1.6.0": {
+      "tag": "v1.6.0",
+      "commit": "cab25554e099330aa8f71ef9c4bcd6cdf736f11d"
+    },
+    "1.7.0": {
+      "tag": "v1.7.0",
+      "commit": "5aab360a9fa2ed2a61300a8bf9839b26775e8241"
+    },
+    "1.7.1": {
+      "tag": "v1.7.1",
+      "commit": "3b04a81df5e78a53e79a28e172e958f48091ed82"
+    },
+    "1.7.2": {
+      "tag": "v1.7.2",
+      "commit": "90068b60a1c840981c73c46fd587def4513b9b66"
+    },
+    "1.7.3": {
+      "tag": "v1.7.3",
+      "commit": "25e1bcb77316b1647701e885bfadfc5af1686ee5"
+    },
+    "1.7.4": {
+      "tag": "v1.7.4",
+      "commit": "3f008cba316803e3f8704d0de6fbe4032d48683e"
+    },
+    "1.8.0": {
+      "tag": "v1.8.0",
+      "commit": "003c57368c5d3231d568995c8603ceaa2cc2f207"
+    },
     "1.9.0": {
-      "commit": "12cbb6ccd57abc926f338df000b4768d0dfe4dd6",
-      "tag": "v1.9.0"
+      "tag": "v1.9.0",
+      "commit": "12cbb6ccd57abc926f338df000b4768d0dfe4dd6"
     }
   }
 }
