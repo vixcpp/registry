@@ -1,0 +1,67 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-28T11:42:26Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Lightweight C++ ORM utilities for Vix.cpp: Entity mapping, repositories, query builder, and unit-of-work pattern.",
+  "displayName": "orm",
+  "documentation": "https://github.com/vixcpp/orm#readme",
+  "exports": {
+    "headers": [],
+    "modules": [],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/vixcpp/orm",
+  "keywords": [
+    "cpp",
+    "vix",
+    "orm",
+    "repository",
+    "unit-of-work",
+    "query-builder",
+    "entity",
+    "database"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "vix",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "orm",
+  "namespace": "vix",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": false
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/vixcpp/orm"
+  },
+  "type": "header-only",
+  "versions": {
+    "1.9.0": {
+      "commit": "12cbb6ccd57abc926f338df000b4768d0dfe4dd6",
+      "tag": "v1.9.0"
+    }
+  }
+}
