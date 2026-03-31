@@ -1,0 +1,67 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-31T17:36:09Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Fast and minimal HTTP router for the Cnerium web framework. Provides path routing, method matching and handler dispatch.",
+  "displayName": "router",
+  "documentation": "https://github.com/cnerium/router#readme",
+  "exports": {
+    "headers": [],
+    "modules": [],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/cnerium/router",
+  "keywords": [
+    "http",
+    "router",
+    "web",
+    "framework",
+    "cnerium",
+    "vix",
+    "backend",
+    "routing"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "cnerium",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "router",
+  "namespace": "cnerium",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/cnerium/router"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "614c3c294ec84954129a8cd3f8df46c127667dd8",
+      "tag": "v0.1.0"
+    }
+  }
+}
