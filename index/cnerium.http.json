@@ -1,0 +1,65 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-03-31T17:14:47Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "@cnerium/json": "^0.2.0"
+  },
+  "description": "HTTP primitives for the Cnerium web framework. Provides methods, status codes, headers, request and response objects.",
+  "displayName": "http",
+  "documentation": "https://github.com/cnerium/http#readme",
+  "exports": {
+    "headers": [],
+    "modules": [],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/cnerium/http",
+  "keywords": [
+    "http",
+    "web",
+    "framework",
+    "cnerium",
+    "vix",
+    "backend",
+    "request",
+    "response"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "cnerium",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "http",
+  "namespace": "cnerium",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/cnerium/http"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.1": {
+      "commit": "f3dd246df3d02267528381e78f1fb4c7f0632e93",
+      "tag": "v0.1.1"
+    }
+  }
+}
