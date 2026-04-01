@@ -1,0 +1,68 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-04-01T08:24:26Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "the fast, minimalist web framework for Vix.",
+  "displayName": "app",
+  "documentation": "https://github.com/cnerium/app#readme",
+  "exports": {
+    "headers": [],
+    "modules": [],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/cnerium/app",
+  "keywords": [
+    "cpp",
+    "framework",
+    "http",
+    "web",
+    "runtime",
+    "router",
+    "middleware",
+    "cnerium",
+    "vix"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "cnerium",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "app",
+  "namespace": "cnerium",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/cnerium/app"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "8d7039a28fc1eb26139051c188e7d5d3e7580d61",
+      "tag": "v0.1.0"
+    }
+  }
+}
