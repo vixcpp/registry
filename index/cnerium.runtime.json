@@ -1,0 +1,68 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-04-01T05:52:35Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Concurrent execution runtime for the Cnerium web framework. Provides thread pool, executor, scheduler, and integrates with the HTTP server layer.",
+  "displayName": "runtime",
+  "documentation": "https://github.com/cnerium/runtime#readme",
+  "exports": {
+    "headers": [],
+    "modules": [],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/cnerium/runtime",
+  "keywords": [
+    "cpp",
+    "runtime",
+    "executor",
+    "thread-pool",
+    "scheduler",
+    "concurrency",
+    "framework",
+    "cnerium",
+    "vix"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "cnerium",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "runtime",
+  "namespace": "cnerium",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/cnerium/runtime"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "23b13378b9636f7e7fac5f9b30a15c7a47a9aaea",
+      "tag": "v0.1.0"
+    }
+  }
+}
