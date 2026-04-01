@@ -1,0 +1,67 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-04-01T04:40:16Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "HTTP server layer for the Cnerium web framework. Connects transport, routing, middleware, and HTTP request/response handling.",
+  "displayName": "server",
+  "documentation": "https://github.com/cnerium/server#readme",
+  "exports": {
+    "headers": [],
+    "modules": [],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/cnerium/server",
+  "keywords": [
+    "cpp",
+    "server",
+    "http",
+    "router",
+    "middleware",
+    "framework",
+    "cnerium",
+    "vix"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "cnerium",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "server",
+  "namespace": "cnerium",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/cnerium/server"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "176a12d11b447a6101774ac1b9ba3a69637984e8",
+      "tag": "v0.1.0"
+    }
+  }
+}
