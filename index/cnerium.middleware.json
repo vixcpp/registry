@@ -1,0 +1,65 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-04-01T03:34:05Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Composable middleware system for the Cnerium web framework.",
+  "displayName": "middleware",
+  "documentation": "https://github.com/cnerium/middleware#readme",
+  "exports": {
+    "headers": [],
+    "modules": [],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/cnerium/middleware",
+  "keywords": [
+    "cpp",
+    "middleware",
+    "http",
+    "framework",
+    "cnerium",
+    "vix"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "cnerium",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "middleware",
+  "namespace": "cnerium",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/cnerium/middleware"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "9e6e7534315025f66e62bd1684df7d57b24ace8d",
+      "tag": "v0.1.0"
+    }
+  }
+}
