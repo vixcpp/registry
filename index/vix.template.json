@@ -121,6 +121,10 @@
     "1.0.0": {
       "tag": "v1.0.0",
       "commit": "f25d3f1dc1cb7209379528117bb0eddb60917b79"
+    },
+    "1.0.1": {
+      "tag": "v1.0.1",
+      "commit": "523f1ae52a66ad61043f1ecbebad42f4f0aabce0"
     }
   }
 }
