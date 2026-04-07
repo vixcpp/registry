@@ -112,6 +112,10 @@
     "1.8.0": {
       "tag": "v1.8.0",
       "commit": "75c87ffdbc9e3e0ad51afce4a4bde7df8faf9da6"
+    },
+    "1.9.0": {
+      "tag": "v1.9.0",
+      "commit": "0ecba73f32a1710b55cd6d31a846af6866299090"
     }
   }
 }
