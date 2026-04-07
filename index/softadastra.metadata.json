@@ -1,0 +1,80 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-04-07T12:33:32Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Softadastra Metadata provides structured node information for distributed systems, enabling identity, runtime visibility, and capability tracking across unreliable networks.",
+  "displayName": "metadata",
+  "documentation": "https://github.com/softadastra/metadata#readme",
+  "exports": {
+    "headers": [],
+    "modules": [],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/softadastra/metadata",
+  "keywords": [
+    "softadastra",
+    "metadata",
+    "node-metadata",
+    "node-identity",
+    "node-info",
+    "runtime",
+    "capabilities",
+    "discovery",
+    "peer-metadata",
+    "distributed-systems",
+    "p2p",
+    "peer-to-peer",
+    "network",
+    "systems",
+    "infrastructure",
+    "observability",
+    "offline-first",
+    "c++",
+    "cpp",
+    "c++20",
+    "library"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "softadastra",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "metadata",
+  "namespace": "softadastra",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/softadastra/metadata"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.2.0": {
+      "commit": "e0432b4da61450ff0f72cc41e57a40900de4b215",
+      "tag": "v0.2.0"
+    }
+  }
+}
