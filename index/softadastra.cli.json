@@ -1,0 +1,78 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-04-08T19:01:02Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Modular command-line interface engine for Softadastra systems: parsing, command registry, handlers, interactive REPL, and structured terminal I/O. Designed for deterministic, composable, registry-safe integration.",
+  "displayName": "cli",
+  "documentation": "https://github.com/softadastra/cli#readme",
+  "exports": {
+    "headers": [],
+    "modules": [],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/softadastra/cli",
+  "keywords": [
+    "softadastra",
+    "cli",
+    "command-line",
+    "terminal",
+    "parser",
+    "commands",
+    "repl",
+    "interactive",
+    "registry-safe",
+    "deterministic",
+    "composable",
+    "modular",
+    "c++",
+    "cpp",
+    "c++20",
+    "cross-platform",
+    "systems",
+    "infrastructure",
+    "library"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "softadastra",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "cli",
+  "namespace": "softadastra",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/softadastra/cli"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.3.0": {
+      "commit": "fb3ba5223851c8a28de416446b846019956216c6",
+      "tag": "v0.3.0"
+    }
+  }
+}
