@@ -1,0 +1,74 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-04-07T12:37:55Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Softadastra umbrella project for building core modules, optional apps, and top-level examples.",
+  "displayName": "softadastra",
+  "documentation": "https://github.com/softadastra/softadastra#readme",
+  "exports": {
+    "headers": [],
+    "modules": [],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/softadastra/softadastra",
+  "keywords": [
+    "softadastra",
+    "umbrella",
+    "offline-first",
+    "distributed-systems",
+    "p2p",
+    "sync",
+    "wal",
+    "filesystem",
+    "metadata",
+    "transport",
+    "discovery",
+    "c++",
+    "cpp",
+    "c++20",
+    "project"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "softadastra",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "softadastra",
+  "namespace": "softadastra",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": false
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/softadastra/softadastra"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.4.0": {
+      "commit": "7fdaa8b1e184bfba3bd72acdc5c6afd787ae2f1f",
+      "tag": "v0.4.0"
+    }
+  }
+}
