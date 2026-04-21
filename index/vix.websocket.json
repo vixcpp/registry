@@ -161,6 +161,10 @@
       "tag": "v1.17.1",
       "commit": "98c7e63caa2f7af63dddf31edc383188deaef6a9"
     },
+    "1.17.2": {
+      "tag": "v1.17.2",
+      "commit": "e9bbabc7f14ef0f998f944155d370e336c1bb23b"
+    },
     "1.2.0": {
       "tag": "v1.2.0",
       "commit": "e85047fda91162e3442c9fb3c9e500e818c1ef6d"
