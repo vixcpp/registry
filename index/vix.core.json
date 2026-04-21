@@ -391,6 +391,10 @@
     "2.7.2": {
       "tag": "v2.7.2",
       "commit": "c6dfd240f1c7ea89a7bf0d04d18a1d1f9e0e7838"
+    },
+    "2.7.3": {
+      "tag": "v2.7.3",
+      "commit": "adcadb83ede2fc8ec4960ea8438418ac182c58f9"
     }
   }
 }
