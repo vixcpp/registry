@@ -3,7 +3,7 @@
     "format": "vix-api-1",
     "generatedBy": "vix-cli",
     "path": "vix.api.json",
-    "updatedAt": "2026-03-19T13:55:44Z"
+    "updatedAt": "2026-04-29T12:01:38Z"
   },
   "constraints": {
     "minCppStandard": "c++17",
@@ -74,52 +74,56 @@
   "type": "header-only",
   "versions": {
     "0.1.0": {
-      "tag": "v0.1.0",
-      "commit": "4339bb159f8095473fa29134f40dc8fc0e99807e"
+      "commit": "4339bb159f8095473fa29134f40dc8fc0e99807e",
+      "tag": "v0.1.0"
     },
     "1.0.0": {
-      "tag": "v1.0.0",
-      "commit": "91cf8a75d9933ef9618834352f8b872fd96b7bf5"
+      "commit": "91cf8a75d9933ef9618834352f8b872fd96b7bf5",
+      "tag": "v1.0.0"
     },
     "1.1.0": {
-      "tag": "v1.1.0",
-      "commit": "3a795cab1bb925aa6aefd1d70c16391a80202ad7"
+      "commit": "3a795cab1bb925aa6aefd1d70c16391a80202ad7",
+      "tag": "v1.1.0"
     },
     "1.10.0": {
-      "tag": "v1.10.0",
-      "commit": "68347d23bae94eb3d11cd77da8732971743fb36d"
+      "commit": "68347d23bae94eb3d11cd77da8732971743fb36d",
+      "tag": "v1.10.0"
+    },
+    "1.11.0": {
+      "commit": "66804702dfd767878cbc8dec328783b041b6f3b8",
+      "tag": "v1.11.0"
     },
     "1.2.0": {
-      "tag": "v1.2.0",
-      "commit": "46c30320b3a0eab8c229952bf527696326e1ab7f"
+      "commit": "46c30320b3a0eab8c229952bf527696326e1ab7f",
+      "tag": "v1.2.0"
     },
     "1.3.0": {
-      "tag": "v1.3.0",
-      "commit": "abbee9d2cbc3fe6956a9fe235202240ac92ce247"
+      "commit": "abbee9d2cbc3fe6956a9fe235202240ac92ce247",
+      "tag": "v1.3.0"
     },
     "1.4.0": {
-      "tag": "v1.4.0",
-      "commit": "f90ea616d7084ede6969e959575b1370e5bb78af"
+      "commit": "f90ea616d7084ede6969e959575b1370e5bb78af",
+      "tag": "v1.4.0"
     },
     "1.5.0": {
-      "tag": "v1.5.0",
-      "commit": "a2899099820cf7e80cf9aab4a8cf861dbfb5ec70"
+      "commit": "a2899099820cf7e80cf9aab4a8cf861dbfb5ec70",
+      "tag": "v1.5.0"
     },
     "1.6.0": {
-      "tag": "v1.6.0",
-      "commit": "c128597f2fef44437f0b9b580d589e83c201ebdf"
+      "commit": "c128597f2fef44437f0b9b580d589e83c201ebdf",
+      "tag": "v1.6.0"
     },
     "1.7.0": {
-      "tag": "v1.7.0",
-      "commit": "e7282569fb44a33746708261b8014d1e3f2793fa"
+      "commit": "e7282569fb44a33746708261b8014d1e3f2793fa",
+      "tag": "v1.7.0"
     },
     "1.8.0": {
-      "tag": "v1.8.0",
-      "commit": "75c87ffdbc9e3e0ad51afce4a4bde7df8faf9da6"
+      "commit": "75c87ffdbc9e3e0ad51afce4a4bde7df8faf9da6",
+      "tag": "v1.8.0"
     },
     "1.9.0": {
-      "tag": "v1.9.0",
-      "commit": "0ecba73f32a1710b55cd6d31a846af6866299090"
+      "commit": "0ecba73f32a1710b55cd6d31a846af6866299090",
+      "tag": "v1.9.0"
     }
   }
 }
