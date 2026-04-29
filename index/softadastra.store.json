@@ -3,7 +3,7 @@
     "format": "vix-api-1",
     "generatedBy": "vix-cli",
     "path": "vix.api.json",
-    "updatedAt": "2026-03-20T15:17:19Z"
+    "updatedAt": "2026-04-29T17:00:58Z"
   },
   "constraints": {
     "minCppStandard": "c++17",
@@ -77,48 +77,52 @@
   "type": "header-only",
   "versions": {
     "0.1.0": {
-      "tag": "v0.1.0",
-      "commit": "9d1d303ca8e4f8a83056762776dcdf8aeaec76fa"
+      "commit": "9d1d303ca8e4f8a83056762776dcdf8aeaec76fa",
+      "tag": "v0.1.0"
     },
     "0.10.0": {
-      "tag": "v0.10.0",
-      "commit": "470d680668c1704afe1d4cc4b4d097ae175be479"
+      "commit": "470d680668c1704afe1d4cc4b4d097ae175be479",
+      "tag": "v0.10.0"
+    },
+    "0.11.0": {
+      "commit": "6637e5e98025625f8e4b00eb625d0f3d7f414049",
+      "tag": "v0.11.0"
     },
     "0.2.0": {
-      "tag": "v0.2.0",
-      "commit": "c3b41c632fb0e3b6d885ef95e6292cd19f6f2f38"
+      "commit": "c3b41c632fb0e3b6d885ef95e6292cd19f6f2f38",
+      "tag": "v0.2.0"
     },
     "0.3.0": {
-      "tag": "v0.3.0",
-      "commit": "903f65fb9c2a10246f0bde9b483f78a29b8e5050"
+      "commit": "903f65fb9c2a10246f0bde9b483f78a29b8e5050",
+      "tag": "v0.3.0"
     },
     "0.4.0": {
-      "tag": "v0.4.0",
-      "commit": "8b3788bd78f35c9fc0a74db42560f61982fdafc4"
+      "commit": "8b3788bd78f35c9fc0a74db42560f61982fdafc4",
+      "tag": "v0.4.0"
     },
     "0.5.0": {
-      "tag": "v0.5.0",
-      "commit": "cf19bf56f23d462d71286cd0ad887152a962eba9"
+      "commit": "cf19bf56f23d462d71286cd0ad887152a962eba9",
+      "tag": "v0.5.0"
     },
     "0.6.0": {
-      "tag": "v0.6.0",
-      "commit": "378cd594bb9810f409a136b82d3773bc01e39995"
+      "commit": "378cd594bb9810f409a136b82d3773bc01e39995",
+      "tag": "v0.6.0"
     },
     "0.7.0": {
-      "tag": "v0.7.0",
-      "commit": "db680428f023f3034e8483edb97a2522a80f7db9"
+      "commit": "db680428f023f3034e8483edb97a2522a80f7db9",
+      "tag": "v0.7.0"
     },
     "0.7.1": {
-      "tag": "v0.7.1",
-      "commit": "74d20f6df00c2607e9b401e2158b39abe44763cc"
+      "commit": "74d20f6df00c2607e9b401e2158b39abe44763cc",
+      "tag": "v0.7.1"
     },
     "0.8.0": {
-      "tag": "v0.8.0",
-      "commit": "15dff4d156421b4f582fe825ab5a576f523af7db"
+      "commit": "15dff4d156421b4f582fe825ab5a576f523af7db",
+      "tag": "v0.8.0"
     },
     "0.9.0": {
-      "tag": "v0.9.0",
-      "commit": "c9c7ee8014898a5599b65ecbec21e150b476523f"
+      "commit": "c9c7ee8014898a5599b65ecbec21e150b476523f",
+      "tag": "v0.9.0"
     }
   }
 }
