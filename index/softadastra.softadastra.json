@@ -73,6 +73,10 @@
     "0.1.1": {
       "tag": "v0.1.1",
       "commit": "372a9dbfe94479d85de83fe3bb2226f6fcc357ed"
+    },
+    "0.1.2": {
+      "tag": "v0.1.2",
+      "commit": "ac102a8a4cef783ccaceef979537b5c86d74f8e8"
     }
   }
 }
