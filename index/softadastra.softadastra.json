@@ -3,7 +3,7 @@
     "format": "vix-api-1",
     "generatedBy": "vix-cli",
     "path": "vix.api.json",
-    "updatedAt": "2026-04-07T12:37:55Z"
+    "updatedAt": "2026-04-30T08:55:00Z"
   },
   "constraints": {
     "minCppStandard": "c++17",
@@ -67,16 +67,20 @@
   "type": "header-only",
   "versions": {
     "0.1.0": {
-      "tag": "v0.1.0",
-      "commit": "b551795e50ef321fe3fcf51b74c2c0f4fc728350"
+      "commit": "b551795e50ef321fe3fcf51b74c2c0f4fc728350",
+      "tag": "v0.1.0"
     },
     "0.1.1": {
-      "tag": "v0.1.1",
-      "commit": "372a9dbfe94479d85de83fe3bb2226f6fcc357ed"
+      "commit": "372a9dbfe94479d85de83fe3bb2226f6fcc357ed",
+      "tag": "v0.1.1"
     },
     "0.1.2": {
-      "tag": "v0.1.2",
-      "commit": "ac102a8a4cef783ccaceef979537b5c86d74f8e8"
+      "commit": "ac102a8a4cef783ccaceef979537b5c86d74f8e8",
+      "tag": "v0.1.2"
+    },
+    "0.1.5": {
+      "commit": "fadd878c143e8a51c53df4afad330f84c8f623b8",
+      "tag": "v0.1.5"
     }
   }
 }
