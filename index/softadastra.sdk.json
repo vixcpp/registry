@@ -1,0 +1,76 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-05-01T13:48:16Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Official C++ SDK for Softadastra, providing a small developer-facing API for local-first storage, sync, transport, discovery, and metadata.",
+  "displayName": "sdk",
+  "documentation": "https://github.com/softadastra/sdk-cpp#readme",
+  "exports": {
+    "headers": [],
+    "modules": [],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/softadastra/sdk-cpp",
+  "keywords": [
+    "softadastra",
+    "sdk",
+    "sdk-cpp",
+    "c++",
+    "cpp",
+    "c++20",
+    "local-first",
+    "offline-first",
+    "distributed-systems",
+    "sync",
+    "wal",
+    "store",
+    "transport",
+    "discovery",
+    "metadata",
+    "p2p",
+    "library"
+  ],
+  "license": "Apache-2.0",
+  "maintainers": [
+    {
+      "github": "softadastra",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "sdk",
+  "namespace": "softadastra",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/softadastra/sdk-cpp"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.1": {
+      "commit": "ff1110e284cd96d44d6e35d0f56590b6ce85a9c0",
+      "tag": "v0.1.1"
+    }
+  }
+}
