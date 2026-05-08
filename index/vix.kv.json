@@ -74,12 +74,16 @@
   "type": "header-only",
   "versions": {
     "0.1.0": {
-      "commit": "28b9ef8180e3c8a77166dac8f33dde8da5c2b5ba",
-      "tag": "v0.1.0"
+      "tag": "v0.1.0",
+      "commit": "28b9ef8180e3c8a77166dac8f33dde8da5c2b5ba"
     },
     "0.2.0": {
-      "commit": "5ea9b06713d861d3a22fde96e8434302c3357a80",
-      "tag": "v0.2.0"
+      "tag": "v0.2.0",
+      "commit": "5ea9b06713d861d3a22fde96e8434302c3357a80"
+    },
+    "1.0.0": {
+      "tag": "v1.0.0",
+      "commit": "265b6e5090b52863fb64beb2a13e15962d1f293e"
     }
   }
 }
