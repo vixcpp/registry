@@ -35,7 +35,7 @@ jobs:
           set -euo pipefail
           python .github/scripts/index_from_tags.py
 
-      - name: Create or update PR and try auto-merge (if changes)
+      - name: Create or update PR and try auto-merge if changes
         env:
           GH_TOKEN: ${{ secrets.REGISTRY_BOT_TOKEN }}
         run: |
@@ -51,14 +51,12 @@ jobs:
 
           BRANCH="bot/registry-index-from-tags"
 
-          # reset branch from current main
           git switch -C "$BRANCH"
 
           git add index/*.json
           git commit -m "registry: update versions from tags" || true
           git push -u origin "$BRANCH" --force
 
-          # IMPORTANT: only reuse an OPEN PR for this head branch
           PR_URL="$(
             gh pr list \
               --repo "${{ github.repository }}" \
@@ -72,7 +70,6 @@ jobs:
           if [ -n "${PR_URL}" ]; then
             echo "OPEN PR exists: ${PR_URL}"
           else
-            # gh pr create --json is not supported on some gh versions in Actions
             PR_URL="$(
               gh pr create \
                 --repo "${{ github.repository }}" \
@@ -85,9 +82,8 @@ jobs:
             echo "PR created: ${PR_URL}"
           fi
 
-          # Try enabling auto-merge (squash). Do not fail if policy/checks block it.
           if gh pr merge "$PR_URL" --repo "${{ github.repository }}" --squash --auto >/dev/null 2>&1; then
-            echo "Auto-merge enabled (squash) for: ${PR_URL}"
+            echo "Auto-merge enabled for: ${PR_URL}"
           else
             echo "Could not enable auto-merge automatically."
             echo "PR pending manual merge: ${PR_URL}"

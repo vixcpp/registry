@@ -51,3 +51,16 @@ jobs:
             --squash \
             --delete-branch \
             --repo "${{ github.repository }}"
+
+      - name: Trigger registry web deploy
+        env:
+          VERCEL_DEPLOY_HOOK: ${{ secrets.VERCEL_REGISTRY_WEB_DEPLOY_HOOK }}
+        run: |
+          set -euo pipefail
+
+          if [ -z "${VERCEL_DEPLOY_HOOK}" ]; then
+            echo "VERCEL_REGISTRY_WEB_DEPLOY_HOOK is not set"
+            exit 1
+          fi
+
+          curl -X POST "${VERCEL_DEPLOY_HOOK}"

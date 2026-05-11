@@ -33,4 +33,6 @@ jobs:
             exit 1
           fi
 
-          curl -X POST "${VERCEL_DEPLOY_HOOK}"
+          echo "Triggering Vercel deployment..."
+          curl -fsS -X POST "${VERCEL_DEPLOY_HOOK}"
+          echo "Vercel deployment triggered."
