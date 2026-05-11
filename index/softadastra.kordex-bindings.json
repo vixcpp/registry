@@ -1,0 +1,67 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-05-11T09:02:33Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Native bindings layer for Kordex, bridging the Kordex runtime with script execution, engine contexts, values, modules, scripts, and runtime integration.",
+  "displayName": "kordex-bindings",
+  "documentation": "https://github.com/softadastra/kordex-bindings#readme",
+  "exports": {
+    "headers": [],
+    "modules": [],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/softadastra/kordex-bindings",
+  "keywords": [
+    "cpp",
+    "bindings",
+    "javascript-runtime",
+    "runtime-bridge",
+    "local-first",
+    "kordex",
+    "softadastra",
+    "vix"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "softadastra",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "kordex-bindings",
+  "namespace": "softadastra",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/softadastra/kordex-bindings"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "a68bbcf931399964f78f1f41e63e82ac2a79d5bd",
+      "tag": "v0.1.0"
+    }
+  }
+}
