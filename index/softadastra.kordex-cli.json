@@ -1,0 +1,67 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-05-11T19:55:08Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Official command line interface for Kordex, providing commands to initialize, run, check, build, and interact with reliable local-first JavaScript applications.",
+  "displayName": "kordex-cli",
+  "documentation": "https://github.com/softadastra/kordex-cli#readme",
+  "exports": {
+    "headers": [],
+    "modules": [],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/softadastra/kordex-cli",
+  "keywords": [
+    "cpp",
+    "cli",
+    "javascript-runtime",
+    "developer-tools",
+    "local-first",
+    "kordex",
+    "softadastra",
+    "vix"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "softadastra",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "kordex-cli",
+  "namespace": "softadastra",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/softadastra/kordex-cli"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.2.0": {
+      "commit": "feb371aafab26841f7b1098639acf4b852b3ddb8",
+      "tag": "v0.2.0"
+    }
+  }
+}
