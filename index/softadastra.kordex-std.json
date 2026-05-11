@@ -1,0 +1,67 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-05-11T09:16:22Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Standard native modules for Kordex, providing console, filesystem, path, environment, process, timer, crypto, and HTTP APIs for reliable local-first JavaScript applications.",
+  "displayName": "kordex-std",
+  "documentation": "https://github.com/softadastra/kordex-std#readme",
+  "exports": {
+    "headers": [],
+    "modules": [],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/softadastra/kordex-std",
+  "keywords": [
+    "cpp",
+    "standard-library",
+    "javascript-runtime",
+    "native-modules",
+    "local-first",
+    "kordex",
+    "softadastra",
+    "vix"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "softadastra",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "kordex-std",
+  "namespace": "softadastra",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/softadastra/kordex-std"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "f9660e2b61f6a2841cd5682485bff158951685f0",
+      "tag": "v0.1.0"
+    }
+  }
+}
