@@ -1,0 +1,66 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-05-11T08:58:15Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Native runtime engine for Kordex, providing runtime options, diagnostics, source loading, module resolution, timers, process integration, and the public Runtime facade.",
+  "displayName": "kordex-runtime",
+  "documentation": "https://github.com/softadastra/kordex-runtime#readme",
+  "exports": {
+    "headers": [],
+    "modules": [],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/softadastra/kordex-runtime",
+  "keywords": [
+    "cpp",
+    "runtime",
+    "javascript-runtime",
+    "local-first",
+    "kordex",
+    "softadastra",
+    "vix"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "softadastra",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "kordex-runtime",
+  "namespace": "softadastra",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/softadastra/kordex-runtime"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "757686a639808882eb83ce14411ac52a372a83c7",
+      "tag": "v0.1.0"
+    }
+  }
+}
