@@ -3,7 +3,7 @@
     "format": "vix-api-1",
     "generatedBy": "vix-cli",
     "path": "vix.api.json",
-    "updatedAt": "2026-05-11T09:16:22Z"
+    "updatedAt": "2026-05-11T19:25:00Z"
   },
   "constraints": {
     "minCppStandard": "c++17",
@@ -62,6 +62,10 @@
     "0.1.0": {
       "commit": "f9660e2b61f6a2841cd5682485bff158951685f0",
       "tag": "v0.1.0"
+    },
+    "0.2.0": {
+      "commit": "d65e605164c4fc936cb8e270a87edd7bc6232b2a",
+      "tag": "v0.2.0"
     }
   }
 }
