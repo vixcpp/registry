@@ -45,7 +45,7 @@ jobs:
 
       - name: Merge PR
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.REGISTRY_BOT_TOKEN }}
         run: |
           gh pr merge "${{ github.event.pull_request.number }}" \
             --squash \
@@ -63,4 +63,6 @@ jobs:
             exit 1
           fi
 
-          curl -X POST "${VERCEL_DEPLOY_HOOK}"
+          echo "Triggering Vercel deployment..."
+          curl -fsS -X POST "${VERCEL_DEPLOY_HOOK}"
+          echo "Vercel deployment triggered."
