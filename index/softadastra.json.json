@@ -1,0 +1,69 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-05-19T15:01:44Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Simple JSON for C++ applications and servers.",
+  "displayName": "json",
+  "documentation": "https://github.com/softadastra/json#readme",
+  "exports": {
+    "headers": [],
+    "modules": [],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/softadastra/json",
+  "keywords": [
+    "json",
+    "c++",
+    "cpp20",
+    "application-json",
+    "server-json",
+    "configuration",
+    "dot-path",
+    "fallback-values",
+    "developer-experience",
+    "nlohmann-json"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "softadastra",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "json",
+  "namespace": "softadastra",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/softadastra/json"
+  },
+  "type": "header-only",
+  "versions": {
+    "1.0.0": {
+      "commit": "5f993a1900990817b0759704f4a66a14d1f3ce04",
+      "tag": "v1.0.0"
+    }
+  }
+}
