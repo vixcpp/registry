@@ -3,7 +3,7 @@
     "format": "vix-api-1",
     "generatedBy": "vix-cli",
     "path": "vix.api.json",
-    "updatedAt": "2026-04-30T08:55:00Z"
+    "updatedAt": "2026-05-30T21:46:54Z"
   },
   "constraints": {
     "minCppStandard": "c++17",
@@ -67,32 +67,36 @@
   "type": "header-only",
   "versions": {
     "0.1.0": {
-      "tag": "v0.1.0",
-      "commit": "b551795e50ef321fe3fcf51b74c2c0f4fc728350"
+      "commit": "b551795e50ef321fe3fcf51b74c2c0f4fc728350",
+      "tag": "v0.1.0"
     },
     "0.1.1": {
-      "tag": "v0.1.1",
-      "commit": "372a9dbfe94479d85de83fe3bb2226f6fcc357ed"
+      "commit": "372a9dbfe94479d85de83fe3bb2226f6fcc357ed",
+      "tag": "v0.1.1"
     },
     "0.1.2": {
-      "tag": "v0.1.2",
-      "commit": "ac102a8a4cef783ccaceef979537b5c86d74f8e8"
+      "commit": "ac102a8a4cef783ccaceef979537b5c86d74f8e8",
+      "tag": "v0.1.2"
     },
     "0.1.3": {
-      "tag": "v0.1.3",
-      "commit": "2f15b1379c5e7fa003db8a5d449ff98fbe9d5a5d"
+      "commit": "2f15b1379c5e7fa003db8a5d449ff98fbe9d5a5d",
+      "tag": "v0.1.3"
     },
     "0.1.4": {
-      "tag": "v0.1.4",
-      "commit": "433df1ab34a68837f31710f452140b9ed7103952"
+      "commit": "433df1ab34a68837f31710f452140b9ed7103952",
+      "tag": "v0.1.4"
     },
     "0.1.5": {
-      "tag": "v0.1.5",
-      "commit": "fadd878c143e8a51c53df4afad330f84c8f623b8"
+      "commit": "fadd878c143e8a51c53df4afad330f84c8f623b8",
+      "tag": "v0.1.5"
     },
     "0.1.7": {
-      "tag": "v0.1.7",
-      "commit": "086a256614f3c00c86cf08bb0775c94197fe8f5c"
+      "commit": "086a256614f3c00c86cf08bb0775c94197fe8f5c",
+      "tag": "v0.1.7"
+    },
+    "0.2.0": {
+      "commit": "297afb911bf111bd61286f572577fc648e7c0204",
+      "tag": "v0.2.0"
     }
   }
 }
