@@ -1,0 +1,75 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-06-02T13:05:43Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Reliability-first application framework built on Vix and the Softadastra SDK for durable APIs and realtime applications.",
+  "displayName": "cnerium",
+  "documentation": "https://github.com/softadastra/cnerium#readme",
+  "exports": {
+    "headers": [
+      "cnerium/cnerium.hpp"
+    ],
+    "modules": [
+      "cnerium/cnerium.hpp"
+    ],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/softadastra/cnerium",
+  "keywords": [
+    "cpp",
+    "framework",
+    "reliability",
+    "durable-api",
+    "idempotency",
+    "replay-protection",
+    "stored-response",
+    "realtime",
+    "websocket",
+    "softadastra",
+    "vix",
+    "cnerium"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "softadastra",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "cnerium",
+  "namespace": "softadastra",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/softadastra/cnerium"
+  },
+  "type": "header-only",
+  "versions": {
+    "1.1.0": {
+      "commit": "d5773bf4a483b5a9c491dd3a4590d12021e1eb4c",
+      "tag": "v1.1.0"
+    }
+  }
+}
