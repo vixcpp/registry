@@ -1,0 +1,67 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-06-07T11:22:49Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Debug printing, formatting, logging, and inspection utilities for Rix.",
+  "displayName": "debug",
+  "documentation": "https://github.com/rixcpp/debug#readme",
+  "exports": {
+    "headers": [],
+    "modules": [],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/rixcpp/debug",
+  "keywords": [
+    "cpp",
+    "debug",
+    "print",
+    "format",
+    "log",
+    "inspect",
+    "rix",
+    "vix"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "rixcpp",
+      "name": "Rix maintainers"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "debug",
+  "namespace": "rix",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/rixcpp/debug"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "c6fe0b357d97832bfc3f768635971d2dd10374cf",
+      "tag": "v0.1.0"
+    }
+  }
+}
