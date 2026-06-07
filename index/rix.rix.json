@@ -1,0 +1,64 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-06-07T11:00:48Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Unified Rix facade for Vix C++ projects.",
+  "displayName": "rix",
+  "documentation": "https://github.com/rixcpp/rix#readme",
+  "exports": {
+    "headers": [],
+    "modules": [],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/rixcpp/rix",
+  "keywords": [
+    "cpp",
+    "rix",
+    "vix",
+    "facade",
+    "standard-library"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "rixcpp",
+      "name": "Rix maintainers"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "rix",
+  "namespace": "rix",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/rixcpp/rix"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.5.0": {
+      "commit": "1b1df0fc4de3ff43ebb94312bf0a4e2a3a57064d",
+      "tag": "v0.5.0"
+    }
+  }
+}
