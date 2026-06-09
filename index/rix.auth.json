@@ -1,0 +1,68 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-06-09T07:22:52Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Ready-to-use authentication package for Vix C++ applications.",
+  "displayName": "auth",
+  "documentation": "https://github.com/rixcpp/auth#readme",
+  "exports": {
+    "headers": [],
+    "modules": [],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/rixcpp/auth",
+  "keywords": [
+    "cpp",
+    "auth",
+    "authentication",
+    "users",
+    "sessions",
+    "tokens",
+    "password",
+    "rix",
+    "vix"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "rix",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "auth",
+  "namespace": "rix",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/rixcpp/auth"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "c6628f24ac2fe8eec17f3b5a2129716ee51a95d5",
+      "tag": "v0.1.0"
+    }
+  }
+}
