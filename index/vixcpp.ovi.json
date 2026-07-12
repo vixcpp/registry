@@ -1,0 +1,68 @@
+{
+  "api": {
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "path": "vix.api.json",
+    "updatedAt": "2026-07-12T10:37:35Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "A small C++ library with a command-line executable for testing global package installation with Vix.",
+  "displayName": "ovi",
+  "documentation": "https://github.com/GaspardKirira/ovi#readme",
+  "exports": {
+    "headers": [
+      "ovi/ovi.hpp"
+    ],
+    "modules": [
+      "ovi/ovi.hpp"
+    ],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/GaspardKirira/ovi",
+  "keywords": [
+    "cpp",
+    "cli",
+    "header-only",
+    "vix",
+    "global-install"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "vixcpp",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "ovi",
+  "namespace": "vixcpp",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/GaspardKirira/ovi"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "commit": "19975614895d1175fe65685fb1ca1d57c05666a2",
+      "tag": "v0.1.0"
+    }
+  }
+}
