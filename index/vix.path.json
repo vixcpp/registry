@@ -1,0 +1,274 @@
+{
+  "api": {
+    "document": {
+      "commit": "39dc4d1c8fac4e91e9f18077062c8d8a723c5192",
+      "format": "vix-api-1",
+      "headers": [
+        {
+          "includeRoot": "include",
+          "path": "vix/path/Absolute.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/path/Basename.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/path/Dirname.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/path/Extension.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/path/Filename.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/path/HasExtension.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/path/IsAbsolute.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/path/IsRelative.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/path/Join.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/path/LexicallyNormal.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/path/LexicallyProximate.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/path/LexicallyRelative.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/path/Normalize.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/path/Parent.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/path/Path.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/path/PathError.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "enum class",
+              "line": 34,
+              "qualifiedName": "vix::path::PathErrorCode",
+              "signature": "enum class PathErrorCode"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 51,
+              "qualifiedName": "vix::error::ErrorCategory",
+              "signature": "return vix::error::ErrorCategory(\"path\");"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/path/PathOptions.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "enum class",
+              "line": 25,
+              "qualifiedName": "vix::path::PathStyle",
+              "signature": "enum class PathStyle"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 39,
+              "qualifiedName": "vix::path::PathOptions",
+              "signature": "struct PathOptions"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/path/PathParts.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 30,
+              "qualifiedName": "vix::path::PathParts",
+              "signature": "struct PathParts"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/path/PathResult.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/path/Relative.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/path/ReplaceExtension.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/path/Separator.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/path/Split.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/path/Stem.hpp",
+          "symbols": []
+        }
+      ],
+      "package": "vix/path",
+      "version": "0.3.1"
+    },
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "hash": "12c8a989378e950c",
+    "path": "vix.api.json"
+  },
+  "constraints": {
+    "minCppStandard": "c++20",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [
+      {
+        "id": "vix/error",
+        "version": "0.3.1"
+      }
+    ],
+    "system": []
+  },
+  "description": "Portable lexical path manipulation utilities for Vix C++ projects.",
+  "displayName": "Vix Path",
+  "documentation": "https://github.com/vixcpp/path#readme",
+  "exports": {
+    "headers": [
+      "vix/path/Absolute.hpp",
+      "vix/path/Basename.hpp",
+      "vix/path/Dirname.hpp",
+      "vix/path/Extension.hpp",
+      "vix/path/Filename.hpp",
+      "vix/path/HasExtension.hpp",
+      "vix/path/IsAbsolute.hpp",
+      "vix/path/IsRelative.hpp",
+      "vix/path/Join.hpp",
+      "vix/path/LexicallyNormal.hpp",
+      "vix/path/LexicallyProximate.hpp",
+      "vix/path/LexicallyRelative.hpp",
+      "vix/path/Normalize.hpp",
+      "vix/path/Parent.hpp",
+      "vix/path/Path.hpp",
+      "vix/path/PathError.hpp",
+      "vix/path/PathOptions.hpp",
+      "vix/path/PathParts.hpp",
+      "vix/path/PathResult.hpp",
+      "vix/path/Relative.hpp",
+      "vix/path/ReplaceExtension.hpp",
+      "vix/path/Separator.hpp",
+      "vix/path/Split.hpp",
+      "vix/path/Stem.hpp"
+    ],
+    "modules": [
+      "vix::path"
+    ],
+    "namespaces": [
+      "vix::path"
+    ]
+  },
+  "homepage": "https://github.com/vixcpp/path",
+  "keywords": [
+    "vix",
+    "cpp",
+    "path",
+    "filesystem",
+    "portable"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "path",
+  "namespace": "vix",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/vixcpp/path"
+  },
+  "type": "library",
+  "versions": {
+    "0.3.1": {
+      "api": {
+        "format": "vix-api-1",
+        "hash": "12c8a989378e950c",
+        "path": "vix.api.json"
+      },
+      "commit": "39dc4d1c8fac4e91e9f18077062c8d8a723c5192",
+      "manifest": {
+        "include": [
+          "include"
+        ],
+        "type": "library"
+      },
+      "tag": "v0.3.1"
+    }
+  }
+}
