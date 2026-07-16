@@ -1,7 +1,842 @@
 {
   "api": {
+    "document": {
+      "commit": "2f7b00e624a81dccbdc5ffbce94901a62f4d7c31",
+      "format": "vix-api-1",
+      "headers": [
+        {
+          "includeRoot": "include",
+          "path": "vix/utils/ConsoleMutex.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 87,
+              "qualifiedName": "vix::utils::lk",
+              "signature": "std::unique_lock<std::mutex> lk(banner_mutex());"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 100,
+              "qualifiedName": "vix::utils::lk",
+              "signature": "std::lock_guard<std::mutex> lk(banner_mutex());"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 115,
+              "qualifiedName": "vix::utils::lk",
+              "signature": "std::lock_guard<std::mutex> lk(banner_mutex());"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/utils/Env.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 116,
+              "qualifiedName": "std::getenv",
+              "signature": "return std::getenv(name);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 133,
+              "qualifiedName": "detail::k",
+              "signature": "const std::string k(key); // stable null-terminated key"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 135,
+              "qualifiedName": "std::string",
+              "signature": "return std::string(v);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 136,
+              "qualifiedName": "std::string",
+              "signature": "return std::string(def);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 243,
+              "qualifiedName": "detail::tmp",
+              "signature": "const std::string tmp(v); // ensure null-terminated for strtod"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/utils/Logger.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 131,
+              "qualifiedName": "vix::utils::Logger",
+              "signature": "class Logger"
+            },
+            {
+              "documentation": "",
+              "kind": "enum class",
+              "line": 149,
+              "qualifiedName": "vix::utils::Level",
+              "signature": "enum class Level"
+            },
+            {
+              "documentation": "",
+              "kind": "enum class",
+              "line": 163,
+              "qualifiedName": "vix::utils::Format",
+              "signature": "enum class Format"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 199,
+              "qualifiedName": "vix::utils::lock",
+              "signature": "std::lock_guard<std::mutex> lock(mutex_);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 209,
+              "qualifiedName": "vix::utils::setFormat",
+              "signature": "void setFormat(Format f);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 216,
+              "qualifiedName": "vix::utils::setFormatFromEnv",
+              "signature": "void setFormatFromEnv(std::string_view envName = \"VIX_LOG_FORMAT\");"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 224,
+              "qualifiedName": "vix::utils::parseFormat",
+              "signature": "static Format parseFormat(std::string_view s);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 298,
+              "qualifiedName": "vix::utils::lock",
+              "signature": "std::lock_guard<std::mutex> lock(mutex_);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 317,
+              "qualifiedName": "vix::utils::lk",
+              "signature": "std::lock_guard<std::mutex> lk(vix::utils::console_mutex());"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 329,
+              "qualifiedName": "vix::utils::lk",
+              "signature": "std::lock_guard<std::mutex> lk(vix::utils::console_mutex());"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 358,
+              "qualifiedName": "vix::utils::lock",
+              "signature": "std::lock_guard<std::mutex> lock(mutex_);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 373,
+              "qualifiedName": "vix::utils::lk",
+              "signature": "std::lock_guard<std::mutex> lk(vix::utils::console_mutex());"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 389,
+              "qualifiedName": "std::runtime_error",
+              "signature": "throw std::runtime_error(msg);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 398,
+              "qualifiedName": "std::runtime_error",
+              "signature": "throw std::runtime_error(msg);"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 406,
+              "qualifiedName": "vix::utils::Context",
+              "signature": "struct Context"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 431,
+              "qualifiedName": "vix::utils::setPattern",
+              "signature": "void setPattern(const std::string &pattern);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 438,
+              "qualifiedName": "vix::utils::setAsync",
+              "signature": "void setAsync(bool enable);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 445,
+              "qualifiedName": "vix::utils::setContext",
+              "signature": "void setContext(Context ctx);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 450,
+              "qualifiedName": "vix::utils::clearContext",
+              "signature": "void clearContext();"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 455,
+              "qualifiedName": "vix::utils::getContext",
+              "signature": "Context getContext() const;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 475,
+              "qualifiedName": "vix::utils::lock",
+              "signature": "std::lock_guard<std::mutex> lock(mutex_);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 482,
+              "qualifiedName": "vix::utils::lk",
+              "signature": "std::lock_guard<std::mutex> lk(vix::utils::console_mutex());"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 516,
+              "qualifiedName": "vix::utils::setLevelFromEnv",
+              "signature": "void setLevelFromEnv(std::string_view envName = \"VIX_LOG_LEVEL\");"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 521,
+              "qualifiedName": "vix::utils::parseLevel",
+              "signature": "static Level parseLevel(std::string_view s);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 536,
+              "qualifiedName": "vix::utils::jsonColorsEnabled",
+              "signature": "static bool jsonColorsEnabled();"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 543,
+              "qualifiedName": "vix::utils::lock",
+              "signature": "std::lock_guard<std::mutex> lock(mutex_);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 568,
+              "qualifiedName": "vix::utils::lock",
+              "signature": "std::lock_guard<std::mutex> lock(mutex_);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 623,
+              "qualifiedName": "vix::utils::appendKV",
+              "signature": "static void appendKV(std::string &) {}"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 873,
+              "qualifiedName": "vix::utils::c_red",
+              "signature": "static std::string c_red(std::string_view s, bool on) { return ansi_wrap(\"\\033[31m\", s, on); }"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 874,
+              "qualifiedName": "vix::utils::c_blue",
+              "signature": "static std::string c_blue(std::string_view s, bool on) { return ansi_wrap(\"\\033[34m\", s, on); }"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 875,
+              "qualifiedName": "vix::utils::c_dim",
+              "signature": "static std::string c_dim(std::string_view s, bool on) { return ansi_wrap(\"\\033[2m\", s, on); }"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 890,
+              "qualifiedName": "vix::utils::ansi_wrap",
+              "signature": "return ansi_wrap(\"\\033[32m\", s, true);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 892,
+              "qualifiedName": "vix::utils::ansi_wrap",
+              "signature": "return ansi_wrap(\"\\033[36m\", s, true);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 894,
+              "qualifiedName": "vix::utils::ansi_wrap",
+              "signature": "return ansi_wrap(\"\\033[33m\", s, true);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 896,
+              "qualifiedName": "vix::utils::ansi_wrap",
+              "signature": "return ansi_wrap(\"\\033[31m\", s, true);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 897,
+              "qualifiedName": "vix::utils::ansi_wrap",
+              "signature": "return ansi_wrap(\"\\033[90m\", s, true);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 911,
+              "qualifiedName": "vix::utils::appendJsonPrettyKV",
+              "signature": "static void appendJsonPrettyKV(std::string &, bool) {}"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 1071,
+              "qualifiedName": "vix::utils::appendJsonKV",
+              "signature": "static void appendJsonKV(std::string &) {}"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 1090,
+              "qualifiedName": "std::string",
+              "signature": "return std::string(s);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 1100,
+              "qualifiedName": "vix::utils::c_key",
+              "signature": "static std::string c_key(std::string_view s, bool on) { return ansi_wrap(\"\\033[36m\", s, on); }"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 1101,
+              "qualifiedName": "vix::utils::c_str",
+              "signature": "static std::string c_str(std::string_view s, bool on) { return ansi_wrap(\"\\033[32m\", s, on); }"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 1102,
+              "qualifiedName": "vix::utils::c_num",
+              "signature": "static std::string c_num(std::string_view s, bool on) { return ansi_wrap(\"\\033[33m\", s, on); }"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 1103,
+              "qualifiedName": "vix::utils::c_bool",
+              "signature": "static std::string c_bool(std::string_view s, bool on) { return ansi_wrap(\"\\033[35m\", s, on); }"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 1104,
+              "qualifiedName": "vix::utils::c_punc",
+              "signature": "static std::string c_punc(std::string_view s, bool on) { return ansi_wrap(\"\\033[90m\", s, on); }"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/utils/NetworkError.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 132,
+              "qualifiedName": "vix::utils::is_normal_network_disconnect_message",
+              "signature": "return is_normal_network_disconnect_message(e.what());"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/utils/Result.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 65,
+              "qualifiedName": "vix::utils::OkTag",
+              "signature": "struct OkTag"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 73,
+              "qualifiedName": "vix::utils::ErrTag",
+              "signature": "struct ErrTag"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 104,
+              "qualifiedName": "vix::utils::Result",
+              "signature": "class Result"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 116,
+              "qualifiedName": "vix::utils::Result",
+              "signature": "explicit Result(OkTag, const T &v) : ok_(true), val_(v) {}"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 121,
+              "qualifiedName": "vix::utils::Result",
+              "signature": "explicit Result(OkTag, T &&v) : ok_(true), val_(std::move(v)) {}"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 126,
+              "qualifiedName": "vix::utils::Result",
+              "signature": "explicit Result(ErrTag, const E &e) : ok_(false), err_(e) {}"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 131,
+              "qualifiedName": "vix::utils::Result",
+              "signature": "explicit Result(ErrTag, E &&e) : ok_(false), err_(std::move(e)) {}"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 140,
+              "qualifiedName": "vix::utils::Ok",
+              "signature": "static Result Ok(T v) { return Result(OkTag_v, std::move(v)); }"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 148,
+              "qualifiedName": "vix::utils::Err",
+              "signature": "static Result Err(E e) { return Result(ErrTag_v, std::move(e)); }"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 279,
+              "qualifiedName": "vix::utils::is_ok",
+              "signature": "bool is_ok() const noexcept { return ok_; }"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 286,
+              "qualifiedName": "vix::utils::is_err",
+              "signature": "bool is_err() const noexcept { return !ok_; }"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 342,
+              "qualifiedName": "vix::utils::FromOk",
+              "signature": "static Result FromOk(const T &v) { return Result(OkTag_v, v); }"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 350,
+              "qualifiedName": "vix::utils::FromOk",
+              "signature": "static Result FromOk(T &&v) { return Result(OkTag_v, std::move(v)); }"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 358,
+              "qualifiedName": "vix::utils::FromErr",
+              "signature": "static Result FromErr(const E &e) { return Result(ErrTag_v, e); }"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 366,
+              "qualifiedName": "vix::utils::FromErr",
+              "signature": "static Result FromErr(E &&e) { return Result(ErrTag_v, std::move(e)); }"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 394,
+              "qualifiedName": "vix::utils::Result",
+              "signature": "class Result<void, E>"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 406,
+              "qualifiedName": "vix::utils::Result",
+              "signature": "explicit Result(OkTag) : ok_(true), dummy_(0) {}"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 411,
+              "qualifiedName": "vix::utils::Result",
+              "signature": "explicit Result(ErrTag, const E &e) : ok_(false), err_(e) {}"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 416,
+              "qualifiedName": "vix::utils::Result",
+              "signature": "explicit Result(ErrTag, E &&e) : ok_(false), err_(std::move(e)) {}"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 424,
+              "qualifiedName": "vix::utils::Ok",
+              "signature": "static Result Ok() { return Result(OkTag_v); }"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 432,
+              "qualifiedName": "vix::utils::Err",
+              "signature": "static Result Err(E e) { return Result(ErrTag_v, std::move(e)); }"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 545,
+              "qualifiedName": "vix::utils::is_ok",
+              "signature": "bool is_ok() const noexcept { return ok_; }"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 552,
+              "qualifiedName": "vix::utils::is_err",
+              "signature": "bool is_err() const noexcept { return !ok_; }"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/utils/ScopeGuard.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 69,
+              "qualifiedName": "vix::utils::ScopeGuard",
+              "signature": "class ScopeGuard"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 181,
+              "qualifiedName": "vix::utils::dismiss",
+              "signature": "void dismiss() noexcept { active_ = false; }"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 200,
+              "qualifiedName": "vix::utils::ScopeGuard",
+              "signature": "return ScopeGuard(std::forward<F>(f));"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/utils/ServerPrettyLogs.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 47,
+              "qualifiedName": "vix::utils::ServerReadyInfo",
+              "signature": "struct ServerReadyInfo"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 139,
+              "qualifiedName": "vix::utils::RuntimeBanner",
+              "signature": "class RuntimeBanner final"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 189,
+              "qualifiedName": "vix::utils::s",
+              "signature": "std::string s(v);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 217,
+              "qualifiedName": "vix::utils::s",
+              "signature": "std::string s(v);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 254,
+              "qualifiedName": "vix::utils::s",
+              "signature": "std::string s(tp);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 267,
+              "qualifiedName": "vix::utils::t",
+              "signature": "std::string t(term);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 334,
+              "qualifiedName": "vix::utils::lk",
+              "signature": "std::lock_guard<std::mutex> lk(vix::utils::console_mutex());"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 507,
+              "qualifiedName": "vix::utils::dev_tag_animated",
+              "signature": "return dev_tag_animated(color);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 508,
+              "qualifiedName": "vix::utils::run_tag",
+              "signature": "return run_tag(color);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 787,
+              "qualifiedName": "vix::utils::cyan",
+              "signature": "return cyan(\"[\" + m + \"]\", true);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 797,
+              "qualifiedName": "vix::utils::white_bright",
+              "signature": "static std::string white_bright(const std::string &s, bool on) { return wrap(\"\\033[97m\", s, on); }"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 831,
+              "qualifiedName": "vix::utils::gray",
+              "signature": "static std::string gray(const std::string &s, bool on) { return wrap(\"\\033[90m\", s, on); }"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 836,
+              "qualifiedName": "vix::utils::green",
+              "signature": "static std::string green(const std::string &s, bool on) { return wrap(\"\\033[32m\", s, on); }"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 841,
+              "qualifiedName": "vix::utils::cyan",
+              "signature": "static std::string cyan(const std::string &s, bool on) { return wrap(\"\\033[36m\", s, on); }"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 846,
+              "qualifiedName": "vix::utils::dim",
+              "signature": "static std::string dim(const std::string &s, bool on) { return wrap(\"\\033[2m\", s, on); }"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 851,
+              "qualifiedName": "vix::utils::bold",
+              "signature": "static std::string bold(const std::string &s, bool on) { return wrap(\"\\033[1m\", s, on); }"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 868,
+              "qualifiedName": "vix::utils::bold",
+              "signature": "return bold(gray(\"[\" + text + \"]\", true), true);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 879,
+              "qualifiedName": "vix::utils::wrap",
+              "signature": "return wrap(\"\\033[36m\", \">\", true);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 890,
+              "qualifiedName": "vix::utils::wrap",
+              "signature": "return wrap(\"\\033[90m\", \"-\", true);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 907,
+              "qualifiedName": "vix::utils::osc8_link",
+              "signature": "return osc8_link(url, label, hl);"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/utils/String.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 104,
+              "qualifiedName": "vix::utils::rtrim",
+              "signature": "return rtrim(ltrim(std::move(s)));"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 345,
+              "qualifiedName": "std::string",
+              "signature": "return std::string(b);"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/utils/Time.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 101,
+              "qualifiedName": "std::put_time",
+              "signature": "os << std::put_time(&tm, \"%Y-%m-%dT%H:%M:%SZ\");"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 125,
+              "qualifiedName": "std::put_time",
+              "signature": "os << std::put_time(&tm, \"%a, %d %b %Y %H:%M:%S GMT\");"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/utils/UUID.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 111,
+              "qualifiedName": "vix::utils::dist32",
+              "signature": "std::uniform_int_distribution<std::uint32_t> dist32(0, 0xFFFFFFFFu);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 141,
+              "qualifiedName": "std::string",
+              "signature": "return std::string(out.data(), out.size());"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/utils/Validation.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 79,
+              "qualifiedName": "vix::utils::Rule",
+              "signature": "struct Rule"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/utils/Version.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 79,
+              "qualifiedName": "vix::utils::build_info",
+              "signature": "std::string build_info();"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/utils/utils.hpp",
+          "symbols": []
+        }
+      ],
+      "package": "vix/utils",
+      "version": "1.14.7"
+    },
     "format": "vix-api-1",
     "generatedBy": "vix-cli",
+    "hash": "4370f9eeb74ce7cb",
     "path": "vix.api.json",
     "updatedAt": "2026-03-14T06:07:41Z"
   },
@@ -61,140 +896,155 @@
   "type": "header-only",
   "versions": {
     "1.0.0": {
-      "tag": "v1.0.0",
-      "commit": "52b17884a858b69b8e45af16f7546ec7f6756b29"
+      "commit": "52b17884a858b69b8e45af16f7546ec7f6756b29",
+      "tag": "v1.0.0"
     },
     "1.1.0": {
-      "tag": "v1.1.0",
-      "commit": "fa15bb3236a47fc932b72af570569702ac0af969"
+      "commit": "fa15bb3236a47fc932b72af570569702ac0af969",
+      "tag": "v1.1.0"
     },
     "1.1.1": {
-      "tag": "v1.1.1",
-      "commit": "07ae51e5fad6a23247afa57f66bc5c7c28d81ab5"
+      "commit": "07ae51e5fad6a23247afa57f66bc5c7c28d81ab5",
+      "tag": "v1.1.1"
     },
     "1.1.2": {
-      "tag": "v1.1.2",
-      "commit": "24c69066a8ba12165c17976f675134e027637f81"
+      "commit": "24c69066a8ba12165c17976f675134e027637f81",
+      "tag": "v1.1.2"
     },
     "1.1.3": {
-      "tag": "v1.1.3",
-      "commit": "65fba626016cd10e2a242f2ee058f0251be3efdf"
+      "commit": "65fba626016cd10e2a242f2ee058f0251be3efdf",
+      "tag": "v1.1.3"
     },
     "1.10.0": {
-      "tag": "v1.10.0",
-      "commit": "aac88b79771a6d641ec8bb7dbac5a2e439e02972"
+      "commit": "aac88b79771a6d641ec8bb7dbac5a2e439e02972",
+      "tag": "v1.10.0"
     },
     "1.11.0": {
-      "tag": "v1.11.0",
-      "commit": "b2bbb55a7fd9ed61713b8927ec502f8c1b8d5404"
+      "commit": "b2bbb55a7fd9ed61713b8927ec502f8c1b8d5404",
+      "tag": "v1.11.0"
     },
     "1.12.0": {
-      "tag": "v1.12.0",
-      "commit": "b527ec5313b4da506126e82c4096bc6246c3611e"
+      "commit": "b527ec5313b4da506126e82c4096bc6246c3611e",
+      "tag": "v1.12.0"
     },
     "1.13.0": {
-      "tag": "v1.13.0",
-      "commit": "194956e79d635ea639700f2b7c082ade6dd29a76"
+      "commit": "194956e79d635ea639700f2b7c082ade6dd29a76",
+      "tag": "v1.13.0"
     },
     "1.14.0": {
-      "tag": "v1.14.0",
-      "commit": "e3ca62394a2c648178b9d7234f7440bbfa227e53"
+      "commit": "e3ca62394a2c648178b9d7234f7440bbfa227e53",
+      "tag": "v1.14.0"
     },
     "1.14.1": {
-      "tag": "v1.14.1",
-      "commit": "01f7298780d02f2c0641f38e72ea2aaf16051309"
+      "commit": "01f7298780d02f2c0641f38e72ea2aaf16051309",
+      "tag": "v1.14.1"
     },
     "1.14.2": {
-      "tag": "v1.14.2",
-      "commit": "227ccc6c11436e88edc4a7532ead2859a80860f7"
+      "commit": "227ccc6c11436e88edc4a7532ead2859a80860f7",
+      "tag": "v1.14.2"
     },
     "1.14.3": {
-      "tag": "v1.14.3",
-      "commit": "0ce8133372b16f7292b39963898298effdfbbb1b"
+      "commit": "0ce8133372b16f7292b39963898298effdfbbb1b",
+      "tag": "v1.14.3"
     },
     "1.14.4": {
-      "tag": "v1.14.4",
-      "commit": "1caaaac636cbd5b7b587b31e24934c305dae3b05"
+      "commit": "1caaaac636cbd5b7b587b31e24934c305dae3b05",
+      "tag": "v1.14.4"
     },
     "1.14.5": {
-      "tag": "v1.14.5",
-      "commit": "cefc858cea150cc951aa96a4bb41509090465ae5"
+      "commit": "cefc858cea150cc951aa96a4bb41509090465ae5",
+      "tag": "v1.14.5"
     },
     "1.14.6": {
-      "tag": "v1.14.6",
-      "commit": "7a69f06f5f8118441e8e36317112a65fa59114cd"
+      "commit": "7a69f06f5f8118441e8e36317112a65fa59114cd",
+      "tag": "v1.14.6"
+    },
+    "1.14.7": {
+      "api": {
+        "format": "vix-api-1",
+        "hash": "4370f9eeb74ce7cb",
+        "path": "vix.api.json"
+      },
+      "commit": "2f7b00e624a81dccbdc5ffbce94901a62f4d7c31",
+      "manifest": {
+        "include": [
+          "include"
+        ],
+        "type": "library"
+      },
+      "tag": "v1.14.7"
     },
     "1.2.0": {
-      "tag": "v1.2.0",
-      "commit": "274004acafe552b9890ec444246503d972993dab"
+      "commit": "274004acafe552b9890ec444246503d972993dab",
+      "tag": "v1.2.0"
     },
     "1.2.1": {
-      "tag": "v1.2.1",
-      "commit": "940d920c87bc6790bbb1825acb98d2f2dfc66cd4"
+      "commit": "940d920c87bc6790bbb1825acb98d2f2dfc66cd4",
+      "tag": "v1.2.1"
     },
     "1.3.0": {
-      "tag": "v1.3.0",
-      "commit": "969c6088f40c4817654732251ccdf6f2f4f7aaeb"
+      "commit": "969c6088f40c4817654732251ccdf6f2f4f7aaeb",
+      "tag": "v1.3.0"
     },
     "1.3.1": {
-      "tag": "v1.3.1",
-      "commit": "1c7b4490d42250483d5602776b26a91a55af5e50"
+      "commit": "1c7b4490d42250483d5602776b26a91a55af5e50",
+      "tag": "v1.3.1"
     },
     "1.4.0": {
-      "tag": "v1.4.0",
-      "commit": "fead788c1d4d7c310502e58589d18943afc55d23"
+      "commit": "fead788c1d4d7c310502e58589d18943afc55d23",
+      "tag": "v1.4.0"
     },
     "1.4.1": {
-      "tag": "v1.4.1",
-      "commit": "5b4011ea82140e3fd276c24aadd38de35cef1812"
+      "commit": "5b4011ea82140e3fd276c24aadd38de35cef1812",
+      "tag": "v1.4.1"
     },
     "1.5.0": {
-      "tag": "v1.5.0",
-      "commit": "b14754f67cdeed05cd4a3ef45e4303418cb8b955"
+      "commit": "b14754f67cdeed05cd4a3ef45e4303418cb8b955",
+      "tag": "v1.5.0"
     },
     "1.5.1": {
-      "tag": "v1.5.1",
-      "commit": "15da60ed7d54ccfc638c05459f44ec08286b177e"
+      "commit": "15da60ed7d54ccfc638c05459f44ec08286b177e",
+      "tag": "v1.5.1"
     },
     "1.5.2": {
-      "tag": "v1.5.2",
-      "commit": "8f251b06247b7ac6507da4933754f36cea00f03b"
+      "commit": "8f251b06247b7ac6507da4933754f36cea00f03b",
+      "tag": "v1.5.2"
     },
     "1.5.3": {
-      "tag": "v1.5.3",
-      "commit": "ffaa3b61155e28efae66d79371a5974c04e2fd4a"
+      "commit": "ffaa3b61155e28efae66d79371a5974c04e2fd4a",
+      "tag": "v1.5.3"
     },
     "1.5.4": {
-      "tag": "v1.5.4",
-      "commit": "bffa6433d2a2b65b21b4ff69e8df2d915d39041c"
+      "commit": "bffa6433d2a2b65b21b4ff69e8df2d915d39041c",
+      "tag": "v1.5.4"
     },
     "1.5.5": {
-      "tag": "v1.5.5",
-      "commit": "af2a7c31fa35a7d61ca237b83e7429241fadd505"
+      "commit": "af2a7c31fa35a7d61ca237b83e7429241fadd505",
+      "tag": "v1.5.5"
     },
     "1.6.0": {
-      "tag": "v1.6.0",
-      "commit": "f0b76563ec2bc0a3d0ecd89c74610b3694cf66ba"
+      "commit": "f0b76563ec2bc0a3d0ecd89c74610b3694cf66ba",
+      "tag": "v1.6.0"
     },
     "1.7.0": {
-      "tag": "v1.7.0",
-      "commit": "008ebd9c0a4382073a23b785c5a9c4b8d1055d32"
+      "commit": "008ebd9c0a4382073a23b785c5a9c4b8d1055d32",
+      "tag": "v1.7.0"
     },
     "1.7.1": {
-      "tag": "v1.7.1",
-      "commit": "fd53ec3e1ef10dbb8b3fd9ba4b13d9d3e75a421a"
+      "commit": "fd53ec3e1ef10dbb8b3fd9ba4b13d9d3e75a421a",
+      "tag": "v1.7.1"
     },
     "1.8.0": {
-      "tag": "v1.8.0",
-      "commit": "6d3aa36b98f9ed6f549475e7ef6021ce82016918"
+      "commit": "6d3aa36b98f9ed6f549475e7ef6021ce82016918",
+      "tag": "v1.8.0"
     },
     "1.8.1": {
-      "tag": "v1.8.1",
-      "commit": "0de8931cc06a47461135575f7b0c30d7281b9a89"
+      "commit": "0de8931cc06a47461135575f7b0c30d7281b9a89",
+      "tag": "v1.8.1"
     },
     "1.9.0": {
-      "tag": "v1.9.0",
-      "commit": "271ee7235b9c0dca408a0396b44484b275938ace"
+      "commit": "271ee7235b9c0dca408a0396b44484b275938ace",
+      "tag": "v1.9.0"
     }
   }
 }
