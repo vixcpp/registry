@@ -1,0 +1,287 @@
+{
+  "api": {
+    "document": {
+      "commit": "64e73d37b2904f36d9ff889d651b9a0100b48f0b",
+      "format": "vix-api-1",
+      "headers": [
+        {
+          "includeRoot": "include",
+          "path": "vix/log/GlobalLog.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 38,
+              "qualifiedName": "vix::log::configure",
+              "signature": "void configure(const LogConfig &config);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 43,
+              "qualifiedName": "vix::log::set_level",
+              "signature": "void set_level(LogLevel level);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 58,
+              "qualifiedName": "vix::log::set_format",
+              "signature": "void set_format(LogFormat format);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 63,
+              "qualifiedName": "vix::log::set_async",
+              "signature": "void set_async(bool enable);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 68,
+              "qualifiedName": "vix::log::set_context",
+              "signature": "void set_context(LogContext ctx);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 73,
+              "qualifiedName": "vix::log::clear_context",
+              "signature": "void clear_context();"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 83,
+              "qualifiedName": "vix::log::set_level_from_env",
+              "signature": "void set_level_from_env(std::string_view env_name = \"VIX_LOG_LEVEL\");"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 88,
+              "qualifiedName": "vix::log::set_format_from_env",
+              "signature": "void set_format_from_env(std::string_view env_name = \"VIX_LOG_FORMAT\");"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/log/Log.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/log/LogAdapter.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 38,
+              "qualifiedName": "vix::log::LogAdapter",
+              "signature": "class LogAdapter"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 49,
+              "qualifiedName": "vix::log::configure",
+              "signature": "void configure(const LogConfig &config);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 54,
+              "qualifiedName": "vix::log::set_level",
+              "signature": "void set_level(LogLevel level);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 69,
+              "qualifiedName": "vix::log::set_format",
+              "signature": "void set_format(LogFormat format);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 74,
+              "qualifiedName": "vix::log::set_async",
+              "signature": "void set_async(bool enable);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 79,
+              "qualifiedName": "vix::log::set_context",
+              "signature": "void set_context(LogContext ctx);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 84,
+              "qualifiedName": "vix::log::clear_context",
+              "signature": "void clear_context();"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 96,
+              "qualifiedName": "vix::log::set_level_from_env",
+              "signature": "void set_level_from_env(std::string_view env_name = \"VIX_LOG_LEVEL\");"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 103,
+              "qualifiedName": "vix::log::set_format_from_env",
+              "signature": "void set_format_from_env(std::string_view env_name = \"VIX_LOG_FORMAT\");"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/log/LogConfig.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 31,
+              "qualifiedName": "vix::log::LogConfig",
+              "signature": "struct LogConfig"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/log/LogContext.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 36,
+              "qualifiedName": "vix::log::LogContext",
+              "signature": "struct LogContext"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/log/LogFormat.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "enum class",
+              "line": 28,
+              "qualifiedName": "vix::log::LogFormat",
+              "signature": "enum class LogFormat"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/log/LogLevel.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "enum class",
+              "line": 28,
+              "qualifiedName": "vix::log::LogLevel",
+              "signature": "enum class LogLevel"
+            }
+          ]
+        }
+      ],
+      "package": "vix/log",
+      "version": "0.2.1"
+    },
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "hash": "27ab71466bdf1d69",
+    "path": "vix.api.json"
+  },
+  "constraints": {
+    "minCppStandard": "c++20",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [
+      {
+        "id": "vix/utils",
+        "version": "1.14.7"
+      }
+    ],
+    "system": []
+  },
+  "description": "Stable logging facade for Vix C++ projects built on top of the Vix utilities logger.",
+  "displayName": "Vix Log",
+  "documentation": "https://github.com/vixcpp/log#readme",
+  "exports": {
+    "headers": [
+      "vix/log/GlobalLog.hpp",
+      "vix/log/Log.hpp",
+      "vix/log/LogAdapter.hpp",
+      "vix/log/LogConfig.hpp",
+      "vix/log/LogContext.hpp",
+      "vix/log/LogFormat.hpp",
+      "vix/log/LogLevel.hpp"
+    ],
+    "modules": [
+      "vix::log"
+    ],
+    "namespaces": [
+      "vix::log"
+    ]
+  },
+  "homepage": "https://github.com/vixcpp/log",
+  "keywords": [
+    "vix",
+    "cpp",
+    "log",
+    "logging",
+    "diagnostics"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "log",
+  "namespace": "vix",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/vixcpp/log"
+  },
+  "type": "library",
+  "versions": {
+    "0.2.1": {
+      "api": {
+        "format": "vix-api-1",
+        "hash": "27ab71466bdf1d69",
+        "path": "vix.api.json"
+      },
+      "commit": "64e73d37b2904f36d9ff889d651b9a0100b48f0b",
+      "manifest": {
+        "include": [
+          "include"
+        ],
+        "type": "library"
+      },
+      "tag": "v0.2.1"
+    }
+  }
+}
