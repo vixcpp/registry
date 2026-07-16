@@ -1,0 +1,303 @@
+{
+  "api": {
+    "document": {
+      "commit": "ba4a16a4dc3ec7f30f64dae18d250a00272149d4",
+      "format": "vix-api-1",
+      "headers": [
+        {
+          "includeRoot": "include",
+          "path": "vix/process/Child.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 41,
+              "qualifiedName": "vix::process::Child",
+              "signature": "class Child"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 96,
+              "qualifiedName": "vix::process::valid",
+              "signature": "return valid();"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/process/Command.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 46,
+              "qualifiedName": "vix::process::Command",
+              "signature": "class Command"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/process/Kill.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/process/Output.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/process/PipeMode.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "enum class",
+              "line": 32,
+              "qualifiedName": "vix::process::PipeMode",
+              "signature": "enum class PipeMode"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/process/Process.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/process/ProcessError.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "enum class",
+              "line": 41,
+              "qualifiedName": "vix::process::ProcessErrorCode",
+              "signature": "enum class ProcessErrorCode"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 68,
+              "qualifiedName": "vix::error::ErrorCategory",
+              "signature": "return vix::error::ErrorCategory(\"process\");"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/process/ProcessId.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/process/ProcessOptions.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 39,
+              "qualifiedName": "vix::process::ProcessOptions",
+              "signature": "struct ProcessOptions"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/process/ProcessResult.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 25,
+              "qualifiedName": "vix::process::Child",
+              "signature": "class Child;"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 38,
+              "qualifiedName": "vix::process::ProcessOutput",
+              "signature": "struct ProcessOutput"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/process/Spawn.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/process/Status.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/process/Terminate.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/process/Wait.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/process/async/OutputAsync.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/process/async/SpawnAsync.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/process/async/WaitAsync.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/process/pipeline/Pipeline.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 31,
+              "qualifiedName": "vix::process::pipeline::PipelineChildren",
+              "signature": "struct PipelineChildren"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 48,
+              "qualifiedName": "vix::process::pipeline::PipelineResult",
+              "signature": "struct PipelineResult"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/process/pipeline/PipelineAsync.hpp",
+          "symbols": []
+        }
+      ],
+      "package": "vix/process",
+      "version": "0.4.1"
+    },
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "hash": "c3ccf3a3dcd3398d",
+    "path": "vix.api.json"
+  },
+  "constraints": {
+    "minCppStandard": "c++20",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [
+      {
+        "id": "vix/error",
+        "version": "0.3.1"
+      },
+      {
+        "id": "vix/env",
+        "version": "0.1.1"
+      },
+      {
+        "id": "vix/path",
+        "version": "0.3.1"
+      },
+      {
+        "id": "vix/async",
+        "version": "1.2.1"
+      }
+    ],
+    "system": []
+  },
+  "description": "Portable process management utilities for spawning, waiting, capturing output, and controlling system processes.",
+  "displayName": "Vix Process",
+  "documentation": "https://github.com/vixcpp/process#readme",
+  "exports": {
+    "headers": [
+      "vix/process/Child.hpp",
+      "vix/process/Command.hpp",
+      "vix/process/Kill.hpp",
+      "vix/process/Output.hpp",
+      "vix/process/PipeMode.hpp",
+      "vix/process/Process.hpp",
+      "vix/process/ProcessError.hpp",
+      "vix/process/ProcessId.hpp",
+      "vix/process/ProcessOptions.hpp",
+      "vix/process/ProcessResult.hpp",
+      "vix/process/Spawn.hpp",
+      "vix/process/Status.hpp",
+      "vix/process/Terminate.hpp",
+      "vix/process/Wait.hpp",
+      "vix/process/async/OutputAsync.hpp",
+      "vix/process/async/SpawnAsync.hpp",
+      "vix/process/async/WaitAsync.hpp",
+      "vix/process/pipeline/Pipeline.hpp",
+      "vix/process/pipeline/PipelineAsync.hpp"
+    ],
+    "modules": [
+      "vix::process"
+    ],
+    "namespaces": [
+      "vix::process"
+    ]
+  },
+  "homepage": "https://github.com/vixcpp/process",
+  "keywords": [
+    "vix",
+    "cpp",
+    "process",
+    "spawn",
+    "command",
+    "portable"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "process",
+  "namespace": "vix",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/vixcpp/process"
+  },
+  "type": "library",
+  "versions": {
+    "0.4.1": {
+      "api": {
+        "format": "vix-api-1",
+        "hash": "c3ccf3a3dcd3398d",
+        "path": "vix.api.json"
+      },
+      "commit": "ba4a16a4dc3ec7f30f64dae18d250a00272149d4",
+      "manifest": {
+        "include": [
+          "include"
+        ],
+        "type": "library"
+      },
+      "tag": "v0.4.1"
+    }
+  }
+}
