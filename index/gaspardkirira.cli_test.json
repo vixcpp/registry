@@ -1,7 +1,7 @@
 {
   "api": {
     "document": {
-      "commit": "cb1e3f4340de3e87edf60fd863f94c76d1c1d903",
+      "commit": "741e29f33aca221aef486bc3e64adefbbabf4a9c",
       "format": "vix-api-1",
       "headers": [
         {
@@ -24,11 +24,11 @@
         }
       ],
       "package": "gaspardkirira/cli_test",
-      "version": "0.1.0"
+      "version": "0.2.0"
     },
     "format": "vix-api-1",
     "generatedBy": "vix-cli",
-    "hash": "4780862970bf7cf5",
+    "hash": "35691c51d822cb48",
     "path": "vix.api.json"
   },
   "constraints": {
@@ -97,6 +97,21 @@
         "type": "header-only"
       },
       "tag": "v0.1.0"
+    },
+    "0.2.0": {
+      "api": {
+        "format": "vix-api-1",
+        "hash": "35691c51d822cb48",
+        "path": "vix.api.json"
+      },
+      "commit": "741e29f33aca221aef486bc3e64adefbbabf4a9c",
+      "manifest": {
+        "include": [
+          "include"
+        ],
+        "type": "header-only"
+      },
+      "tag": "v0.2.0"
     }
   }
 }
