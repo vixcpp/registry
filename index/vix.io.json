@@ -1,0 +1,1413 @@
+{
+  "api": {
+    "document": {
+      "commit": "04783adf7033301ba852dd249d1d2b4e14488459",
+      "format": "vix-api-1",
+      "headers": [
+        {
+          "includeRoot": "include",
+          "path": "vix/console.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/console/Console.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 45,
+              "qualifiedName": "vix::Console",
+              "signature": "class Console final"
+            },
+            {
+              "documentation": "",
+              "kind": "enum class",
+              "line": 48,
+              "qualifiedName": "vix::Level",
+              "signature": "enum class Level : uint8_t"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 59,
+              "qualifiedName": "vix::log",
+              "signature": "void log(Ts &&...xs) noexcept { write_(Level::Info, Stream::Out, /*rate_limit*/ true, std::forward<Ts>(xs)...); }"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 62,
+              "qualifiedName": "vix::info",
+              "signature": "void info(Ts &&...xs) noexcept { write_(Level::Info, Stream::Out, /*rate_limit*/ true, std::forward<Ts>(xs)...); }"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 65,
+              "qualifiedName": "vix::warn",
+              "signature": "void warn(Ts &&...xs) noexcept { write_(Level::Warn, Stream::Err, /*rate_limit*/ false, std::forward<Ts>(xs)...); }"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 68,
+              "qualifiedName": "vix::error",
+              "signature": "void error(Ts &&...xs) noexcept { write_(Level::Error, Stream::Err, /*rate_limit*/ false, std::forward<Ts>(xs)...); }"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 71,
+              "qualifiedName": "vix::debug",
+              "signature": "void debug(Ts &&...xs) noexcept { write_(Level::Debug, Stream::Out, /*rate_limit*/ false, std::forward<Ts>(xs)...); }"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 73,
+              "qualifiedName": "vix::set_level",
+              "signature": "void set_level(Level lvl) noexcept { level_.store(lvl, std::memory_order_relaxed); }"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 74,
+              "qualifiedName": "vix::level",
+              "signature": "Level level() const noexcept { return level_.load(std::memory_order_relaxed); }"
+            },
+            {
+              "documentation": "",
+              "kind": "enum class",
+              "line": 89,
+              "qualifiedName": "vix::Stream",
+              "signature": "enum class Stream : uint8_t"
+            },
+            {
+              "documentation": "",
+              "kind": "enum class",
+              "line": 95,
+              "qualifiedName": "vix::ColorMode",
+              "signature": "enum class ColorMode : uint8_t"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 103,
+              "qualifiedName": "vix::LineBuffer",
+              "signature": "struct LineBuffer final"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 275,
+              "qualifiedName": "vix::if",
+              "signature": "else if (const char *cm = vix::utils::vix_getenv(\"VIX_COLOR\"); cm && *cm)"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 481,
+              "qualifiedName": "vix::lk",
+              "signature": "std::lock_guard<std::mutex> lk(mutex_());"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 741,
+              "qualifiedName": "vix::lk",
+              "signature": "std::lock_guard<std::mutex> lk(mutex_());"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/format.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/format/Format.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 55,
+              "qualifiedName": "vix::format_error",
+              "signature": "class format_error : public std::runtime_error"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 111,
+              "qualifiedName": "detail::rendered_arg_list",
+              "signature": "class rendered_arg_list"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 144,
+              "qualifiedName": "detail::format_error",
+              "signature": "throw format_error(\"format argument index out of range\");"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 164,
+              "qualifiedName": "detail::format_error",
+              "signature": "throw format_error(\"empty explicit format index\");"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 172,
+              "qualifiedName": "detail::format_error",
+              "signature": "throw format_error(\"invalid explicit format index\");"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 231,
+              "qualifiedName": "detail::format_error",
+              "signature": "throw format_error(\"cannot mix automatic and explicit argument indexing\");"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 241,
+              "qualifiedName": "detail::format_error",
+              "signature": "throw format_error(\"cannot mix automatic and explicit argument indexing\");"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 248,
+              "qualifiedName": "detail::format_error",
+              "signature": "throw format_error(\"format specifiers are not supported\");"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/input.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 113,
+              "qualifiedName": "detail::read_line",
+              "signature": "return detail::read_line();"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 134,
+              "qualifiedName": "detail::read_line",
+              "signature": "return detail::read_line();"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/inspect.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/inspect/Inspect.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 70,
+              "qualifiedName": "vix::inspect_context",
+              "signature": "struct inspect_context;"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 71,
+              "qualifiedName": "vix::inspect_options",
+              "signature": "struct inspect_options;"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 75,
+              "qualifiedName": "vix::inspector",
+              "signature": "struct inspector;"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 79,
+              "qualifiedName": "vix::field_map",
+              "signature": "struct field_map;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 84,
+              "qualifiedName": "detail::iwrite",
+              "signature": "void iwrite(inspect_context &ctx, const T &value);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 106,
+              "qualifiedName": "demangle::typeid",
+              "signature": "return typeid(T).name();"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 165,
+              "qualifiedName": "demangle::shorten",
+              "signature": "return shorten(type_name<T>());"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 176,
+              "qualifiedName": "demangle::type_metadata",
+              "signature": "struct type_metadata"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 280,
+              "qualifiedName": "demangle::field_descriptor",
+              "signature": "struct field_descriptor"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 316,
+              "qualifiedName": "demangle::inspect_options",
+              "signature": "struct inspect_options"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 340,
+              "qualifiedName": "demangle::inspect_context",
+              "signature": "struct inspect_context"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 381,
+              "qualifiedName": "demangle::emit",
+              "signature": "void emit(std::string_view sv) { os << sv; }"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 382,
+              "qualifiedName": "demangle::emit",
+              "signature": "void emit(char c) { os << c; }"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 385,
+              "qualifiedName": "demangle::emit_value",
+              "signature": "void emit_value(const T &v) { os << v; }"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 1381,
+              "qualifiedName": "detail::inspect_to_string",
+              "signature": "return inspect_to_string(value, opts);"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 1409,
+              "qualifiedName": "detail::scoped_inspect_options",
+              "signature": "class scoped_inspect_options"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 1434,
+              "qualifiedName": "detail::streamable_inspector",
+              "signature": "struct streamable_inspector"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 1444,
+              "qualifiedName": "detail::inspector",
+              "signature": "struct inspector<std::monostate>"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 1454,
+              "qualifiedName": "detail::inspector",
+              "signature": "struct inspector<std::byte>"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 1467,
+              "qualifiedName": "detail::inspector",
+              "signature": "struct inspector<std::error_code>"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 1478,
+              "qualifiedName": "detail::inspector",
+              "signature": "struct inspector<std::error_condition>"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 1625,
+              "qualifiedName": "std::distance",
+              "signature": "os << std::distance(std::begin(c), std::end(c));"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 1807,
+              "qualifiedName": "detail::items",
+              "signature": "std::vector<V> items(std::begin(rng), std::end(rng));"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 1875,
+              "qualifiedName": "tree::tree_context",
+              "signature": "struct tree_context"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 1899,
+              "qualifiedName": "tree::twrite",
+              "signature": "void twrite(tree_context &tctx, std::string_view label, const T &value);"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 2045,
+              "qualifiedName": "demo::Vec2",
+              "signature": "struct Vec2"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 2056,
+              "qualifiedName": "demo::Vec3",
+              "signature": "struct Vec3"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 2066,
+              "qualifiedName": "demo::vix",
+              "signature": "struct vix::field_map<vix::demo::Vec3>"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 2082,
+              "qualifiedName": "demo::OptimizerConfig",
+              "signature": "struct OptimizerConfig"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 2095,
+              "qualifiedName": "demo::vix",
+              "signature": "struct vix::field_map<vix::demo::OptimizerConfig>"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 2115,
+              "qualifiedName": "demo::NamedResult",
+              "signature": "struct NamedResult"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 2125,
+              "qualifiedName": "demo::vix",
+              "signature": "struct vix::inspector<vix::demo::NamedResult>"
+            },
+            {
+              "documentation": "",
+              "kind": "enum",
+              "line": 2181,
+              "qualifiedName": "demo::Status",
+              "signature": "enum Status"
+            },
+            {
+              "documentation": "",
+              "kind": "enum class",
+              "line": 2187,
+              "qualifiedName": "demo::Direction",
+              "signature": "enum class Direction"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/io/Buffer.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 33,
+              "qualifiedName": "vix::io::Buffer",
+              "signature": "class Buffer"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 160,
+              "qualifiedName": "std::string",
+              "signature": "return std::string(data_.begin(), data_.end());"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/io/Copy.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/io/Flush.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/io/Input.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 34,
+              "qualifiedName": "vix::io::Input",
+              "signature": "class Input"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 40,
+              "qualifiedName": "vix::io::Input",
+              "signature": "explicit Input(std::istream &stream) noexcept;"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/io/Io.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/io/IoError.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "enum class",
+              "line": 34,
+              "qualifiedName": "vix::io::IoErrorCode",
+              "signature": "enum class IoErrorCode"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 54,
+              "qualifiedName": "vix::error::ErrorCategory",
+              "signature": "return vix::error::ErrorCategory(\"io\");"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/io/IoOptions.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "enum class",
+              "line": 27,
+              "qualifiedName": "vix::io::NewlineMode",
+              "signature": "enum class NewlineMode"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 41,
+              "qualifiedName": "vix::io::IoOptions",
+              "signature": "struct IoOptions"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/io/IoResult.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/io/Output.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 34,
+              "qualifiedName": "vix::io::Output",
+              "signature": "class Output"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 40,
+              "qualifiedName": "vix::io::Output",
+              "signature": "explicit Output(std::ostream &stream) noexcept;"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/io/Read.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/io/ReadAll.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/io/ReadLine.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/io/Stderr.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/io/Stdin.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/io/Stdout.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/io/Write.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/io/WriteLine.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/meta/traits.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 50,
+              "qualifiedName": "vix::inspect_context",
+              "signature": "struct inspect_context;"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 53,
+              "qualifiedName": "vix::formatter",
+              "signature": "struct formatter;"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 56,
+              "qualifiedName": "vix::inspector",
+              "signature": "struct inspector;"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 59,
+              "qualifiedName": "vix::field_map",
+              "signature": "struct field_map;"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 67,
+              "qualifiedName": "traits::is_ostreamable",
+              "signature": "struct is_ostreamable : std::false_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 72,
+              "qualifiedName": "traits::is_ostreamable",
+              "signature": "struct is_ostreamable<"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 86,
+              "qualifiedName": "traits::is_string_like",
+              "signature": "struct is_string_like : std::false_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 91,
+              "qualifiedName": "traits::is_string_like",
+              "signature": "struct is_string_like<std::string> : std::true_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 96,
+              "qualifiedName": "traits::is_string_like",
+              "signature": "struct is_string_like<std::string_view> : std::true_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 101,
+              "qualifiedName": "traits::is_string_like",
+              "signature": "struct is_string_like<const char *> : std::true_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 106,
+              "qualifiedName": "traits::is_string_like",
+              "signature": "struct is_string_like<char *> : std::true_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 111,
+              "qualifiedName": "traits::is_string_like",
+              "signature": "struct is_string_like<std::wstring> : std::true_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 116,
+              "qualifiedName": "traits::is_string_like",
+              "signature": "struct is_string_like<std::wstring_view> : std::true_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 121,
+              "qualifiedName": "traits::is_string_like",
+              "signature": "struct is_string_like<const wchar_t *> : std::true_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 126,
+              "qualifiedName": "traits::is_string_like",
+              "signature": "struct is_string_like<wchar_t *> : std::true_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 131,
+              "qualifiedName": "traits::is_string_like",
+              "signature": "struct is_string_like<char[N]> : std::true_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 136,
+              "qualifiedName": "traits::is_string_like",
+              "signature": "struct is_string_like<const char[N]> : std::true_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 141,
+              "qualifiedName": "traits::is_string_like",
+              "signature": "struct is_string_like<wchar_t[N]> : std::true_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 146,
+              "qualifiedName": "traits::is_string_like",
+              "signature": "struct is_string_like<const wchar_t[N]> : std::true_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 157,
+              "qualifiedName": "traits::is_range",
+              "signature": "struct is_range : std::false_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 162,
+              "qualifiedName": "traits::is_range",
+              "signature": "struct is_range<"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 178,
+              "qualifiedName": "traits::is_map_like",
+              "signature": "struct is_map_like : std::false_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 183,
+              "qualifiedName": "traits::is_map_like",
+              "signature": "struct is_map_like<T, std::void_t<typename T::key_type, typename T::mapped_type>>"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 195,
+              "qualifiedName": "traits::is_set_like",
+              "signature": "struct is_set_like : std::false_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 200,
+              "qualifiedName": "traits::is_set_like",
+              "signature": "struct is_set_like<T, std::void_t<typename T::key_type>>"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 212,
+              "qualifiedName": "traits::is_tuple_like",
+              "signature": "struct is_tuple_like : std::false_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 217,
+              "qualifiedName": "traits::is_tuple_like",
+              "signature": "struct is_tuple_like<T, std::void_t<decltype(std::tuple_size<T>::value)>>"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 223,
+              "qualifiedName": "traits::is_tuple_like",
+              "signature": "struct is_tuple_like<std::string> : std::false_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 228,
+              "qualifiedName": "traits::is_tuple_like",
+              "signature": "struct is_tuple_like<std::wstring> : std::false_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 239,
+              "qualifiedName": "traits::is_pair",
+              "signature": "struct is_pair : std::false_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 244,
+              "qualifiedName": "traits::is_pair",
+              "signature": "struct is_pair<std::pair<A, B>> : std::true_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 255,
+              "qualifiedName": "traits::is_unique_ptr",
+              "signature": "struct is_unique_ptr : std::false_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 260,
+              "qualifiedName": "traits::is_unique_ptr",
+              "signature": "struct is_unique_ptr<std::unique_ptr<T, D>> : std::true_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 265,
+              "qualifiedName": "traits::is_shared_ptr",
+              "signature": "struct is_shared_ptr : std::false_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 270,
+              "qualifiedName": "traits::is_shared_ptr",
+              "signature": "struct is_shared_ptr<std::shared_ptr<T>> : std::true_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 275,
+              "qualifiedName": "traits::is_weak_ptr",
+              "signature": "struct is_weak_ptr : std::false_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 280,
+              "qualifiedName": "traits::is_weak_ptr",
+              "signature": "struct is_weak_ptr<std::weak_ptr<T>> : std::true_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 294,
+              "qualifiedName": "traits::is_optional",
+              "signature": "struct is_optional : std::false_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 299,
+              "qualifiedName": "traits::is_optional",
+              "signature": "struct is_optional<std::optional<T>> : std::true_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 307,
+              "qualifiedName": "traits::is_variant",
+              "signature": "struct is_variant : std::false_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 312,
+              "qualifiedName": "traits::is_variant",
+              "signature": "struct is_variant<std::variant<Ts...>> : std::true_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 327,
+              "qualifiedName": "traits::is_duration",
+              "signature": "struct is_duration : std::false_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 332,
+              "qualifiedName": "traits::is_duration",
+              "signature": "struct is_duration<std::chrono::duration<Rep, Period>> : std::true_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 340,
+              "qualifiedName": "traits::is_time_point",
+              "signature": "struct is_time_point : std::false_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 345,
+              "qualifiedName": "traits::is_time_point",
+              "signature": "struct is_time_point<std::chrono::time_point<Clock, Duration>> : std::true_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 363,
+              "qualifiedName": "traits::is_reference_wrapper",
+              "signature": "struct is_reference_wrapper : std::false_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 368,
+              "qualifiedName": "traits::is_reference_wrapper",
+              "signature": "struct is_reference_wrapper<std::reference_wrapper<T>> : std::true_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 426,
+              "qualifiedName": "traits::is_stack",
+              "signature": "struct is_stack : std::false_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 431,
+              "qualifiedName": "traits::is_stack",
+              "signature": "struct is_stack<std::stack<T, C>> : std::true_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 436,
+              "qualifiedName": "traits::is_queue",
+              "signature": "struct is_queue : std::false_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 441,
+              "qualifiedName": "traits::is_queue",
+              "signature": "struct is_queue<std::queue<T, C>> : std::true_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 446,
+              "qualifiedName": "traits::is_priority_queue",
+              "signature": "struct is_priority_queue : std::false_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 451,
+              "qualifiedName": "traits::is_priority_queue",
+              "signature": "struct is_priority_queue<std::priority_queue<T, C, Cmp>> : std::true_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 465,
+              "qualifiedName": "traits::has_formatter_specialization",
+              "signature": "struct has_formatter_specialization : std::false_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 470,
+              "qualifiedName": "traits::has_formatter_specialization",
+              "signature": "struct has_formatter_specialization<"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 486,
+              "qualifiedName": "traits::has_vix_format",
+              "signature": "struct has_vix_format : std::false_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 491,
+              "qualifiedName": "traits::has_vix_format",
+              "signature": "struct has_vix_format<"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 506,
+              "qualifiedName": "traits::has_vix_inspect_hook",
+              "signature": "struct has_vix_inspect_hook : std::false_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 511,
+              "qualifiedName": "traits::has_vix_inspect_hook",
+              "signature": "struct has_vix_inspect_hook<"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 524,
+              "qualifiedName": "traits::has_inspector_specialization",
+              "signature": "struct has_inspector_specialization : std::false_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 529,
+              "qualifiedName": "traits::has_inspector_specialization",
+              "signature": "struct has_inspector_specialization<"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 542,
+              "qualifiedName": "traits::has_field_map",
+              "signature": "struct has_field_map : std::false_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 547,
+              "qualifiedName": "traits::has_field_map",
+              "signature": "struct has_field_map<T, std::void_t<decltype(field_map<T>::fields())>>"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 561,
+              "qualifiedName": "traits::is_expected",
+              "signature": "struct is_expected : std::false_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 566,
+              "qualifiedName": "traits::is_expected",
+              "signature": "struct is_expected<std::expected<T, E>> : std::true_type"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/print.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/print/Print.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 65,
+              "qualifiedName": "vix::formatter",
+              "signature": "struct formatter;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 71,
+              "qualifiedName": "detail::write",
+              "signature": "void write(std::ostream &os, const T &value);"
+            },
+            {
+              "documentation": "@brief Controls rendering behaviour of vix::print.",
+              "kind": "struct",
+              "line": 76,
+              "qualifiedName": "detail::print_config",
+              "signature": "struct print_config"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 89,
+              "qualifiedName": "detail::options",
+              "signature": "struct options"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 131,
+              "qualifiedName": "detail::write",
+              "signature": "void write(std::ostream &os, const T &value);"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 134,
+              "qualifiedName": "detail::indent_guard",
+              "signature": "struct indent_guard"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 610,
+              "qualifiedName": "detail::has_formatter_specialization",
+              "signature": "struct has_formatter_specialization : std::false_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 615,
+              "qualifiedName": "detail::has_formatter_specialization",
+              "signature": "struct has_formatter_specialization<T,"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 844,
+              "qualifiedName": "detail::formatter",
+              "signature": "struct formatter"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 1109,
+              "qualifiedName": "detail::scoped_config",
+              "signature": "class scoped_config"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 1141,
+              "qualifiedName": "detail::streamable_formatter",
+              "signature": "struct streamable_formatter"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 1151,
+              "qualifiedName": "detail::formatter",
+              "signature": "struct formatter<std::monostate>"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 1161,
+              "qualifiedName": "detail::formatter",
+              "signature": "struct formatter<std::byte>"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 1178,
+              "qualifiedName": "detail::formatter",
+              "signature": "struct formatter<std::error_code>"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 1188,
+              "qualifiedName": "detail::formatter",
+              "signature": "struct formatter<std::error_condition>"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 1283,
+              "qualifiedName": "demo::Point2D",
+              "signature": "struct Point2D"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 1294,
+              "qualifiedName": "demo::Color",
+              "signature": "struct Color"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 1304,
+              "qualifiedName": "demo::vix",
+              "signature": "struct vix::formatter<vix::demo::Color>"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 1318,
+              "qualifiedName": "demo::NamedValue",
+              "signature": "struct NamedValue"
+            },
+            {
+              "documentation": "",
+              "kind": "enum",
+              "line": 1367,
+              "qualifiedName": "demo::Color",
+              "signature": "enum Color"
+            },
+            {
+              "documentation": "",
+              "kind": "enum class",
+              "line": 1373,
+              "qualifiedName": "demo::Direction",
+              "signature": "enum class Direction"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 1650,
+              "qualifiedName": "fs::run_demo",
+              "signature": "return run_demo();"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 1662,
+              "qualifiedName": "pretty::context",
+              "signature": "struct context"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 1676,
+              "qualifiedName": "pretty::newline",
+              "signature": "void newline() const { os << '\\n'; }"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 1681,
+              "qualifiedName": "pretty::pwrite",
+              "signature": "void pwrite(context &ctx, const T &value);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 1985,
+              "qualifiedName": "pretty::items",
+              "signature": "std::vector<std::pair<K, V>> items(m.begin(), m.end());"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 2062,
+              "qualifiedName": "pretty::string_builder",
+              "signature": "class string_builder"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 2091,
+              "qualifiedName": "pretty::sep",
+              "signature": "return sep(s).append(v);"
+            },
+            {
+              "documentation": "Implicit conversion to std::string",
+              "kind": "function",
+              "line": 2105,
+              "qualifiedName": "std::string",
+              "signature": "explicit operator std::string() const { return str(); }"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 2333,
+              "qualifiedName": "ansi::items",
+              "signature": "std::vector<V> items(std::begin(rng), std::end(rng));"
+            }
+          ]
+        }
+      ],
+      "package": "vix/io",
+      "version": "0.2.1"
+    },
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "hash": "5f2a58826ae7a039",
+    "path": "vix.api.json"
+  },
+  "constraints": {
+    "minCppStandard": "c++20",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [
+      {
+        "id": "vix/error",
+        "version": "0.3.1"
+      }
+    ],
+    "system": []
+  },
+  "description": "Simple cross-platform stream-oriented input and output utilities for Vix C++ projects.",
+  "displayName": "Vix IO",
+  "documentation": "https://github.com/vixcpp/io#readme",
+  "exports": {
+    "headers": [
+      "vix/console.hpp",
+      "vix/console/Console.hpp",
+      "vix/format.hpp",
+      "vix/format/Format.hpp",
+      "vix/input.hpp",
+      "vix/inspect.hpp",
+      "vix/inspect/Inspect.hpp",
+      "vix/io/Buffer.hpp",
+      "vix/io/Copy.hpp",
+      "vix/io/Flush.hpp",
+      "vix/io/Input.hpp",
+      "vix/io/Io.hpp",
+      "vix/io/IoError.hpp",
+      "vix/io/IoOptions.hpp",
+      "vix/io/IoResult.hpp",
+      "vix/io/Output.hpp",
+      "vix/io/Read.hpp",
+      "vix/io/ReadAll.hpp",
+      "vix/io/ReadLine.hpp",
+      "vix/io/Stderr.hpp",
+      "vix/io/Stdin.hpp",
+      "vix/io/Stdout.hpp",
+      "vix/io/Write.hpp",
+      "vix/io/WriteLine.hpp",
+      "vix/meta/traits.hpp",
+      "vix/print.hpp",
+      "vix/print/Print.hpp"
+    ],
+    "modules": [
+      "vix::io"
+    ],
+    "namespaces": [
+      "vix::io"
+    ]
+  },
+  "homepage": "https://github.com/vixcpp/io",
+  "keywords": [
+    "vix",
+    "cpp",
+    "io",
+    "streams",
+    "console"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "io",
+  "namespace": "vix",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/vixcpp/io"
+  },
+  "type": "library",
+  "versions": {
+    "0.2.1": {
+      "api": {
+        "format": "vix-api-1",
+        "hash": "5f2a58826ae7a039",
+        "path": "vix.api.json"
+      },
+      "commit": "04783adf7033301ba852dd249d1d2b4e14488459",
+      "manifest": {
+        "include": [
+          "include"
+        ],
+        "type": "library"
+      },
+      "tag": "v0.2.1"
+    }
+  }
+}
