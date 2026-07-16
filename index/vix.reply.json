@@ -1,0 +1,635 @@
+{
+  "api": {
+    "document": {
+      "commit": "a2b95d881769a6dc1e1ed4e49505a9a59f962471",
+      "format": "vix-api-1",
+      "headers": [
+        {
+          "includeRoot": "include",
+          "path": "vix/reply/api/ReplApi.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 31,
+              "qualifiedName": "vix::reply::api::print",
+              "signature": "void print(std::string_view s);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 45,
+              "qualifiedName": "vix::reply::api::eprint",
+              "signature": "void eprint(std::string_view s);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 59,
+              "qualifiedName": "vix::reply::api::print_int",
+              "signature": "void print_int(long long value);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 66,
+              "qualifiedName": "vix::reply::api::println_int",
+              "signature": "void println_int(long long value);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 73,
+              "qualifiedName": "vix::reply::api::readln",
+              "signature": "std::optional<std::string> readln();"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 78,
+              "qualifiedName": "vix::reply::api::clear",
+              "signature": "void clear();"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 85,
+              "qualifiedName": "vix::reply::api::pwd",
+              "signature": "std::filesystem::path pwd();"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 94,
+              "qualifiedName": "vix::reply::api::cd",
+              "signature": "bool cd(const std::filesystem::path &path, std::string *err = nullptr);"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/reply/api/ReplCallParser.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 37,
+              "qualifiedName": "vix::reply::api::CallValue",
+              "signature": "struct CallValue"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 155,
+              "qualifiedName": "vix::reply::api::CallExpr",
+              "signature": "struct CallExpr"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 191,
+              "qualifiedName": "vix::reply::api::CallParseResult",
+              "signature": "struct CallParseResult"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 224,
+              "qualifiedName": "vix::reply::api::parse_call",
+              "signature": "CallParseResult parse_call(std::string_view input);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 235,
+              "qualifiedName": "vix::reply::api::looks_like_call",
+              "signature": "bool looks_like_call(std::string_view input);"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/reply/api/Vix.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 26,
+              "qualifiedName": "vix::reply::History",
+              "signature": "class History;"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 34,
+              "qualifiedName": "vix::reply::api::VixResult",
+              "signature": "struct VixResult"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 58,
+              "qualifiedName": "vix::reply::api::Vix",
+              "signature": "class Vix"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 66,
+              "qualifiedName": "vix::reply::api::Vix",
+              "signature": "explicit Vix(vix::reply::History *history);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 73,
+              "qualifiedName": "vix::reply::api::pid",
+              "signature": "int pid() const;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 80,
+              "qualifiedName": "vix::reply::api::exit",
+              "signature": "void exit(int code = 0);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 87,
+              "qualifiedName": "vix::reply::api::exit_requested",
+              "signature": "bool exit_requested() const;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 94,
+              "qualifiedName": "vix::reply::api::exit_code",
+              "signature": "int exit_code() const;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 101,
+              "qualifiedName": "vix::reply::api::cwd",
+              "signature": "std::filesystem::path cwd() const;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 109,
+              "qualifiedName": "vix::reply::api::cd",
+              "signature": "VixResult cd(const std::string &path);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 118,
+              "qualifiedName": "vix::reply::api::mkdir",
+              "signature": "VixResult mkdir(const std::string &path, bool recursive = true);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 126,
+              "qualifiedName": "vix::reply::api::env",
+              "signature": "std::optional<std::string> env(const std::string &key) const;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 140,
+              "qualifiedName": "vix::reply::api::set_args",
+              "signature": "void set_args(std::vector<std::string> args);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 147,
+              "qualifiedName": "vix::reply::api::history",
+              "signature": "VixResult history();"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 154,
+              "qualifiedName": "vix::reply::api::history_clear",
+              "signature": "VixResult history_clear();"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/reply/console/ReplConsole.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 31,
+              "qualifiedName": "vix::reply::Console",
+              "signature": "struct Console"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 41,
+              "qualifiedName": "vix::reply::set_editing",
+              "signature": "static void set_editing(bool editing);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 48,
+              "qualifiedName": "vix::reply::is_editing",
+              "signature": "static bool is_editing();"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 60,
+              "qualifiedName": "vix::reply::set_redraw_callback",
+              "signature": "static void set_redraw_callback(void (*fn)(void *ctx), void *ctx);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 67,
+              "qualifiedName": "vix::reply::print_out",
+              "signature": "static void print_out(std::string_view s);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 74,
+              "qualifiedName": "vix::reply::print_err",
+              "signature": "static void print_err(std::string_view s);"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/reply/core/ReplDetail.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 30,
+              "qualifiedName": "vix::reply::ReplConfig",
+              "signature": "struct ReplConfig"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/reply/core/ReplDispatcher.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 42,
+              "qualifiedName": "vix::reply::Dispatcher",
+              "signature": "class Dispatcher"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 56,
+              "qualifiedName": "vix::reply::register_command",
+              "signature": "void register_command(const std::string &cmd, DispatchFn fn);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 64,
+              "qualifiedName": "vix::reply::has",
+              "signature": "bool has(const std::string &cmd) const;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 73,
+              "qualifiedName": "vix::reply::dispatch",
+              "signature": "int dispatch(const std::string &cmd, const std::vector<std::string> &args) const;"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/reply/core/ReplFlow.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 34,
+              "qualifiedName": "vix::reply::repl_flow_run",
+              "signature": "int repl_flow_run(const std::vector<std::string> &replArgs);"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/reply/core/ReplHistory.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 33,
+              "qualifiedName": "vix::reply::History",
+              "signature": "class History"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 41,
+              "qualifiedName": "vix::reply::History",
+              "signature": "explicit History(std::size_t maxItems);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 48,
+              "qualifiedName": "vix::reply::add",
+              "signature": "void add(const std::string &line);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 53,
+              "qualifiedName": "vix::reply::clear",
+              "signature": "void clear();"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 69,
+              "qualifiedName": "vix::reply::loadFromFile",
+              "signature": "bool loadFromFile(const std::filesystem::path &file, std::string *err = nullptr);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 78,
+              "qualifiedName": "vix::reply::saveToFile",
+              "signature": "bool saveToFile(const std::filesystem::path &file, std::string *err = nullptr) const;"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/reply/core/ReplLineEditor.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "enum class",
+              "line": 28,
+              "qualifiedName": "vix::reply::ReadStatus",
+              "signature": "enum class ReadStatus"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 54,
+              "qualifiedName": "vix::reply::CompletionResult",
+              "signature": "struct CompletionResult"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/reply/core/ReplMath.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 27,
+              "qualifiedName": "vix::reply::CalcResult",
+              "signature": "struct CalcResult"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 53,
+              "qualifiedName": "vix::reply::eval_expression",
+              "signature": "std::optional<CalcResult> eval_expression(const std::string &expr, std::string &error);"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/reply/core/ReplUtils.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 34,
+              "qualifiedName": "vix::reply::make_prompt",
+              "signature": "std::string make_prompt(const std::filesystem::path &cwd);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 48,
+              "qualifiedName": "vix::reply::split_command_line",
+              "signature": "std::vector<std::string> split_command_line(const std::string &line);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 55,
+              "qualifiedName": "vix::reply::clear_screen",
+              "signature": "void clear_screen();"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 64,
+              "qualifiedName": "vix::reply::user_home_dir",
+              "signature": "std::filesystem::path user_home_dir();"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 74,
+              "qualifiedName": "vix::reply::trim_copy",
+              "signature": "std::string trim_copy(std::string s);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 83,
+              "qualifiedName": "vix::reply::starts_with",
+              "signature": "bool starts_with(const std::string &s, const std::string &prefix);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 94,
+              "qualifiedName": "vix::reply::get_env",
+              "signature": "std::optional<std::string> get_env(const std::string &name);"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/reply/core/ReplyRuntime.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 18,
+              "qualifiedName": "vix::reply::ReplyRuntimeOptions",
+              "signature": "struct ReplyRuntimeOptions"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 27,
+              "qualifiedName": "vix::reply::ReplyRunResult",
+              "signature": "struct ReplyRunResult"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 42,
+              "qualifiedName": "vix::reply::ReplyRuntime",
+              "signature": "class ReplyRuntime"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 54,
+              "qualifiedName": "vix::reply::run_line",
+              "signature": "ReplyRunResult run_line(std::string_view line);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 55,
+              "qualifiedName": "vix::reply::run_cell",
+              "signature": "ReplyRunResult run_cell(std::string_view source);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 57,
+              "qualifiedName": "vix::reply::set_args",
+              "signature": "void set_args(std::vector<std::string> args);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 58,
+              "qualifiedName": "vix::reply::clear",
+              "signature": "void clear();"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 61,
+              "qualifiedName": "vix::reply::Impl",
+              "signature": "class Impl;"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/reply/reply.hpp",
+          "symbols": []
+        }
+      ],
+      "package": "vix/reply",
+      "version": "0.1.1"
+    },
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "hash": "1425072788e359f8",
+    "path": "vix.api.json"
+  },
+  "constraints": {
+    "minCppStandard": "c++20",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": [
+      "nlohmann_json"
+    ]
+  },
+  "description": "Interactive REPL engine for Vix with prompt handling, history, expressions, JSON values, and C++ snippet support.",
+  "displayName": "Vix Reply",
+  "documentation": "https://github.com/vixcpp/reply#readme",
+  "exports": {
+    "headers": [
+      "vix/reply/api/ReplApi.hpp",
+      "vix/reply/api/ReplCallParser.hpp",
+      "vix/reply/api/Vix.hpp",
+      "vix/reply/console/ReplConsole.hpp",
+      "vix/reply/core/ReplDetail.hpp",
+      "vix/reply/core/ReplDispatcher.hpp",
+      "vix/reply/core/ReplFlow.hpp",
+      "vix/reply/core/ReplHistory.hpp",
+      "vix/reply/core/ReplLineEditor.hpp",
+      "vix/reply/core/ReplMath.hpp",
+      "vix/reply/core/ReplUtils.hpp",
+      "vix/reply/core/ReplyRuntime.hpp",
+      "vix/reply/reply.hpp"
+    ],
+    "modules": [
+      "vix::reply"
+    ],
+    "namespaces": [
+      "vix::reply"
+    ]
+  },
+  "homepage": "https://github.com/vixcpp/reply",
+  "keywords": [
+    "vix",
+    "cpp",
+    "reply",
+    "repl",
+    "interactive",
+    "cli"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "reply",
+  "namespace": "vix",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": false,
+    "hasTests": false
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/vixcpp/reply"
+  },
+  "type": "library",
+  "versions": {
+    "0.1.1": {
+      "api": {
+        "format": "vix-api-1",
+        "hash": "1425072788e359f8",
+        "path": "vix.api.json"
+      },
+      "commit": "a2b95d881769a6dc1e1ed4e49505a9a59f962471",
+      "manifest": {
+        "include": [
+          "include"
+        ],
+        "type": "library"
+      },
+      "tag": "v0.1.1"
+    }
+  }
+}
