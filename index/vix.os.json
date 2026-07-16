@@ -1,0 +1,279 @@
+{
+  "api": {
+    "document": {
+      "commit": "41df9c51878c015ea17f486d835e3afee3b42bdc",
+      "format": "vix-api-1",
+      "headers": [
+        {
+          "includeRoot": "include",
+          "path": "vix/os/Arch.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/os/CpuCount.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/os/CpuInfo.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 28,
+              "qualifiedName": "vix::os::CpuInfo",
+              "signature": "struct CpuInfo"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/os/CurrentPid.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/os/CurrentUser.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/os/HomeDir.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/os/Hostname.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/os/IsAdmin.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/os/KernelVersion.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/os/MemoryInfo.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 27,
+              "qualifiedName": "vix::os::MemoryInfo",
+              "signature": "struct MemoryInfo"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/os/Os.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/os/OsError.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "enum class",
+              "line": 31,
+              "qualifiedName": "vix::os::OsErrorCode",
+              "signature": "enum class OsErrorCode"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 47,
+              "qualifiedName": "vix::error::ErrorCategory",
+              "signature": "return vix::error::ErrorCategory(\"os\");"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/os/OsInfo.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 27,
+              "qualifiedName": "vix::os::OsInfo",
+              "signature": "struct OsInfo"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/os/OsResult.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/os/PageSize.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/os/Platform.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/os/Sleep.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 26,
+              "qualifiedName": "vix::os::sleep_for_ms",
+              "signature": "void sleep_for_ms(std::uint64_t milliseconds);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 31,
+              "qualifiedName": "vix::os::sleep_for_seconds",
+              "signature": "void sleep_for_seconds(std::uint64_t seconds);"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/os/TempDir.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/os/Uptime.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/os/UserInfo.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 27,
+              "qualifiedName": "vix::os::UserInfo",
+              "signature": "struct UserInfo"
+            }
+          ]
+        }
+      ],
+      "package": "vix/os",
+      "version": "0.2.1"
+    },
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "hash": "a7f56e1ed0323bb8",
+    "path": "vix.api.json"
+  },
+  "constraints": {
+    "minCppStandard": "c++20",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [
+      {
+        "id": "vix/error",
+        "version": "0.3.1"
+      },
+      {
+        "id": "vix/path",
+        "version": "0.3.1"
+      }
+    ],
+    "system": []
+  },
+  "description": "Cross-platform operating system information and utility APIs for Vix C++ projects.",
+  "displayName": "Vix OS",
+  "documentation": "https://github.com/vixcpp/os#readme",
+  "exports": {
+    "headers": [
+      "vix/os/Arch.hpp",
+      "vix/os/CpuCount.hpp",
+      "vix/os/CpuInfo.hpp",
+      "vix/os/CurrentPid.hpp",
+      "vix/os/CurrentUser.hpp",
+      "vix/os/HomeDir.hpp",
+      "vix/os/Hostname.hpp",
+      "vix/os/IsAdmin.hpp",
+      "vix/os/KernelVersion.hpp",
+      "vix/os/MemoryInfo.hpp",
+      "vix/os/Os.hpp",
+      "vix/os/OsError.hpp",
+      "vix/os/OsInfo.hpp",
+      "vix/os/OsResult.hpp",
+      "vix/os/PageSize.hpp",
+      "vix/os/Platform.hpp",
+      "vix/os/Sleep.hpp",
+      "vix/os/TempDir.hpp",
+      "vix/os/Uptime.hpp",
+      "vix/os/UserInfo.hpp"
+    ],
+    "modules": [
+      "vix::os"
+    ],
+    "namespaces": [
+      "vix::os"
+    ]
+  },
+  "homepage": "https://github.com/vixcpp/os",
+  "keywords": [
+    "vix",
+    "cpp",
+    "os",
+    "platform",
+    "system",
+    "portable"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "os",
+  "namespace": "vix",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/vixcpp/os"
+  },
+  "type": "library",
+  "versions": {
+    "0.2.1": {
+      "api": {
+        "format": "vix-api-1",
+        "hash": "a7f56e1ed0323bb8",
+        "path": "vix.api.json"
+      },
+      "commit": "41df9c51878c015ea17f486d835e3afee3b42bdc",
+      "manifest": {
+        "include": [
+          "include"
+        ],
+        "type": "library"
+      },
+      "tag": "v0.2.1"
+    }
+  }
+}
