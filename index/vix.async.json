@@ -1,7 +1,941 @@
 {
   "api": {
+    "document": {
+      "commit": "e2d6ba64b76d2f2fb33de2e0d16b38a0e0d52f73",
+      "format": "vix-api-1",
+      "headers": [
+        {
+          "includeRoot": "include",
+          "path": "vix/async/async.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/async/core/cancel.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 35,
+              "qualifiedName": "vix::async::core::cancel_state",
+              "signature": "class cancel_state"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 74,
+              "qualifiedName": "vix::async::core::cancel_token",
+              "signature": "class cancel_token"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 124,
+              "qualifiedName": "vix::async::core::cancel_source",
+              "signature": "class cancel_source"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 180,
+              "qualifiedName": "vix::async::core::make_error_code",
+              "signature": "return make_error_code(errc::canceled);"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/async/core/error.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "enum class",
+              "line": 37,
+              "qualifiedName": "vix::async::core::errc",
+              "signature": "enum class errc : std::uint8_t"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 110,
+              "qualifiedName": "vix::async::core::error_category",
+              "signature": "class error_category final : public std::error_category"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 191,
+              "qualifiedName": "std::is_error_code_enum",
+              "signature": "struct is_error_code_enum<vix::async::core::errc> : true_type"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/async/core/io_context.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 30,
+              "qualifiedName": "vix::async::net::detail::asio_net_service",
+              "signature": "class asio_net_service;"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 35,
+              "qualifiedName": "vix::async::core::thread_pool",
+              "signature": "class thread_pool;"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 36,
+              "qualifiedName": "vix::async::core::timer",
+              "signature": "class timer;"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 37,
+              "qualifiedName": "vix::async::core::signal_set",
+              "signature": "class signal_set;"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 64,
+              "qualifiedName": "vix::async::core::io_context",
+              "signature": "class io_context"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 219,
+              "qualifiedName": "vix::async::core::shutdown",
+              "signature": "void shutdown() noexcept;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 241,
+              "qualifiedName": "std::runtime_error",
+              "signature": "throw std::runtime_error(\"io_context is shut down\");"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/async/core/scheduler.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 50,
+              "qualifiedName": "vix::async::core::scheduler",
+              "signature": "class scheduler"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 81,
+              "qualifiedName": "vix::async::core::lock",
+              "signature": "std::lock_guard<std::mutex> lock(m_);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 104,
+              "qualifiedName": "vix::async::core::lock",
+              "signature": "std::lock_guard<std::mutex> lock(m_);"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 132,
+              "qualifiedName": "vix::async::core::schedule_awaitable",
+              "signature": "struct schedule_awaitable"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 144,
+              "qualifiedName": "vix::async::core::await_ready",
+              "signature": "bool await_ready() const noexcept { return false; }"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 171,
+              "qualifiedName": "vix::async::core::await_resume",
+              "signature": "void await_resume() const noexcept {}"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 201,
+              "qualifiedName": "vix::async::core::lock",
+              "signature": "std::unique_lock<std::mutex> lock(m_);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 289,
+              "qualifiedName": "vix::async::core::lock",
+              "signature": "std::lock_guard<std::mutex> lock(m_);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 300,
+              "qualifiedName": "vix::async::core::lock",
+              "signature": "std::lock_guard<std::mutex> lock(m_);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 311,
+              "qualifiedName": "vix::async::core::lock",
+              "signature": "std::lock_guard<std::mutex> lock(m_);"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/async/core/signal.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 35,
+              "qualifiedName": "vix::async::core::io_context",
+              "signature": "class io_context;"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 53,
+              "qualifiedName": "vix::async::core::signal_set",
+              "signature": "class signal_set"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 61,
+              "qualifiedName": "vix::async::core::signal_set",
+              "signature": "explicit signal_set(io_context &ctx);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 87,
+              "qualifiedName": "vix::async::core::add",
+              "signature": "void add(int sig);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 94,
+              "qualifiedName": "vix::async::core::remove",
+              "signature": "void remove(int sig);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 116,
+              "qualifiedName": "vix::async::core::on_signal",
+              "signature": "void on_signal(std::function<void(int)> fn);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 123,
+              "qualifiedName": "vix::async::core::stop",
+              "signature": "void stop() noexcept;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 129,
+              "qualifiedName": "vix::async::core::start_if_needed",
+              "signature": "void start_if_needed();"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 137,
+              "qualifiedName": "vix::async::core::worker_loop",
+              "signature": "void worker_loop();"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 144,
+              "qualifiedName": "vix::async::core::ctx_post",
+              "signature": "void ctx_post(std::function<void()> fn);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 151,
+              "qualifiedName": "vix::async::core::ctx_post_handle",
+              "signature": "void ctx_post_handle(std::coroutine_handle<> h);"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/async/core/spawn.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 39,
+              "qualifiedName": "detail::detached_task",
+              "signature": "struct detached_task"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 50,
+              "qualifiedName": "detail::promise_type",
+              "signature": "struct promise_type"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 80,
+              "qualifiedName": "detail::final_awaiter",
+              "signature": "struct final_awaiter"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 105,
+              "qualifiedName": "detail::await_resume",
+              "signature": "void await_resume() noexcept {}"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 121,
+              "qualifiedName": "detail::return_void",
+              "signature": "void return_void() noexcept {}"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/async/core/task.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 45,
+              "qualifiedName": "vix::async::core::task",
+              "signature": "class task;"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 57,
+              "qualifiedName": "detail::promise_common",
+              "signature": "struct promise_common"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 92,
+              "qualifiedName": "detail::final_awaiter",
+              "signature": "struct final_awaiter"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 128,
+              "qualifiedName": "std::noop_coroutine",
+              "signature": "return std::noop_coroutine();"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 134,
+              "qualifiedName": "detail::await_resume",
+              "signature": "void await_resume() noexcept {}"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 162,
+              "qualifiedName": "detail::promise_value",
+              "signature": "struct promise_value : promise_common"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 173,
+              "qualifiedName": "detail::get_return_object",
+              "signature": "task<T> get_return_object() noexcept;"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 197,
+              "qualifiedName": "detail::promise_value",
+              "signature": "struct promise_value<void> : promise_common"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 204,
+              "qualifiedName": "detail::get_return_object",
+              "signature": "task<void> get_return_object() noexcept;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 209,
+              "qualifiedName": "detail::return_void",
+              "signature": "void return_void() noexcept {}"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 224,
+              "qualifiedName": "detail::task_awaiter",
+              "signature": "struct task_awaiter"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 273,
+              "qualifiedName": "std::move",
+              "signature": "return std::move(*p.value);"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 289,
+              "qualifiedName": "detail::task",
+              "signature": "class task"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 312,
+              "qualifiedName": "detail::task",
+              "signature": "explicit task(handle_type h) noexcept : h_(h) {}"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 376,
+              "qualifiedName": "detail::valid",
+              "signature": "return valid();"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 462,
+              "qualifiedName": "detail::task",
+              "signature": "class task<void>"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 485,
+              "qualifiedName": "detail::task",
+              "signature": "explicit task(handle_type h) noexcept : h_(h) {}"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 547,
+              "qualifiedName": "detail::valid",
+              "signature": "return valid();"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/async/core/thread_pool.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 40,
+              "qualifiedName": "vix::async::core::io_context",
+              "signature": "class io_context;"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 53,
+              "qualifiedName": "detail::result_store",
+              "signature": "struct result_store"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 75,
+              "qualifiedName": "std::move",
+              "signature": "return std::move(*value);"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 85,
+              "qualifiedName": "detail::result_store",
+              "signature": "struct result_store<void>"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 90,
+              "qualifiedName": "detail::set",
+              "signature": "void set() noexcept {}"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 109,
+              "qualifiedName": "detail::thread_pool",
+              "signature": "class thread_pool"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 140,
+              "qualifiedName": "detail::submit",
+              "signature": "void submit(std::function<void()> fn);"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 162,
+              "qualifiedName": "detail::awaitable",
+              "signature": "struct awaitable"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 203,
+              "qualifiedName": "std::system_error",
+              "signature": "throw std::system_error(cancelled_ec());"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 263,
+              "qualifiedName": "detail::stop",
+              "signature": "void stop() noexcept;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 271,
+              "qualifiedName": "detail::shutdown",
+              "signature": "void shutdown() noexcept;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 290,
+              "qualifiedName": "detail::worker_loop",
+              "signature": "void worker_loop();"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 297,
+              "qualifiedName": "detail::enqueue",
+              "signature": "void enqueue(std::function<void()> fn);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 304,
+              "qualifiedName": "detail::ctx_post",
+              "signature": "void ctx_post(std::coroutine_handle<> h);"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/async/core/timer.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 36,
+              "qualifiedName": "vix::async::core::io_context",
+              "signature": "class io_context;"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 53,
+              "qualifiedName": "vix::async::core::timer",
+              "signature": "class timer"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 76,
+              "qualifiedName": "vix::async::core::timer",
+              "signature": "explicit timer(io_context &ctx);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 129,
+              "qualifiedName": "vix::async::core::stop",
+              "signature": "void stop() noexcept;"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 135,
+              "qualifiedName": "vix::async::core::job",
+              "signature": "struct job"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 151,
+              "qualifiedName": "vix::async::core::job_impl",
+              "signature": "struct job_impl final : job"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 198,
+              "qualifiedName": "vix::async::core::schedule",
+              "signature": "void schedule(time_point tp, std::unique_ptr<job> j, cancel_token ct);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 203,
+              "qualifiedName": "vix::async::core::timer_loop",
+              "signature": "void timer_loop();"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 212,
+              "qualifiedName": "vix::async::core::ctx_post",
+              "signature": "void ctx_post(std::function<void()> fn);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 221,
+              "qualifiedName": "vix::async::core::ctx_post_handle",
+              "signature": "void ctx_post_handle(std::coroutine_handle<> h);"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 247,
+              "qualifiedName": "vix::async::core::entry",
+              "signature": "struct entry"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 273,
+              "qualifiedName": "vix::async::core::cmp",
+              "signature": "struct cmp"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/async/core/when.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 37,
+              "qualifiedName": "detail::forward_await",
+              "signature": "struct forward_await"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 74,
+              "qualifiedName": "detail::stored",
+              "signature": "struct stored"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 83,
+              "qualifiedName": "detail::stored",
+              "signature": "struct stored<void>"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 127,
+              "qualifiedName": "std::move",
+              "signature": "return std::move(*slot);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 156,
+              "qualifiedName": "detail::Out",
+              "signature": "return Out(materialize_one<Ts>(std::get<Is>(raw))...);"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 186,
+              "qualifiedName": "detail::when_all_state",
+              "signature": "struct when_all_state"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 256,
+              "qualifiedName": "detail::when_all_awaitable",
+              "signature": "struct when_all_awaitable"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 337,
+              "qualifiedName": "detail::when_any_state",
+              "signature": "struct when_any_state"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 411,
+              "qualifiedName": "detail::when_any_awaitable",
+              "signature": "struct when_any_awaitable"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/async/detail/asserts.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/async/detail/config.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/async/detail/log.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "enum class",
+              "line": 34,
+              "qualifiedName": "vix::async::detail::log_level",
+              "signature": "enum class log_level : int"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 128,
+              "qualifiedName": "vix::async::detail::lock",
+              "signature": "std::lock_guard<std::mutex> lock(g_log_mutex);"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/async/detail/platform.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/async/detail/traits.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/async/net/asio_net_service.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 37,
+              "qualifiedName": "vix::async::core::io_context",
+              "signature": "class io_context;"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 55,
+              "qualifiedName": "vix::async::net::detail::asio_net_service",
+              "signature": "class asio_net_service"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 65,
+              "qualifiedName": "vix::async::net::detail::asio_net_service",
+              "signature": "explicit asio_net_service(vix::async::core::io_context &ctx);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 97,
+              "qualifiedName": "vix::async::net::detail::stop",
+              "signature": "void stop() noexcept;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 99,
+              "qualifiedName": "vix::async::net::detail::join",
+              "signature": "void join() noexcept;"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/async/net/dns.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 30,
+              "qualifiedName": "vix::async::core::io_context",
+              "signature": "class io_context;"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 42,
+              "qualifiedName": "vix::async::net::resolved_address",
+              "signature": "struct resolved_address"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 70,
+              "qualifiedName": "vix::async::net::dns_resolver",
+              "signature": "class dns_resolver"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 108,
+              "qualifiedName": "vix::async::net::make_dns_resolver",
+              "signature": "std::unique_ptr<dns_resolver> make_dns_resolver(core::io_context &ctx);"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/async/net/tcp.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 33,
+              "qualifiedName": "vix::async::core::io_context",
+              "signature": "class io_context;"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 44,
+              "qualifiedName": "vix::async::net::tcp_endpoint",
+              "signature": "struct tcp_endpoint"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 68,
+              "qualifiedName": "vix::async::net::tcp_stream",
+              "signature": "class tcp_stream"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 159,
+              "qualifiedName": "vix::async::net::tcp_listener",
+              "signature": "class tcp_listener"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 215,
+              "qualifiedName": "vix::async::net::make_tcp_stream",
+              "signature": "std::unique_ptr<tcp_stream> make_tcp_stream(core::io_context &ctx);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 223,
+              "qualifiedName": "vix::async::net::make_tcp_listener",
+              "signature": "std::unique_ptr<tcp_listener> make_tcp_listener(core::io_context &ctx);"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/async/net/udp.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 32,
+              "qualifiedName": "vix::async::core::io_context",
+              "signature": "class io_context;"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 43,
+              "qualifiedName": "vix::async::net::udp_endpoint",
+              "signature": "struct udp_endpoint"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 64,
+              "qualifiedName": "vix::async::net::udp_datagram",
+              "signature": "struct udp_datagram"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 89,
+              "qualifiedName": "vix::async::net::udp_socket",
+              "signature": "class udp_socket"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 163,
+              "qualifiedName": "vix::async::net::make_udp_socket",
+              "signature": "std::unique_ptr<udp_socket> make_udp_socket(core::io_context &ctx);"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/async/version.hpp",
+          "symbols": []
+        }
+      ],
+      "package": "vix/async",
+      "version": "1.2.1"
+    },
     "format": "vix-api-1",
     "generatedBy": "vix-cli",
+    "hash": "8cd10959591843ae",
     "path": "vix.api.json",
     "updatedAt": "2026-03-13T16:18:14Z"
   },
@@ -60,36 +994,51 @@
   "type": "header-only",
   "versions": {
     "0.1.0": {
-      "tag": "v0.1.0",
-      "commit": "fe823949166e1eb5ec03ab34d4533b4699677893"
+      "commit": "fe823949166e1eb5ec03ab34d4533b4699677893",
+      "tag": "v0.1.0"
     },
     "0.2.0": {
-      "tag": "v0.2.0",
-      "commit": "d487f24b422841d2731a5d04cf1a91e4c2d62b5f"
+      "commit": "d487f24b422841d2731a5d04cf1a91e4c2d62b5f",
+      "tag": "v0.2.0"
     },
     "0.3.0": {
-      "tag": "v0.3.0",
-      "commit": "fae533b66d950d75f08d196cfa5f0bf517197c7f"
+      "commit": "fae533b66d950d75f08d196cfa5f0bf517197c7f",
+      "tag": "v0.3.0"
     },
     "0.4.0": {
-      "tag": "v0.4.0",
-      "commit": "e2fc7147a45f3657177501c1fe913d331a3dda59"
+      "commit": "e2fc7147a45f3657177501c1fe913d331a3dda59",
+      "tag": "v0.4.0"
     },
     "1.0.0": {
-      "tag": "v1.0.0",
-      "commit": "67091e9e108a37ee775b8db5a1be410f649b80fc"
+      "commit": "67091e9e108a37ee775b8db5a1be410f649b80fc",
+      "tag": "v1.0.0"
     },
     "1.0.1": {
-      "tag": "v1.0.1",
-      "commit": "c8e53fb3bc4a8e924d1ef3b957c00f175c983157"
+      "commit": "c8e53fb3bc4a8e924d1ef3b957c00f175c983157",
+      "tag": "v1.0.1"
     },
     "1.1.0": {
-      "tag": "v1.1.0",
-      "commit": "67304dd8b234ede47bc725a64ba6831c863377c5"
+      "commit": "67304dd8b234ede47bc725a64ba6831c863377c5",
+      "tag": "v1.1.0"
     },
     "1.2.0": {
-      "tag": "v1.2.0",
-      "commit": "96e7314031e04f93b386cd668f7e5c84922c08cb"
+      "commit": "96e7314031e04f93b386cd668f7e5c84922c08cb",
+      "tag": "v1.2.0"
+    },
+    "1.2.1": {
+      "api": {
+        "format": "vix-api-1",
+        "hash": "8cd10959591843ae",
+        "path": "vix.api.json"
+      },
+      "commit": "e2d6ba64b76d2f2fb33de2e0d16b38a0e0d52f73",
+      "manifest": {
+        "include": [
+          "include"
+        ],
+        "type": "library"
+      },
+      "tag": "v1.2.1"
     }
   }
 }
