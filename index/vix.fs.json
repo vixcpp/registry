@@ -1,0 +1,331 @@
+{
+  "api": {
+    "document": {
+      "commit": "5e733dcf414ae017914d25b746f7c55a256e84bd",
+      "format": "vix-api-1",
+      "headers": [
+        {
+          "includeRoot": "include",
+          "path": "vix/fs/AppendFile.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/fs/Copy.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/fs/CreateDirectories.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/fs/CreateDirectory.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/fs/CurrentPath.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/fs/EnsureDirectory.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/fs/Exists.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/fs/Fs.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/fs/FsEntry.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "enum class",
+              "line": 30,
+              "qualifiedName": "vix::fs::FsEntryType",
+              "signature": "enum class FsEntryType"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 46,
+              "qualifiedName": "vix::fs::FsEntry",
+              "signature": "struct FsEntry"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/fs/FsError.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "enum class",
+              "line": 37,
+              "qualifiedName": "vix::fs::FsErrorCode",
+              "signature": "enum class FsErrorCode"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 65,
+              "qualifiedName": "vix::error::ErrorCategory",
+              "signature": "return vix::error::ErrorCategory(\"fs\");"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/fs/FsOptions.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "enum class",
+              "line": 25,
+              "qualifiedName": "vix::fs::WriteMode",
+              "signature": "enum class WriteMode"
+            },
+            {
+              "documentation": "",
+              "kind": "enum class",
+              "line": 35,
+              "qualifiedName": "vix::fs::CopyMode",
+              "signature": "enum class CopyMode"
+            },
+            {
+              "documentation": "",
+              "kind": "enum class",
+              "line": 45,
+              "qualifiedName": "vix::fs::DirectoryListMode",
+              "signature": "enum class DirectoryListMode"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 58,
+              "qualifiedName": "vix::fs::FsOptions",
+              "signature": "struct FsOptions"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/fs/FsPath.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/fs/FsPermissions.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "enum class",
+              "line": 30,
+              "qualifiedName": "vix::fs::FsPermission",
+              "signature": "enum class FsPermission : std::uint32_t"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/fs/FsResult.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/fs/IsDirectory.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/fs/IsFile.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/fs/ListDirectory.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/fs/Move.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/fs/ReadFile.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/fs/ReadText.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/fs/Remove.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/fs/RemoveAll.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/fs/Rename.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/fs/Size.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/fs/TempDirectory.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/fs/Touch.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/fs/WriteFile.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/fs/WriteText.hpp",
+          "symbols": []
+        }
+      ],
+      "package": "vix/fs",
+      "version": "0.2.2"
+    },
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "hash": "652afc0001b05019",
+    "path": "vix.api.json"
+  },
+  "constraints": {
+    "minCppStandard": "c++20",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [
+      {
+        "id": "vix/error",
+        "version": "0.3.1"
+      },
+      {
+        "id": "vix/path",
+        "version": "0.3.1"
+      }
+    ],
+    "system": []
+  },
+  "description": "Cross-platform filesystem utilities with explicit Vix error handling.",
+  "displayName": "Vix FS",
+  "documentation": "https://github.com/vixcpp/fs#readme",
+  "exports": {
+    "headers": [
+      "vix/fs/AppendFile.hpp",
+      "vix/fs/Copy.hpp",
+      "vix/fs/CreateDirectories.hpp",
+      "vix/fs/CreateDirectory.hpp",
+      "vix/fs/CurrentPath.hpp",
+      "vix/fs/EnsureDirectory.hpp",
+      "vix/fs/Exists.hpp",
+      "vix/fs/Fs.hpp",
+      "vix/fs/FsEntry.hpp",
+      "vix/fs/FsError.hpp",
+      "vix/fs/FsOptions.hpp",
+      "vix/fs/FsPath.hpp",
+      "vix/fs/FsPermissions.hpp",
+      "vix/fs/FsResult.hpp",
+      "vix/fs/IsDirectory.hpp",
+      "vix/fs/IsFile.hpp",
+      "vix/fs/ListDirectory.hpp",
+      "vix/fs/Move.hpp",
+      "vix/fs/ReadFile.hpp",
+      "vix/fs/ReadText.hpp",
+      "vix/fs/Remove.hpp",
+      "vix/fs/RemoveAll.hpp",
+      "vix/fs/Rename.hpp",
+      "vix/fs/Size.hpp",
+      "vix/fs/TempDirectory.hpp",
+      "vix/fs/Touch.hpp",
+      "vix/fs/WriteFile.hpp",
+      "vix/fs/WriteText.hpp"
+    ],
+    "modules": [
+      "vix::fs"
+    ],
+    "namespaces": [
+      "vix::fs"
+    ]
+  },
+  "homepage": "https://github.com/vixcpp/fs",
+  "keywords": [
+    "vix",
+    "cpp",
+    "filesystem",
+    "files",
+    "portable"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "fs",
+  "namespace": "vix",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/vixcpp/fs"
+  },
+  "type": "library",
+  "versions": {
+    "0.2.2": {
+      "api": {
+        "format": "vix-api-1",
+        "hash": "652afc0001b05019",
+        "path": "vix.api.json"
+      },
+      "commit": "5e733dcf414ae017914d25b746f7c55a256e84bd",
+      "manifest": {
+        "include": [
+          "include"
+        ],
+        "type": "library"
+      },
+      "tag": "v0.2.2"
+    }
+  }
+}
