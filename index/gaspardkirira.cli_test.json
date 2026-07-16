@@ -1,0 +1,102 @@
+{
+  "api": {
+    "document": {
+      "commit": "cb1e3f4340de3e87edf60fd863f94c76d1c1d903",
+      "format": "vix-api-1",
+      "headers": [
+        {
+          "includeRoot": "include",
+          "path": "cli_test/cli.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "cli_test/cli_test.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 7,
+              "qualifiedName": "cli_test::Node",
+              "signature": "struct Node"
+            }
+          ]
+        }
+      ],
+      "package": "gaspardkirira/cli_test",
+      "version": "0.1.0"
+    },
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "hash": "4780862970bf7cf5",
+    "path": "vix.api.json"
+  },
+  "constraints": {
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "A tiny header-only C++ library with a CLI.",
+  "displayName": "cli_test",
+  "documentation": "https://github.com/gaspardkirira/cli_test#readme",
+  "exports": {
+    "headers": [
+      "cli_test/cli.hpp",
+      "cli_test/cli_test.hpp"
+    ],
+    "modules": [],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/gaspardkirira/cli_test",
+  "keywords": [
+    "cpp",
+    "header-only",
+    "cli",
+    "vix"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "GaspardKirira",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "cli_test",
+  "namespace": "gaspardkirira",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/gaspardkirira/cli_test"
+  },
+  "type": "header-only",
+  "versions": {
+    "0.1.0": {
+      "api": {
+        "format": "vix-api-1",
+        "hash": "4780862970bf7cf5",
+        "path": "vix.api.json"
+      },
+      "commit": "cb1e3f4340de3e87edf60fd863f94c76d1c1d903",
+      "manifest": {
+        "include": [
+          "include"
+        ],
+        "type": "header-only"
+      },
+      "tag": "v0.1.0"
+    }
+  }
+}
