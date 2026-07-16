@@ -994,51 +994,40 @@
   "type": "header-only",
   "versions": {
     "0.1.0": {
-      "commit": "fe823949166e1eb5ec03ab34d4533b4699677893",
-      "tag": "v0.1.0"
+      "tag": "v0.1.0",
+      "commit": "fe823949166e1eb5ec03ab34d4533b4699677893"
     },
     "0.2.0": {
-      "commit": "d487f24b422841d2731a5d04cf1a91e4c2d62b5f",
-      "tag": "v0.2.0"
+      "tag": "v0.2.0",
+      "commit": "d487f24b422841d2731a5d04cf1a91e4c2d62b5f"
     },
     "0.3.0": {
-      "commit": "fae533b66d950d75f08d196cfa5f0bf517197c7f",
-      "tag": "v0.3.0"
+      "tag": "v0.3.0",
+      "commit": "fae533b66d950d75f08d196cfa5f0bf517197c7f"
     },
     "0.4.0": {
-      "commit": "e2fc7147a45f3657177501c1fe913d331a3dda59",
-      "tag": "v0.4.0"
+      "tag": "v0.4.0",
+      "commit": "e2fc7147a45f3657177501c1fe913d331a3dda59"
     },
     "1.0.0": {
-      "commit": "67091e9e108a37ee775b8db5a1be410f649b80fc",
-      "tag": "v1.0.0"
+      "tag": "v1.0.0",
+      "commit": "67091e9e108a37ee775b8db5a1be410f649b80fc"
     },
     "1.0.1": {
-      "commit": "c8e53fb3bc4a8e924d1ef3b957c00f175c983157",
-      "tag": "v1.0.1"
+      "tag": "v1.0.1",
+      "commit": "c8e53fb3bc4a8e924d1ef3b957c00f175c983157"
     },
     "1.1.0": {
-      "commit": "67304dd8b234ede47bc725a64ba6831c863377c5",
-      "tag": "v1.1.0"
+      "tag": "v1.1.0",
+      "commit": "67304dd8b234ede47bc725a64ba6831c863377c5"
     },
     "1.2.0": {
-      "commit": "96e7314031e04f93b386cd668f7e5c84922c08cb",
-      "tag": "v1.2.0"
+      "tag": "v1.2.0",
+      "commit": "96e7314031e04f93b386cd668f7e5c84922c08cb"
     },
     "1.2.1": {
-      "api": {
-        "format": "vix-api-1",
-        "hash": "8cd10959591843ae",
-        "path": "vix.api.json"
-      },
-      "commit": "e2d6ba64b76d2f2fb33de2e0d16b38a0e0d52f73",
-      "manifest": {
-        "include": [
-          "include"
-        ],
-        "type": "library"
-      },
-      "tag": "v1.2.1"
+      "tag": "v1.2.1",
+      "commit": "e2d6ba64b76d2f2fb33de2e0d16b38a0e0d52f73"
     }
   }
 }

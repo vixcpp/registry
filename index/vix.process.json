@@ -284,20 +284,29 @@
   },
   "type": "library",
   "versions": {
+    "0.1.0": {
+      "tag": "v0.1.0",
+      "commit": "3f6c90153b2a1ef4ec368adaac4ecd22472296f9"
+    },
+    "0.2.0": {
+      "tag": "v0.2.0",
+      "commit": "45cb78b3987d4649a065078db4c77c1396dfe51c"
+    },
+    "0.3.0": {
+      "tag": "v0.3.0",
+      "commit": "286174d5760b002067afef3b27d2dfda7d721717"
+    },
+    "0.3.1": {
+      "tag": "v0.3.1",
+      "commit": "1f0935c62d8ec6b6f8499d4dbe41c426f802f551"
+    },
+    "0.4.0": {
+      "tag": "v0.4.0",
+      "commit": "ceec133cba68929df1266d4ae46912d8edd3a1df"
+    },
     "0.4.1": {
-      "api": {
-        "format": "vix-api-1",
-        "hash": "c3ccf3a3dcd3398d",
-        "path": "vix.api.json"
-      },
-      "commit": "ba4a16a4dc3ec7f30f64dae18d250a00272149d4",
-      "manifest": {
-        "include": [
-          "include"
-        ],
-        "type": "library"
-      },
-      "tag": "v0.4.1"
+      "tag": "v0.4.1",
+      "commit": "ba4a16a4dc3ec7f30f64dae18d250a00272149d4"
     }
   }
 }
