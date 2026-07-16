@@ -1,0 +1,302 @@
+{
+  "api": {
+    "document": {
+      "commit": "b533fb066e9ac755dfff4a4f589c979e9bc50b4f",
+      "format": "vix-api-1",
+      "headers": [
+        {
+          "includeRoot": "include",
+          "path": "vix/tests/Assert.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 29,
+              "qualifiedName": "vix::tests::AssertionError",
+              "signature": "class AssertionError : public std::runtime_error"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 44,
+              "qualifiedName": "vix::tests::Assert",
+              "signature": "class Assert"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 102,
+              "qualifiedName": "vix::tests::AssertionError",
+              "signature": "throw AssertionError(message);"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/tests/Colors.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 30,
+              "qualifiedName": "vix::tests::Colors",
+              "signature": "class Colors"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 54,
+              "qualifiedName": "vix::tests::wrap",
+              "signature": "return wrap(\"\\033[32m\", text);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 62,
+              "qualifiedName": "vix::tests::wrap",
+              "signature": "return wrap(\"\\033[31m\", text);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 70,
+              "qualifiedName": "vix::tests::wrap",
+              "signature": "return wrap(\"\\033[33m\", text);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 78,
+              "qualifiedName": "vix::tests::wrap",
+              "signature": "return wrap(\"\\033[36m\", text);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 86,
+              "qualifiedName": "vix::tests::wrap",
+              "signature": "return wrap(\"\\033[1m\", text);"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/tests/Summary.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 31,
+              "qualifiedName": "vix::tests::Summary",
+              "signature": "struct Summary"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/tests/TestCase.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 31,
+              "qualifiedName": "vix::tests::TestCase",
+              "signature": "class TestCase"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/tests/TestRegistry.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 35,
+              "qualifiedName": "vix::tests::TestRegistry",
+              "signature": "class TestRegistry"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 52,
+              "qualifiedName": "vix::tests::lock",
+              "signature": "std::lock_guard<std::mutex> lock(mutex_);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 61,
+              "qualifiedName": "vix::tests::lock",
+              "signature": "std::lock_guard<std::mutex> lock(mutex_);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 86,
+              "qualifiedName": "vix::tests::lock",
+              "signature": "std::lock_guard<std::mutex> lock(mutex_);"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/tests/TestRunner.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 27,
+              "qualifiedName": "vix::tests::RunResult",
+              "signature": "struct RunResult"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 44,
+              "qualifiedName": "vix::tests::TestRunner",
+              "signature": "class TestRunner"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 51,
+              "qualifiedName": "vix::tests::run_all",
+              "signature": "static RunResult run_all();"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 57,
+              "qualifiedName": "vix::tests::run_all_and_exit",
+              "signature": "static int run_all_and_exit();"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/tests/TestSuite.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 33,
+              "qualifiedName": "vix::tests::TestSuite",
+              "signature": "class TestSuite"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/tests/Timer.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 29,
+              "qualifiedName": "vix::tests::Timer",
+              "signature": "class Timer"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/tests/Version.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/tests/tests.hpp",
+          "symbols": []
+        }
+      ],
+      "package": "vix/tests",
+      "version": "0.1.1"
+    },
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "hash": "5bae16ba9695a97e",
+    "path": "vix.api.json"
+  },
+  "constraints": {
+    "minCppStandard": "c++20",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Dependency-light native C++ testing utilities for Vix modules and standalone projects.",
+  "displayName": "Vix Tests",
+  "documentation": "https://github.com/vixcpp/tests#readme",
+  "exports": {
+    "headers": [
+      "vix/tests/Assert.hpp",
+      "vix/tests/Colors.hpp",
+      "vix/tests/Summary.hpp",
+      "vix/tests/TestCase.hpp",
+      "vix/tests/TestRegistry.hpp",
+      "vix/tests/TestRunner.hpp",
+      "vix/tests/TestSuite.hpp",
+      "vix/tests/Timer.hpp",
+      "vix/tests/Version.hpp",
+      "vix/tests/tests.hpp"
+    ],
+    "modules": [
+      "vix::tests"
+    ],
+    "namespaces": [
+      "vix::tests"
+    ]
+  },
+  "homepage": "https://github.com/vixcpp/tests",
+  "keywords": [
+    "vix",
+    "cpp",
+    "tests",
+    "testing",
+    "assertions"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "tests",
+  "namespace": "vix",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/vixcpp/tests"
+  },
+  "type": "library",
+  "versions": {
+    "0.1.1": {
+      "api": {
+        "format": "vix-api-1",
+        "hash": "5bae16ba9695a97e",
+        "path": "vix.api.json"
+      },
+      "commit": "b533fb066e9ac755dfff4a4f589c979e9bc50b4f",
+      "manifest": {
+        "include": [
+          "include"
+        ],
+        "type": "library"
+      },
+      "tag": "v0.1.1"
+    }
+  }
+}
