@@ -1,0 +1,254 @@
+{
+  "api": {
+    "document": {
+      "commit": "a0ed7f489ea1ff0c30d22437fd48905544cd2c02",
+      "format": "vix-api-1",
+      "headers": [
+        {
+          "includeRoot": "include",
+          "path": "vix/error/Error.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 56,
+              "qualifiedName": "vix::error::Error",
+              "signature": "class Error"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 186,
+              "qualifiedName": "vix::error::has_error",
+              "signature": "return has_error();"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/error/ErrorCategory.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 43,
+              "qualifiedName": "vix::error::ErrorCategory",
+              "signature": "class ErrorCategory"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 89,
+              "qualifiedName": "vix::error::ErrorCategory",
+              "signature": "return ErrorCategory(\"generic\");"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 97,
+              "qualifiedName": "vix::error::ErrorCategory",
+              "signature": "return ErrorCategory(\"system\");"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 105,
+              "qualifiedName": "vix::error::ErrorCategory",
+              "signature": "return ErrorCategory(\"io\");"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 113,
+              "qualifiedName": "vix::error::ErrorCategory",
+              "signature": "return ErrorCategory(\"network\");"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 121,
+              "qualifiedName": "vix::error::ErrorCategory",
+              "signature": "return ErrorCategory(\"validation\");"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 129,
+              "qualifiedName": "vix::error::ErrorCategory",
+              "signature": "return ErrorCategory(\"config\");"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 137,
+              "qualifiedName": "vix::error::ErrorCategory",
+              "signature": "return ErrorCategory(\"security\");"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 145,
+              "qualifiedName": "vix::error::ErrorCategory",
+              "signature": "return ErrorCategory(\"internal\");"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/error/ErrorCode.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "enum class",
+              "line": 46,
+              "qualifiedName": "vix::error::ErrorCode",
+              "signature": "enum class ErrorCode : std::uint32_t"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/error/Exception.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 51,
+              "qualifiedName": "vix::error::Exception",
+              "signature": "class Exception : public std::exception"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/error/Result.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 73,
+              "qualifiedName": "vix::error::Result",
+              "signature": "class Result"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 166,
+              "qualifiedName": "vix::error::ok",
+              "signature": "return ok();"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 289,
+              "qualifiedName": "vix::error::fn",
+              "signature": "return fn(std::get<T>(storage_));"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 292,
+              "qualifiedName": "vix::error::ReturnType",
+              "signature": "return ReturnType(std::get<Error>(storage_));"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 337,
+              "qualifiedName": "std::move",
+              "signature": "return std::move(error);"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "vix/error/all.hpp",
+          "symbols": []
+        }
+      ],
+      "package": "vix/error",
+      "version": "0.3.1"
+    },
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "hash": "020530983d9a3f2c",
+    "path": "vix.api.json"
+  },
+  "constraints": {
+    "minCppStandard": "c++20",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Unified explicit error handling primitives for Vix C++ projects.",
+  "displayName": "Vix Error",
+  "documentation": "https://github.com/vixcpp/error#readme",
+  "exports": {
+    "headers": [
+      "vix/error/Error.hpp",
+      "vix/error/ErrorCategory.hpp",
+      "vix/error/ErrorCode.hpp",
+      "vix/error/Exception.hpp",
+      "vix/error/Result.hpp",
+      "vix/error/all.hpp"
+    ],
+    "modules": [
+      "vix::error"
+    ],
+    "namespaces": [
+      "vix"
+    ]
+  },
+  "homepage": "https://github.com/vixcpp/error",
+  "keywords": [
+    "vix",
+    "cpp",
+    "error",
+    "result",
+    "diagnostics"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "error",
+  "namespace": "vix",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/vixcpp/error"
+  },
+  "type": "library",
+  "versions": {
+    "0.3.1": {
+      "api": {
+        "format": "vix-api-1",
+        "hash": "020530983d9a3f2c",
+        "path": "vix.api.json"
+      },
+      "commit": "a0ed7f489ea1ff0c30d22437fd48905544cd2c02",
+      "manifest": {
+        "include": [
+          "include"
+        ],
+        "type": "library"
+      },
+      "tag": "v0.3.1"
+    }
+  }
+}
