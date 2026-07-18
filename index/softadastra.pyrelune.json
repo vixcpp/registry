@@ -1,0 +1,334 @@
+{
+  "api": {
+    "document": {
+      "commit": "54aef91d9430d85416e7d352b481a79542a17931",
+      "format": "vix-api-1",
+      "headers": [
+        {
+          "includeRoot": "include",
+          "path": "pyrelune/error.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "enum class",
+              "line": 25,
+              "qualifiedName": "pyrelune::ErrorCode",
+              "signature": "enum class ErrorCode"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 78,
+              "qualifiedName": "pyrelune::Error",
+              "signature": "class Error"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "pyrelune/kernel.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 30,
+              "qualifiedName": "pyrelune::KernelOptions",
+              "signature": "struct KernelOptions"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 52,
+              "qualifiedName": "pyrelune::Kernel",
+              "signature": "class Kernel"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 60,
+              "qualifiedName": "pyrelune::Kernel",
+              "signature": "explicit Kernel(KernelOptions options);"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "pyrelune/protocol.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "pyrelune/pyrelune.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "pyrelune/python_process.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 28,
+              "qualifiedName": "pyrelune::ProcessResult",
+              "signature": "struct ProcessResult"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 56,
+              "qualifiedName": "pyrelune::PythonProcessOptions",
+              "signature": "struct PythonProcessOptions"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "pyrelune/request.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 23,
+              "qualifiedName": "pyrelune::Request",
+              "signature": "struct Request"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "pyrelune/response.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 24,
+              "qualifiedName": "pyrelune::Output",
+              "signature": "struct Output"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 40,
+              "qualifiedName": "pyrelune::Diagnostic",
+              "signature": "struct Diagnostic"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 71,
+              "qualifiedName": "pyrelune::Response",
+              "signature": "struct Response"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "pyrelune/result.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 31,
+              "qualifiedName": "pyrelune::Result",
+              "signature": "class Result"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 39,
+              "qualifiedName": "pyrelune::Result",
+              "signature": "return Result(std::move(value));"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 47,
+              "qualifiedName": "pyrelune::Result",
+              "signature": "return Result(std::move(error));"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 71,
+              "qualifiedName": "pyrelune::has_value",
+              "signature": "return has_value();"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 119,
+              "qualifiedName": "std::move",
+              "signature": "return std::move(std::get<T>(storage_));"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 172,
+              "qualifiedName": "pyrelune::Result",
+              "signature": "class Result<void>"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 180,
+              "qualifiedName": "pyrelune::Result",
+              "signature": "return Result(std::nullopt);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 188,
+              "qualifiedName": "pyrelune::Result",
+              "signature": "return Result(std::move(error));"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 212,
+              "qualifiedName": "pyrelune::has_value",
+              "signature": "return has_value();"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "pyrelune/version.hpp",
+          "symbols": []
+        }
+      ],
+      "package": "softadastra/pyrelune",
+      "version": "0.1.0"
+    },
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "hash": "bcb04337b92206fb",
+    "path": "vix.api.json"
+  },
+  "constraints": {
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "A Python execution kernel for interactive notebooks in Vix Note",
+  "displayName": "pyrelune",
+  "documentation": "https://github.com/softadastra/pyrelune#readme",
+  "exports": {
+    "headers": [
+      "pyrelune/error.hpp",
+      "pyrelune/kernel.hpp",
+      "pyrelune/protocol.hpp",
+      "pyrelune/pyrelune.hpp",
+      "pyrelune/python_process.hpp",
+      "pyrelune/request.hpp",
+      "pyrelune/response.hpp",
+      "pyrelune/result.hpp",
+      "pyrelune/version.hpp"
+    ],
+    "modules": [],
+    "namespaces": []
+  },
+  "extensions": {
+    "note": {
+      "api": "1",
+      "capabilities": [
+        "execute",
+        "stdout",
+        "stderr",
+        "mime-output",
+        "diagnostics"
+      ],
+      "cellTypes": [
+        {
+          "aliases": [
+            "py"
+          ],
+          "executable": true,
+          "id": "python",
+          "label": "Python",
+          "language": "python"
+        }
+      ]
+    }
+  },
+  "homepage": "https://github.com/softadastra/pyrelune",
+  "keywords": [
+    "vix",
+    "vix-note",
+    "python",
+    "kernel",
+    "notebook"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "softadastra",
+      "name": "Softadastra"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "pyrelune",
+  "namespace": "softadastra",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/softadastra/pyrelune"
+  },
+  "type": "executable",
+  "versions": {
+    "0.1.0": {
+      "api": {
+        "format": "vix-api-1",
+        "hash": "bcb04337b92206fb",
+        "path": "vix.api.json"
+      },
+      "commit": "54aef91d9430d85416e7d352b481a79542a17931",
+      "extensions": {
+        "note": {
+          "api": "1",
+          "capabilities": [
+            "execute",
+            "stdout",
+            "stderr",
+            "mime-output",
+            "diagnostics"
+          ],
+          "cellTypes": [
+            {
+              "aliases": [
+                "py"
+              ],
+              "executable": true,
+              "id": "python",
+              "label": "Python",
+              "language": "python"
+            }
+          ],
+          "runtime": {
+            "command": "pyrelune",
+            "mode": "oneshot",
+            "protocol": "vix-note-extension-1"
+          }
+        }
+      },
+      "manifest": {
+        "include": [
+          "include"
+        ],
+        "type": "executable"
+      },
+      "tag": "v0.1.0"
+    }
+  }
+}
