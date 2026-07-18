@@ -288,47 +288,8 @@
   "type": "executable",
   "versions": {
     "0.1.0": {
-      "api": {
-        "format": "vix-api-1",
-        "hash": "bcb04337b92206fb",
-        "path": "vix.api.json"
-      },
-      "commit": "54aef91d9430d85416e7d352b481a79542a17931",
-      "extensions": {
-        "note": {
-          "api": "1",
-          "capabilities": [
-            "execute",
-            "stdout",
-            "stderr",
-            "mime-output",
-            "diagnostics"
-          ],
-          "cellTypes": [
-            {
-              "aliases": [
-                "py"
-              ],
-              "executable": true,
-              "id": "python",
-              "label": "Python",
-              "language": "python"
-            }
-          ],
-          "runtime": {
-            "command": "pyrelune",
-            "mode": "oneshot",
-            "protocol": "vix-note-extension-1"
-          }
-        }
-      },
-      "manifest": {
-        "include": [
-          "include"
-        ],
-        "type": "executable"
-      },
-      "tag": "v0.1.0"
+      "tag": "v0.1.0",
+      "commit": "54aef91d9430d85416e7d352b481a79542a17931"
     }
   }
 }
