@@ -292,59 +292,16 @@
   "type": "executable",
   "versions": {
     "0.1.0": {
-      "commit": "54aef91d9430d85416e7d352b481a79542a17931",
-      "tag": "v0.1.0"
+      "tag": "v0.1.0",
+      "commit": "54aef91d9430d85416e7d352b481a79542a17931"
     },
     "0.1.1": {
-      "commit": "4258744733b86c92f64c4a368e4d6c3e83f9ed3a",
-      "tag": "v0.1.1"
+      "tag": "v0.1.1",
+      "commit": "4258744733b86c92f64c4a368e4d6c3e83f9ed3a"
     },
     "0.1.2": {
-      "api": {
-        "format": "vix-api-1",
-        "hash": "c6b9414ced3af943",
-        "path": "vix.api.json"
-      },
-      "commit": "1a871455c72bc931556b8d3038517f0a948c4163",
-      "extensions": {
-        "note": {
-          "api": "1",
-          "capabilities": [
-            "execute",
-            "stdout",
-            "stderr",
-            "mime-output",
-            "diagnostics"
-          ],
-          "cellTypes": [
-            {
-              "aliases": [
-                "py"
-              ],
-              "commentLine": "#",
-              "defaultSource": "# Write your explanation here.\n",
-              "executable": true,
-              "id": "python",
-              "label": "Python",
-              "language": "python",
-              "placeholder": "Write your explanation here."
-            }
-          ],
-          "icon": "assets/icon.svg",
-          "runtime": {
-            "command": "pyrelune",
-            "mode": "oneshot",
-            "protocol": "vix-note-extension-1"
-          }
-        }
-      },
-      "manifest": {
-        "include": [
-          "include"
-        ],
-        "type": "executable"
-      },
-      "tag": "v0.1.2"
+      "tag": "v0.1.2",
+      "commit": "1a871455c72bc931556b8d3038517f0a948c4163"
     }
   }
 }
