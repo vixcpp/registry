@@ -1,7 +1,7 @@
 {
   "api": {
     "document": {
-      "commit": "54aef91d9430d85416e7d352b481a79542a17931",
+      "commit": "4258744733b86c92f64c4a368e4d6c3e83f9ed3a",
       "format": "vix-api-1",
       "headers": [
         {
@@ -197,11 +197,11 @@
         }
       ],
       "package": "softadastra/pyrelune",
-      "version": "0.1.0"
+      "version": "0.1.1"
     },
     "format": "vix-api-1",
     "generatedBy": "vix-cli",
-    "hash": "bcb04337b92206fb",
+    "hash": "bd0774a324e97b55",
     "path": "vix.api.json"
   },
   "constraints": {
@@ -249,10 +249,13 @@
           "aliases": [
             "py"
           ],
+          "commentLine": "#",
+          "defaultSource": "# Write your explanation here.\n",
           "executable": true,
           "id": "python",
           "label": "Python",
-          "language": "python"
+          "language": "python",
+          "placeholder": "Write your explanation here."
         }
       ]
     }
@@ -288,8 +291,54 @@
   "type": "executable",
   "versions": {
     "0.1.0": {
-      "tag": "v0.1.0",
-      "commit": "54aef91d9430d85416e7d352b481a79542a17931"
+      "commit": "54aef91d9430d85416e7d352b481a79542a17931",
+      "tag": "v0.1.0"
+    },
+    "0.1.1": {
+      "api": {
+        "format": "vix-api-1",
+        "hash": "bd0774a324e97b55",
+        "path": "vix.api.json"
+      },
+      "commit": "4258744733b86c92f64c4a368e4d6c3e83f9ed3a",
+      "extensions": {
+        "note": {
+          "api": "1",
+          "capabilities": [
+            "execute",
+            "stdout",
+            "stderr",
+            "mime-output",
+            "diagnostics"
+          ],
+          "cellTypes": [
+            {
+              "aliases": [
+                "py"
+              ],
+              "commentLine": "#",
+              "defaultSource": "# Write your explanation here.\n",
+              "executable": true,
+              "id": "python",
+              "label": "Python",
+              "language": "python",
+              "placeholder": "Write your explanation here."
+            }
+          ],
+          "runtime": {
+            "command": "pyrelune",
+            "mode": "oneshot",
+            "protocol": "vix-note-extension-1"
+          }
+        }
+      },
+      "manifest": {
+        "include": [
+          "include"
+        ],
+        "type": "executable"
+      },
+      "tag": "v0.1.1"
     }
   }
 }
