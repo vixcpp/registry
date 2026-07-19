@@ -1,7 +1,7 @@
 {
   "api": {
     "document": {
-      "commit": "03acaed30f5eea27722237418a49288443da23af",
+      "commit": "c562456b0958f93072148ff48ba5a37e3528fca0",
       "format": "vix-api-1",
       "headers": [
         {
@@ -417,11 +417,11 @@
         }
       ],
       "package": "softadastra/ptrlens",
-      "version": "0.1.2"
+      "version": "0.1.3"
     },
     "format": "vix-api-1",
     "generatedBy": "vix-cli",
-    "hash": "a08912f7a2f80695",
+    "hash": "c3402712fcbc4056",
     "path": "vix.api.json"
   },
   "constraints": {
@@ -521,16 +521,68 @@
   "type": "executable",
   "versions": {
     "0.1.0": {
-      "tag": "v0.1.0",
-      "commit": "69e4891e16e39a312165a79b07fba7fc3d002115"
+      "commit": "69e4891e16e39a312165a79b07fba7fc3d002115",
+      "tag": "v0.1.0"
     },
     "0.1.1": {
-      "tag": "v0.1.1",
-      "commit": "2b7bea089d898e7670c84721c9e106711d6a901e"
+      "commit": "2b7bea089d898e7670c84721c9e106711d6a901e",
+      "tag": "v0.1.1"
     },
     "0.1.2": {
-      "tag": "v0.1.2",
-      "commit": "03acaed30f5eea27722237418a49288443da23af"
+      "commit": "03acaed30f5eea27722237418a49288443da23af",
+      "tag": "v0.1.2"
+    },
+    "0.1.3": {
+      "api": {
+        "format": "vix-api-1",
+        "hash": "c3402712fcbc4056",
+        "path": "vix.api.json"
+      },
+      "commit": "c562456b0958f93072148ff48ba5a37e3528fca0",
+      "extensions": {
+        "note": {
+          "api": "1",
+          "capabilities": [
+            "execute",
+            "stdout",
+            "stderr",
+            "mime-output",
+            "diagnostics",
+            "memory-trace"
+          ],
+          "cellTypes": [
+            {
+              "aliases": [
+                "cpp-memory",
+                "memory-trace"
+              ],
+              "commentLine": "//",
+              "defaultSource": "#include <iostream>\n\nint main()\n{\n  int value = 42;\n  int* pointer = &value;\n\n  std::cout << *pointer << '\\n';\n  return 0;\n}\n",
+              "executable": true,
+              "id": "ptrlens",
+              "label": "C++ Memory",
+              "language": "cpp",
+              "placeholder": "Write C++ code to visualize its memory."
+            }
+          ],
+          "permissions": [
+            "process.execute",
+            "project.read"
+          ],
+          "runtime": {
+            "command": "ptrlens",
+            "mode": "oneshot",
+            "protocol": "vix-note-extension-1"
+          }
+        }
+      },
+      "manifest": {
+        "include": [
+          "include"
+        ],
+        "type": "executable"
+      },
+      "tag": "v0.1.3"
     }
   }
 }
