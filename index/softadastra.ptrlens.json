@@ -521,56 +521,8 @@
   "type": "executable",
   "versions": {
     "0.1.0": {
-      "api": {
-        "format": "vix-api-1",
-        "hash": "e3a1d799ae32e278",
-        "path": "vix.api.json"
-      },
-      "commit": "69e4891e16e39a312165a79b07fba7fc3d002115",
-      "extensions": {
-        "note": {
-          "api": "1",
-          "capabilities": [
-            "execute",
-            "stdout",
-            "stderr",
-            "mime-output",
-            "diagnostics",
-            "memory-trace"
-          ],
-          "cellTypes": [
-            {
-              "aliases": [
-                "cpp-memory",
-                "memory-trace"
-              ],
-              "commentLine": "//",
-              "defaultSource": "#include <iostream>\n\nint main()\n{\n  int value = 42;\n  int* pointer = &value;\n\n  std::cout << *pointer << '\\n';\n  return 0;\n}\n",
-              "executable": true,
-              "id": "ptrlens",
-              "label": "C++ Memory",
-              "language": "cpp",
-              "placeholder": "Write C++ code to visualize its memory."
-            }
-          ],
-          "permissions": [
-            "process.execute",
-            "project.read"
-          ],
-          "runtime": {
-            "command": "ptrlens",
-            "mode": "oneshot",
-            "protocol": "vix-note-extension-1"
-          }
-        }
-      },
-      "manifest": {
-        "include": [
-          "include"
-        ],
-        "type": "executable"
-      },
-      "tag": "v0.1.0"
+      "tag": "v0.1.0",
+      "commit": "69e4891e16e39a312165a79b07fba7fc3d002115"
     }
   }
 }
