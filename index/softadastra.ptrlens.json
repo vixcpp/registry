@@ -1,7 +1,7 @@
 {
   "api": {
     "document": {
-      "commit": "69e4891e16e39a312165a79b07fba7fc3d002115",
+      "commit": "2b7bea089d898e7670c84721c9e106711d6a901e",
       "format": "vix-api-1",
       "headers": [
         {
@@ -45,28 +45,28 @@
             {
               "documentation": "",
               "kind": "struct",
-              "line": 29,
+              "line": 30,
               "qualifiedName": "ptrlens::DebuggerOptions",
               "signature": "struct DebuggerOptions"
             },
             {
               "documentation": "",
               "kind": "struct",
-              "line": 66,
+              "line": 57,
               "qualifiedName": "ptrlens::DebuggerResult",
               "signature": "struct DebuggerResult"
             },
             {
               "documentation": "",
               "kind": "class",
-              "line": 97,
+              "line": 88,
               "qualifiedName": "ptrlens::DebuggerProcess",
               "signature": "class DebuggerProcess"
             },
             {
               "documentation": "",
               "kind": "function",
-              "line": 110,
+              "line": 101,
               "qualifiedName": "ptrlens::DebuggerProcess",
               "signature": "explicit DebuggerProcess(DebuggerOptions options);"
             }
@@ -417,11 +417,11 @@
         }
       ],
       "package": "softadastra/ptrlens",
-      "version": "0.1.0"
+      "version": "0.1.1"
     },
     "format": "vix-api-1",
     "generatedBy": "vix-cli",
-    "hash": "e3a1d799ae32e278",
+    "hash": "a5360721dbdb61c8",
     "path": "vix.api.json"
   },
   "constraints": {
@@ -521,8 +521,60 @@
   "type": "executable",
   "versions": {
     "0.1.0": {
-      "tag": "v0.1.0",
-      "commit": "69e4891e16e39a312165a79b07fba7fc3d002115"
+      "commit": "69e4891e16e39a312165a79b07fba7fc3d002115",
+      "tag": "v0.1.0"
+    },
+    "0.1.1": {
+      "api": {
+        "format": "vix-api-1",
+        "hash": "a5360721dbdb61c8",
+        "path": "vix.api.json"
+      },
+      "commit": "2b7bea089d898e7670c84721c9e106711d6a901e",
+      "extensions": {
+        "note": {
+          "api": "1",
+          "capabilities": [
+            "execute",
+            "stdout",
+            "stderr",
+            "mime-output",
+            "diagnostics",
+            "memory-trace"
+          ],
+          "cellTypes": [
+            {
+              "aliases": [
+                "cpp-memory",
+                "memory-trace"
+              ],
+              "commentLine": "//",
+              "defaultSource": "#include <iostream>\n\nint main()\n{\n  int value = 42;\n  int* pointer = &value;\n\n  std::cout << *pointer << '\\n';\n  return 0;\n}\n",
+              "executable": true,
+              "id": "ptrlens",
+              "label": "C++ Memory",
+              "language": "cpp",
+              "placeholder": "Write C++ code to visualize its memory."
+            }
+          ],
+          "permissions": [
+            "process.execute",
+            "project.read"
+          ],
+          "runtime": {
+            "command": "ptrlens",
+            "mode": "oneshot",
+            "protocol": "vix-note-extension-1"
+          }
+        }
+      },
+      "manifest": {
+        "include": [
+          "include"
+        ],
+        "type": "executable"
+      },
+      "tag": "v0.1.1"
     }
   }
 }
