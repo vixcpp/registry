@@ -1,0 +1,576 @@
+{
+  "api": {
+    "document": {
+      "commit": "69e4891e16e39a312165a79b07fba7fc3d002115",
+      "format": "vix-api-1",
+      "headers": [
+        {
+          "includeRoot": "include",
+          "path": "ptrlens/compiler_process.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 29,
+              "qualifiedName": "ptrlens::CompilerOptions",
+              "signature": "struct CompilerOptions"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 61,
+              "qualifiedName": "ptrlens::CompilationResult",
+              "signature": "struct CompilationResult"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 92,
+              "qualifiedName": "ptrlens::CompilerProcess",
+              "signature": "class CompilerProcess"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 105,
+              "qualifiedName": "ptrlens::CompilerProcess",
+              "signature": "explicit CompilerProcess(CompilerOptions options);"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "ptrlens/debugger_process.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 29,
+              "qualifiedName": "ptrlens::DebuggerOptions",
+              "signature": "struct DebuggerOptions"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 66,
+              "qualifiedName": "ptrlens::DebuggerResult",
+              "signature": "struct DebuggerResult"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 97,
+              "qualifiedName": "ptrlens::DebuggerProcess",
+              "signature": "class DebuggerProcess"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 110,
+              "qualifiedName": "ptrlens::DebuggerProcess",
+              "signature": "explicit DebuggerProcess(DebuggerOptions options);"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "ptrlens/error.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "enum class",
+              "line": 25,
+              "qualifiedName": "ptrlens::ErrorCode",
+              "signature": "enum class ErrorCode"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 46,
+              "qualifiedName": "ptrlens::Error",
+              "signature": "class Error"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "ptrlens/kernel.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 28,
+              "qualifiedName": "ptrlens::KernelOptions",
+              "signature": "struct KernelOptions"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 59,
+              "qualifiedName": "ptrlens::Kernel",
+              "signature": "class Kernel"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 72,
+              "qualifiedName": "ptrlens::Kernel",
+              "signature": "explicit Kernel(KernelOptions options);"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "ptrlens/memory_model.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "enum class",
+              "line": 30,
+              "qualifiedName": "ptrlens::MemoryRegion",
+              "signature": "enum class MemoryRegion"
+            },
+            {
+              "documentation": "",
+              "kind": "enum class",
+              "line": 41,
+              "qualifiedName": "ptrlens::MemoryState",
+              "signature": "enum class MemoryState"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 51,
+              "qualifiedName": "ptrlens::MemoryObject",
+              "signature": "struct MemoryObject"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 112,
+              "qualifiedName": "ptrlens::MemoryLink",
+              "signature": "struct MemoryLink"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 143,
+              "qualifiedName": "ptrlens::MemoryFrame",
+              "signature": "struct MemoryFrame"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 169,
+              "qualifiedName": "ptrlens::MemorySnapshot",
+              "signature": "struct MemorySnapshot"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 220,
+              "qualifiedName": "ptrlens::MemoryModel",
+              "signature": "struct MemoryModel"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 258,
+              "qualifiedName": "ptrlens::MemoryModelBuilder",
+              "signature": "class MemoryModelBuilder"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "ptrlens/protocol.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "ptrlens/ptrlens.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "ptrlens/request.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 25,
+              "qualifiedName": "ptrlens::Request",
+              "signature": "struct Request"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "ptrlens/response.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 25,
+              "qualifiedName": "ptrlens::Output",
+              "signature": "struct Output"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 41,
+              "qualifiedName": "ptrlens::ResponseError",
+              "signature": "struct ResponseError"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 62,
+              "qualifiedName": "ptrlens::Response",
+              "signature": "struct Response"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "ptrlens/result.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 32,
+              "qualifiedName": "ptrlens::Result",
+              "signature": "class Result"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 44,
+              "qualifiedName": "ptrlens::Result",
+              "signature": "return Result(std::move(value));"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 56,
+              "qualifiedName": "ptrlens::Result",
+              "signature": "return Result(std::move(error));"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 86,
+              "qualifiedName": "ptrlens::has_value",
+              "signature": "return has_value();"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 100,
+              "qualifiedName": "std::logic_error",
+              "signature": "throw std::logic_error(\"PtrLens result does not contain a value.\");"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 117,
+              "qualifiedName": "std::logic_error",
+              "signature": "throw std::logic_error(\"PtrLens result does not contain a value.\");"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 134,
+              "qualifiedName": "std::logic_error",
+              "signature": "throw std::logic_error(\"PtrLens result does not contain a value.\");"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 137,
+              "qualifiedName": "std::move",
+              "signature": "return std::move(*value_);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 151,
+              "qualifiedName": "std::logic_error",
+              "signature": "throw std::logic_error(\"PtrLens result does not contain an error.\");"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 176,
+              "qualifiedName": "ptrlens::Result",
+              "signature": "class Result<void>"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 186,
+              "qualifiedName": "ptrlens::Result",
+              "signature": "return Result();"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 198,
+              "qualifiedName": "ptrlens::Result",
+              "signature": "return Result(std::move(error));"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 228,
+              "qualifiedName": "ptrlens::has_value",
+              "signature": "return has_value();"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 242,
+              "qualifiedName": "std::logic_error",
+              "signature": "throw std::logic_error(\"PtrLens result does not contain an error.\");"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "ptrlens/svg_renderer.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 28,
+              "qualifiedName": "ptrlens::SvgRendererOptions",
+              "signature": "struct SvgRendererOptions"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 79,
+              "qualifiedName": "ptrlens::SvgRenderer",
+              "signature": "class SvgRenderer"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 92,
+              "qualifiedName": "ptrlens::SvgRenderer",
+              "signature": "explicit SvgRenderer(SvgRendererOptions options);"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "ptrlens/trace.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 32,
+              "qualifiedName": "ptrlens::SourceLocation",
+              "signature": "struct SourceLocation"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 63,
+              "qualifiedName": "ptrlens::TraceVariable",
+              "signature": "struct TraceVariable"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 109,
+              "qualifiedName": "ptrlens::TraceFrame",
+              "signature": "struct TraceFrame"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 135,
+              "qualifiedName": "ptrlens::TraceStep",
+              "signature": "struct TraceStep"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 161,
+              "qualifiedName": "ptrlens::Trace",
+              "signature": "struct Trace"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 212,
+              "qualifiedName": "ptrlens::TraceParser",
+              "signature": "class TraceParser"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "ptrlens/version.hpp",
+          "symbols": []
+        }
+      ],
+      "package": "softadastra/ptrlens",
+      "version": "0.1.0"
+    },
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "hash": "e3a1d799ae32e278",
+    "path": "vix.api.json"
+  },
+  "constraints": {
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Visual C++ memory tracing extension for Vix Note.",
+  "displayName": "PtrLens",
+  "documentation": "https://github.com/softadastra/ptrlens#readme",
+  "exports": {
+    "headers": [
+      "ptrlens/compiler_process.hpp",
+      "ptrlens/debugger_process.hpp",
+      "ptrlens/error.hpp",
+      "ptrlens/kernel.hpp",
+      "ptrlens/memory_model.hpp",
+      "ptrlens/protocol.hpp",
+      "ptrlens/ptrlens.hpp",
+      "ptrlens/request.hpp",
+      "ptrlens/response.hpp",
+      "ptrlens/result.hpp",
+      "ptrlens/svg_renderer.hpp",
+      "ptrlens/trace.hpp",
+      "ptrlens/version.hpp"
+    ],
+    "modules": [],
+    "namespaces": []
+  },
+  "extensions": {
+    "note": {
+      "api": "1",
+      "capabilities": [
+        "execute",
+        "stdout",
+        "stderr",
+        "mime-output",
+        "diagnostics",
+        "memory-trace"
+      ],
+      "cellTypes": [
+        {
+          "aliases": [
+            "cpp-memory",
+            "memory-trace"
+          ],
+          "commentLine": "//",
+          "defaultSource": "#include <iostream>\n\nint main()\n{\n  int value = 42;\n  int* pointer = &value;\n\n  std::cout << *pointer << '\\n';\n  return 0;\n}\n",
+          "executable": true,
+          "id": "ptrlens",
+          "label": "C++ Memory",
+          "language": "cpp",
+          "placeholder": "Write C++ code to visualize its memory."
+        }
+      ]
+    }
+  },
+  "homepage": "https://github.com/softadastra/ptrlens",
+  "keywords": [
+    "cpp",
+    "c++",
+    "note",
+    "memory",
+    "pointer",
+    "stack",
+    "heap",
+    "trace",
+    "debugging",
+    "visualization"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "Softadastra"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "ptrlens",
+  "namespace": "softadastra",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/softadastra/ptrlens"
+  },
+  "type": "executable",
+  "versions": {
+    "0.1.0": {
+      "api": {
+        "format": "vix-api-1",
+        "hash": "e3a1d799ae32e278",
+        "path": "vix.api.json"
+      },
+      "commit": "69e4891e16e39a312165a79b07fba7fc3d002115",
+      "extensions": {
+        "note": {
+          "api": "1",
+          "capabilities": [
+            "execute",
+            "stdout",
+            "stderr",
+            "mime-output",
+            "diagnostics",
+            "memory-trace"
+          ],
+          "cellTypes": [
+            {
+              "aliases": [
+                "cpp-memory",
+                "memory-trace"
+              ],
+              "commentLine": "//",
+              "defaultSource": "#include <iostream>\n\nint main()\n{\n  int value = 42;\n  int* pointer = &value;\n\n  std::cout << *pointer << '\\n';\n  return 0;\n}\n",
+              "executable": true,
+              "id": "ptrlens",
+              "label": "C++ Memory",
+              "language": "cpp",
+              "placeholder": "Write C++ code to visualize its memory."
+            }
+          ],
+          "permissions": [
+            "process.execute",
+            "project.read"
+          ],
+          "runtime": {
+            "command": "ptrlens",
+            "mode": "oneshot",
+            "protocol": "vix-note-extension-1"
+          }
+        }
+      },
+      "manifest": {
+        "include": [
+          "include"
+        ],
+        "type": "executable"
+      },
+      "tag": "v0.1.0"
+    }
+  }
+}
