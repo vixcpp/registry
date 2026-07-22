@@ -788,46 +788,24 @@
   "type": "library",
   "versions": {
     "0.1.0": {
-      "commit": "a68bbcf931399964f78f1f41e63e82ac2a79d5bd",
-      "tag": "v0.1.0"
+      "tag": "v0.1.0",
+      "commit": "a68bbcf931399964f78f1f41e63e82ac2a79d5bd"
     },
     "0.1.1": {
-      "commit": "bb450ca131dd8dd5f4a02c31888c2b326d1c8aa8",
-      "tag": "v0.1.1"
+      "tag": "v0.1.1",
+      "commit": "bb450ca131dd8dd5f4a02c31888c2b326d1c8aa8"
     },
     "0.2.0": {
-      "commit": "0c90d5ce58b85671caf8ca7b3c15f61375bc416a",
-      "tag": "v0.2.0"
+      "tag": "v0.2.0",
+      "commit": "0c90d5ce58b85671caf8ca7b3c15f61375bc416a"
     },
     "0.3.0": {
-      "api": {
-        "format": "vix-api-1",
-        "hash": "86fa4395c76fe8c4",
-        "path": "vix.api.json"
-      },
-      "commit": "133d565bb167f7bc4270be530528cb17db78dc6a",
-      "manifest": {
-        "include": [
-          "include"
-        ],
-        "type": "library"
-      },
-      "tag": "v0.3.0"
+      "tag": "v0.3.0",
+      "commit": "133d565bb167f7bc4270be530528cb17db78dc6a"
     },
     "0.3.1": {
-      "api": {
-        "format": "vix-api-1",
-        "hash": "d95526f8af698eee",
-        "path": "vix.api.json"
-      },
-      "commit": "4c6f56b1b8567cb01718f9dd5339f57e77257c1b",
-      "manifest": {
-        "include": [
-          "include"
-        ],
-        "type": "library"
-      },
-      "tag": "v0.3.1"
+      "tag": "v0.3.1",
+      "commit": "4c6f56b1b8567cb01718f9dd5339f57e77257c1b"
     }
   }
 }
