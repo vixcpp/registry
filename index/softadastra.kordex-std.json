@@ -18,6 +18,8 @@
     "registry": [],
     "system": []
   },
+  "deprecated": true,
+  "deprecationMessage": "This package moved to kordexjs/std.",
   "description": "Standard native modules for Kordex, providing console, filesystem, path, environment, process, timer, crypto, and HTTP APIs for reliable local-first JavaScript applications.",
   "displayName": "kordex-std",
   "documentation": "https://github.com/softadastra/kordex-std#readme",
@@ -45,6 +47,7 @@
     }
   ],
   "manifestPath": "vix.json",
+  "movedTo": "kordexjs/std",
   "name": "kordex-std",
   "namespace": "softadastra",
   "quality": {
