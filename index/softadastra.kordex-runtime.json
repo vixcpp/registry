@@ -18,6 +18,8 @@
     "registry": [],
     "system": []
   },
+  "deprecated": true,
+  "deprecationMessage": "This package moved to kordexjs/runtime.",
   "description": "Native runtime engine for Kordex, providing runtime options, diagnostics, source loading, module resolution, timers, process integration, and the public Runtime facade.",
   "displayName": "kordex-runtime",
   "documentation": "https://github.com/softadastra/kordex-runtime#readme",
@@ -44,6 +46,7 @@
     }
   ],
   "manifestPath": "vix.json",
+  "movedTo": "kordexjs/runtime",
   "name": "kordex-runtime",
   "namespace": "softadastra",
   "quality": {
