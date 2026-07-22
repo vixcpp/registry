@@ -1,0 +1,818 @@
+{
+  "api": {
+    "document": {
+      "commit": "133d565bb167f7bc4270be530528cb17db78dc6a",
+      "format": "vix-api-1",
+      "headers": [
+        {
+          "includeRoot": "include",
+          "path": "kordex/bindings/BindingConfig.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 38,
+              "qualifiedName": "kordex::bindings::BindingConfig",
+              "signature": "struct BindingConfig"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "kordex/bindings/BindingOptions.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "enum class",
+              "line": 30,
+              "qualifiedName": "kordex::bindings::EngineBackend",
+              "signature": "enum class EngineBackend"
+            },
+            {
+              "documentation": "",
+              "kind": "enum class",
+              "line": 41,
+              "qualifiedName": "kordex::bindings::ModulePolicy",
+              "signature": "enum class ModulePolicy"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 55,
+              "qualifiedName": "kordex::bindings::BindingOptions",
+              "signature": "struct BindingOptions"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "kordex/bindings/BindingResult.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "enum class",
+              "line": 31,
+              "qualifiedName": "kordex::bindings::BindingExitStatus",
+              "signature": "enum class BindingExitStatus"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 51,
+              "qualifiedName": "kordex::bindings::BindingResult",
+              "signature": "struct BindingResult"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "kordex/bindings/Bindings.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "kordex/bindings/Engine.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "enum class",
+              "line": 44,
+              "qualifiedName": "kordex::bindings::EngineState",
+              "signature": "enum class EngineState"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 58,
+              "qualifiedName": "kordex::bindings::EngineInfo",
+              "signature": "struct EngineInfo"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 112,
+              "qualifiedName": "kordex::bindings::Engine",
+              "signature": "class Engine"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 123,
+              "qualifiedName": "kordex::bindings::Engine",
+              "signature": "explicit Engine(BindingConfig config);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 160,
+              "qualifiedName": "kordex::bindings::set_name",
+              "signature": "void set_name(std::string name);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 296,
+              "qualifiedName": "kordex::bindings::clear",
+              "signature": "void clear() noexcept;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 301,
+              "qualifiedName": "kordex::bindings::mark_state",
+              "signature": "void mark_state(EngineState state) noexcept;"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "kordex/bindings/EngineContext.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 44,
+              "qualifiedName": "kordex::bindings::EngineContextInfo",
+              "signature": "struct EngineContextInfo"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 82,
+              "qualifiedName": "kordex::bindings::EngineContext",
+              "signature": "class EngineContext"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 98,
+              "qualifiedName": "kordex::bindings::EngineContext",
+              "signature": "explicit EngineContext(BindingConfig config);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 140,
+              "qualifiedName": "kordex::bindings::set_id",
+              "signature": "void set_id(std::string id);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 145,
+              "qualifiedName": "kordex::bindings::set_name",
+              "signature": "void set_name(std::string name);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 311,
+              "qualifiedName": "kordex::bindings::clear",
+              "signature": "void clear() noexcept;"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "kordex/bindings/Error.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "enum class",
+              "line": 56,
+              "qualifiedName": "kordex::bindings::BindingErrorCode",
+              "signature": "enum class BindingErrorCode"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 84,
+              "qualifiedName": "kordex::bindings::ErrorCategory",
+              "signature": "return ErrorCategory(\"kordex.bindings\");"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "kordex/bindings/Function.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 44,
+              "qualifiedName": "kordex::bindings::FunctionInfo",
+              "signature": "struct FunctionInfo"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 91,
+              "qualifiedName": "kordex::bindings::Function",
+              "signature": "class Function"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "kordex/bindings/Module.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "enum class",
+              "line": 38,
+              "qualifiedName": "kordex::bindings::ModuleKind",
+              "signature": "enum class ModuleKind"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 50,
+              "qualifiedName": "kordex::bindings::ModuleInfo",
+              "signature": "struct ModuleInfo"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 106,
+              "qualifiedName": "kordex::bindings::Module",
+              "signature": "class Module"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 127,
+              "qualifiedName": "kordex::bindings::Module",
+              "signature": "explicit Module(ModuleInfo info);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 185,
+              "qualifiedName": "kordex::bindings::mark_loaded",
+              "signature": "void mark_loaded() noexcept;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 190,
+              "qualifiedName": "kordex::bindings::mark_unloaded",
+              "signature": "void mark_unloaded() noexcept;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 282,
+              "qualifiedName": "kordex::bindings::clear",
+              "signature": "void clear() noexcept;"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "kordex/bindings/ModuleLoader.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 39,
+              "qualifiedName": "kordex::bindings::ModuleLoaderOptions",
+              "signature": "struct ModuleLoaderOptions"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 56,
+              "qualifiedName": "kordex::bindings::ModuleLoaderReport",
+              "signature": "struct ModuleLoaderReport"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 70,
+              "qualifiedName": "kordex::bindings::ModuleLoaderResult",
+              "signature": "struct ModuleLoaderResult"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 84,
+              "qualifiedName": "kordex::bindings::ModuleLoader",
+              "signature": "class ModuleLoader"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 105,
+              "qualifiedName": "kordex::bindings::clear_cache",
+              "signature": "void clear_cache();"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 119,
+              "qualifiedName": "kordex::bindings::LoadedModule",
+              "signature": "struct LoadedModule"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "kordex/bindings/ModuleRegistry.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 36,
+              "qualifiedName": "kordex::bindings::ModuleRegistryOptions",
+              "signature": "struct ModuleRegistryOptions"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 67,
+              "qualifiedName": "kordex::bindings::ModuleRegistry",
+              "signature": "class ModuleRegistry"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 83,
+              "qualifiedName": "kordex::bindings::ModuleRegistry",
+              "signature": "explicit ModuleRegistry(ModuleRegistryOptions options);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 93,
+              "qualifiedName": "kordex::bindings::set_options",
+              "signature": "void set_options(ModuleRegistryOptions options);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 161,
+              "qualifiedName": "kordex::bindings::clear",
+              "signature": "void clear() noexcept;"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "kordex/bindings/NativeFunction.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 46,
+              "qualifiedName": "kordex::bindings::NativeFunctionInfo",
+              "signature": "struct NativeFunctionInfo"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 119,
+              "qualifiedName": "kordex::bindings::NativeFunction",
+              "signature": "class NativeFunction"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "kordex/bindings/NativeModule.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 37,
+              "qualifiedName": "kordex::bindings::NativeModuleInfo",
+              "signature": "struct NativeModuleInfo"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 97,
+              "qualifiedName": "kordex::bindings::NativeModule",
+              "signature": "class NativeModule"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 118,
+              "qualifiedName": "kordex::bindings::NativeModule",
+              "signature": "explicit NativeModule(NativeModuleInfo info);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 250,
+              "qualifiedName": "kordex::bindings::clear",
+              "signature": "void clear() noexcept;"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "kordex/bindings/Object.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 38,
+              "qualifiedName": "kordex::bindings::Object",
+              "signature": "class Object"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 54,
+              "qualifiedName": "kordex::bindings::Object",
+              "signature": "explicit Object(std::string name);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 74,
+              "qualifiedName": "kordex::bindings::set_name",
+              "signature": "void set_name(std::string name);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 109,
+              "qualifiedName": "kordex::bindings::clear",
+              "signature": "void clear() noexcept;"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "kordex/bindings/Result.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "kordex/bindings/RuntimeBridge.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 48,
+              "qualifiedName": "kordex::bindings::RuntimeBridgeOptions",
+              "signature": "struct RuntimeBridgeOptions"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 85,
+              "qualifiedName": "kordex::bindings::RuntimeBridgeInfo",
+              "signature": "struct RuntimeBridgeInfo"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 121,
+              "qualifiedName": "kordex::bindings::RuntimeBridge",
+              "signature": "class RuntimeBridge"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 132,
+              "qualifiedName": "kordex::bindings::RuntimeBridge",
+              "signature": "explicit RuntimeBridge(kordex::runtime::RuntimeOptions runtime_options);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 137,
+              "qualifiedName": "kordex::bindings::RuntimeBridge",
+              "signature": "explicit RuntimeBridge(kordex::runtime::Runtime &runtime);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 180,
+              "qualifiedName": "kordex::bindings::set_name",
+              "signature": "void set_name(std::string name);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 190,
+              "qualifiedName": "kordex::bindings::set_options",
+              "signature": "void set_options(RuntimeBridgeOptions options);"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "kordex/bindings/Script.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "enum class",
+              "line": 37,
+              "qualifiedName": "kordex::bindings::ScriptType",
+              "signature": "enum class ScriptType"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 49,
+              "qualifiedName": "kordex::bindings::ScriptInfo",
+              "signature": "struct ScriptInfo"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 104,
+              "qualifiedName": "kordex::bindings::Script",
+              "signature": "class Script"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 206,
+              "qualifiedName": "kordex::bindings::set_source",
+              "signature": "void set_source(std::string source);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 211,
+              "qualifiedName": "kordex::bindings::set_path",
+              "signature": "void set_path(std::string path);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 216,
+              "qualifiedName": "kordex::bindings::set_name",
+              "signature": "void set_name(std::string name);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 221,
+              "qualifiedName": "kordex::bindings::set_type",
+              "signature": "void set_type(ScriptType type) noexcept;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 226,
+              "qualifiedName": "kordex::bindings::mark_compiled",
+              "signature": "void mark_compiled() noexcept;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 231,
+              "qualifiedName": "kordex::bindings::mark_uncompiled",
+              "signature": "void mark_uncompiled() noexcept;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 236,
+              "qualifiedName": "kordex::bindings::mark_executed",
+              "signature": "void mark_executed() noexcept;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 241,
+              "qualifiedName": "kordex::bindings::mark_unexecuted",
+              "signature": "void mark_unexecuted() noexcept;"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "kordex/bindings/ScriptResult.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "enum class",
+              "line": 33,
+              "qualifiedName": "kordex::bindings::ScriptExitStatus",
+              "signature": "enum class ScriptExitStatus"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 52,
+              "qualifiedName": "kordex::bindings::ScriptResult",
+              "signature": "struct ScriptResult"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "kordex/bindings/TypeScriptLoader.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "enum class",
+              "line": 34,
+              "qualifiedName": "kordex::bindings::TypeScriptDiagnosticLevel",
+              "signature": "enum class TypeScriptDiagnosticLevel"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 45,
+              "qualifiedName": "kordex::bindings::TypeScriptDiagnostic",
+              "signature": "struct TypeScriptDiagnostic"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 65,
+              "qualifiedName": "kordex::bindings::TypeScriptLoaderOptions",
+              "signature": "struct TypeScriptLoaderOptions"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 92,
+              "qualifiedName": "kordex::bindings::TypeScriptLoadResult",
+              "signature": "struct TypeScriptLoadResult"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 111,
+              "qualifiedName": "kordex::bindings::TypeScriptLoader",
+              "signature": "class TypeScriptLoader"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "kordex/bindings/Value.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 39,
+              "qualifiedName": "kordex::bindings::Value",
+              "signature": "class Value"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "kordex/bindings/ValueType.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "enum class",
+              "line": 26,
+              "qualifiedName": "kordex::bindings::ValueType",
+              "signature": "enum class ValueType"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "kordex/bindings/Version.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "kordex/bindings/backend/EngineBackendDriver.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 36,
+              "qualifiedName": "kordex::bindings::EngineBackendDriver",
+              "signature": "class EngineBackendDriver"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "kordex/bindings/backend/NativeBackendDriver.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 32,
+              "qualifiedName": "kordex::bindings::NativeBackendDriver",
+              "signature": "class NativeBackendDriver final : public EngineBackendDriver"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "kordex/bindings/backend/QuickJsBackendDriver.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 31,
+              "qualifiedName": "kordex::bindings::QuickJsBackendDriver",
+              "signature": "class QuickJsBackendDriver final : public EngineBackendDriver"
+            }
+          ]
+        }
+      ],
+      "package": "kordexjs/bindings",
+      "version": "0.3.0"
+    },
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "hash": "86fa4395c76fe8c4",
+    "path": "vix.api.json",
+    "updatedAt": "2026-05-11T19:13:29Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Native bindings layer for Kordex, bridging the Kordex runtime with script execution, engine contexts, values, modules, scripts, and runtime integration.",
+  "displayName": "kordex-bindings",
+  "documentation": "https://github.com/kordexjs/bindings#readme",
+  "exports": {
+    "headers": [],
+    "modules": [],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/kordexjs/bindings",
+  "keywords": [
+    "cpp",
+    "bindings",
+    "javascript-runtime",
+    "runtime-bridge",
+    "local-first",
+    "kordex",
+    "kordexjs",
+    "vix"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "kordexjs",
+      "name": "KordexJS"
+    },
+    {
+      "github": "GaspardKirira",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "migratedFrom": "softadastra/kordex-bindings",
+  "name": "bindings",
+  "namespace": "kordexjs",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/kordexjs/bindings"
+  },
+  "type": "library",
+  "versions": {
+    "0.1.0": {
+      "commit": "a68bbcf931399964f78f1f41e63e82ac2a79d5bd",
+      "tag": "v0.1.0"
+    },
+    "0.1.1": {
+      "commit": "bb450ca131dd8dd5f4a02c31888c2b326d1c8aa8",
+      "tag": "v0.1.1"
+    },
+    "0.2.0": {
+      "commit": "0c90d5ce58b85671caf8ca7b3c15f61375bc416a",
+      "tag": "v0.2.0"
+    },
+    "0.3.0": {
+      "api": {
+        "format": "vix-api-1",
+        "hash": "86fa4395c76fe8c4",
+        "path": "vix.api.json"
+      },
+      "commit": "133d565bb167f7bc4270be530528cb17db78dc6a",
+      "manifest": {
+        "include": [
+          "include"
+        ],
+        "type": "library"
+      },
+      "tag": "v0.3.0"
+    }
+  }
+}
