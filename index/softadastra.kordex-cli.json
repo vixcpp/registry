@@ -18,6 +18,8 @@
     "registry": [],
     "system": []
   },
+  "deprecated": true,
+  "deprecationMessage": "This package moved to kordexjs/cli.",
   "description": "Official command line interface for Kordex, providing commands to initialize, run, check, build, and interact with reliable local-first JavaScript applications.",
   "displayName": "kordex-cli",
   "documentation": "https://github.com/softadastra/kordex-cli#readme",
@@ -45,6 +47,7 @@
     }
   ],
   "manifestPath": "vix.json",
+  "movedTo": "kordexjs/cli",
   "name": "kordex-cli",
   "namespace": "softadastra",
   "quality": {
@@ -60,12 +63,12 @@
   "type": "header-only",
   "versions": {
     "0.1.0": {
-      "tag": "v0.1.0",
-      "commit": "4721eddb9956523c933ae134d6f5e1787e637ecc"
+      "commit": "4721eddb9956523c933ae134d6f5e1787e637ecc",
+      "tag": "v0.1.0"
     },
     "0.2.0": {
-      "tag": "v0.2.0",
-      "commit": "feb371aafab26841f7b1098639acf4b852b3ddb8"
+      "commit": "feb371aafab26841f7b1098639acf4b852b3ddb8",
+      "tag": "v0.2.0"
     }
   }
 }
