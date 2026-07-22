@@ -18,6 +18,8 @@
     "registry": [],
     "system": []
   },
+  "deprecated": true,
+  "deprecationMessage": "This package moved to kordexjs/bindings.",
   "description": "Native bindings layer for Kordex, bridging the Kordex runtime with script execution, engine contexts, values, modules, scripts, and runtime integration.",
   "displayName": "kordex-bindings",
   "documentation": "https://github.com/softadastra/kordex-bindings#readme",
@@ -45,6 +47,7 @@
     }
   ],
   "manifestPath": "vix.json",
+  "movedTo": "kordexjs/bindings",
   "name": "kordex-bindings",
   "namespace": "softadastra",
   "quality": {
