@@ -1,0 +1,395 @@
+{
+  "api": {
+    "document": {
+      "commit": "74861f779afd81acfcc2a3534581b9c978c90c49",
+      "format": "vix-api-1",
+      "headers": [
+        {
+          "includeRoot": "include",
+          "path": "kordex/std/Console.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "enum class",
+              "line": 37,
+              "qualifiedName": "kordex::standard::ConsoleLevel",
+              "signature": "enum class ConsoleLevel"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 53,
+              "qualifiedName": "kordex::standard::Console",
+              "signature": "class Console"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 64,
+              "qualifiedName": "kordex::standard::Console",
+              "signature": "explicit Console(StdConfig config);"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "kordex/std/Crypto.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 43,
+              "qualifiedName": "kordex::standard::Crypto",
+              "signature": "class Crypto"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 54,
+              "qualifiedName": "kordex::standard::Crypto",
+              "signature": "explicit Crypto(StdConfig config);"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "kordex/std/Env.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 39,
+              "qualifiedName": "kordex::standard::Env",
+              "signature": "class Env"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 50,
+              "qualifiedName": "kordex::standard::Env",
+              "signature": "explicit Env(StdConfig config);"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "kordex/std/Error.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "enum class",
+              "line": 31,
+              "qualifiedName": "kordex::standard::StdErrorCode",
+              "signature": "enum class StdErrorCode"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "kordex/std/Fs.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 39,
+              "qualifiedName": "kordex::standard::Fs",
+              "signature": "class Fs"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 50,
+              "qualifiedName": "kordex::standard::Fs",
+              "signature": "explicit Fs(StdConfig config);"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "kordex/std/Http.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 43,
+              "qualifiedName": "kordex::standard::Http",
+              "signature": "class Http"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 54,
+              "qualifiedName": "kordex::standard::Http",
+              "signature": "explicit Http(StdConfig config);"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "kordex/std/ModuleFactory.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 50,
+              "qualifiedName": "kordex::standard::ModuleFactory",
+              "signature": "class ModuleFactory"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 61,
+              "qualifiedName": "kordex::standard::ModuleFactory",
+              "signature": "explicit ModuleFactory(StdConfig config);"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "kordex/std/Path.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 39,
+              "qualifiedName": "kordex::standard::Path",
+              "signature": "class Path"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 50,
+              "qualifiedName": "kordex::standard::Path",
+              "signature": "explicit Path(StdConfig config);"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "kordex/std/Process.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 40,
+              "qualifiedName": "kordex::standard::Process",
+              "signature": "class Process"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 51,
+              "qualifiedName": "kordex::standard::Process",
+              "signature": "explicit Process(StdConfig config);"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "kordex/std/Result.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "kordex/std/Softadastra.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 43,
+              "qualifiedName": "kordex::standard::Softadastra",
+              "signature": "class Softadastra"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 54,
+              "qualifiedName": "kordex::standard::Softadastra",
+              "signature": "explicit Softadastra(StdConfig config);"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "kordex/std/Std.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "kordex/std/StdConfig.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 34,
+              "qualifiedName": "kordex::standard::StdConfig",
+              "signature": "struct StdConfig"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "kordex/std/StdOptions.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 30,
+              "qualifiedName": "kordex::standard::StdOptions",
+              "signature": "struct StdOptions"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "kordex/std/StdRegistry.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 40,
+              "qualifiedName": "kordex::standard::StdRegistryInfo",
+              "signature": "struct StdRegistryInfo"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 82,
+              "qualifiedName": "kordex::standard::StdRegistry",
+              "signature": "class StdRegistry"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 93,
+              "qualifiedName": "kordex::standard::StdRegistry",
+              "signature": "explicit StdRegistry(StdConfig config);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 154,
+              "qualifiedName": "kordex::standard::clear",
+              "signature": "void clear();"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "kordex/std/Timer.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 40,
+              "qualifiedName": "kordex::standard::Timer",
+              "signature": "class Timer"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 51,
+              "qualifiedName": "kordex::standard::Timer",
+              "signature": "explicit Timer(StdConfig config);"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "kordex/std/Version.hpp",
+          "symbols": []
+        }
+      ],
+      "package": "kordexjs/std",
+      "version": "0.3.0"
+    },
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "hash": "8189d59309dc319e",
+    "path": "vix.api.json",
+    "updatedAt": "2026-05-11T19:25:00Z"
+  },
+  "constraints": {
+    "minCppStandard": "c++17",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [],
+    "system": []
+  },
+  "description": "Standard native modules for Kordex, providing console, filesystem, path, environment, process, timer, crypto, and HTTP APIs for reliable local-first JavaScript applications.",
+  "displayName": "kordex-std",
+  "documentation": "https://github.com/kordexjs/std#readme",
+  "exports": {
+    "headers": [],
+    "modules": [],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/kordexjs/std",
+  "keywords": [
+    "cpp",
+    "standard-library",
+    "javascript-runtime",
+    "native-modules",
+    "local-first",
+    "kordex",
+    "kordexjs",
+    "vix"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "kordexjs",
+      "name": "KordexJS"
+    },
+    {
+      "github": "GaspardKirira",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "migratedFrom": "softadastra/kordex-std",
+  "name": "std",
+  "namespace": "kordexjs",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": true
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/kordexjs/std"
+  },
+  "type": "library",
+  "versions": {
+    "0.1.0": {
+      "commit": "f9660e2b61f6a2841cd5682485bff158951685f0",
+      "tag": "v0.1.0"
+    },
+    "0.2.0": {
+      "commit": "d65e605164c4fc936cb8e270a87edd7bc6232b2a",
+      "tag": "v0.2.0"
+    },
+    "0.3.0": {
+      "api": {
+        "format": "vix-api-1",
+        "hash": "8189d59309dc319e",
+        "path": "vix.api.json"
+      },
+      "commit": "74861f779afd81acfcc2a3534581b9c978c90c49",
+      "manifest": {
+        "include": [
+          "include"
+        ],
+        "type": "library"
+      },
+      "tag": "v0.3.0"
+    }
+  }
+}
