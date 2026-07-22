@@ -1,0 +1,106 @@
+{
+  "api": {
+    "document": {
+      "commit": "ae81ca285cca4b881ddda587ddd2c1ce5c186f00",
+      "format": "vix-api-1",
+      "headers": [],
+      "package": "kordexjs/kordex",
+      "version": "0.3.1"
+    },
+    "format": "vix-api-1",
+    "generatedBy": "vix-cli",
+    "hash": "5e8219152aeb83c1",
+    "path": "vix.api.json"
+  },
+  "constraints": {
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "git": [],
+    "registry": [
+      {
+        "id": "kordexjs/runtime",
+        "version": "0.3.0"
+      },
+      {
+        "id": "kordexjs/bindings",
+        "version": "0.3.1"
+      },
+      {
+        "id": "kordexjs/std",
+        "version": "0.3.0"
+      },
+      {
+        "id": "kordexjs/cli",
+        "version": "0.3.0"
+      }
+    ],
+    "system": []
+  },
+  "description": "A JavaScript runtime for reliable local-first applications, built on Kordex Runtime, Bindings, Std, and CLI.",
+  "displayName": "kordex",
+  "documentation": "https://github.com/kordexjs/kordex#readme",
+  "exports": {
+    "headers": [],
+    "modules": [],
+    "namespaces": []
+  },
+  "homepage": "https://github.com/kordexjs/kordex",
+  "keywords": [
+    "cpp",
+    "javascript-runtime",
+    "runtime",
+    "local-first",
+    "offline-first",
+    "developer-tools",
+    "kordex",
+    "kordexjs",
+    "vix"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "github": "kordexjs",
+      "name": "KordexJS"
+    },
+    {
+      "github": "GaspardKirira",
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "manifestPath": "vix.json",
+  "name": "kordex",
+  "namespace": "kordexjs",
+  "quality": {
+    "ci": [],
+    "hasDocs": true,
+    "hasExamples": true,
+    "hasTests": false
+  },
+  "repo": {
+    "defaultBranch": "main",
+    "url": "https://github.com/kordexjs/kordex"
+  },
+  "type": "workspace",
+  "versions": {
+    "0.3.1": {
+      "api": {
+        "format": "vix-api-1",
+        "hash": "5e8219152aeb83c1",
+        "path": "vix.api.json"
+      },
+      "commit": "ae81ca285cca4b881ddda587ddd2c1ce5c186f00",
+      "manifest": {
+        "include": [
+          "include"
+        ],
+        "type": "workspace"
+      },
+      "tag": "v0.3.1"
+    }
+  }
+}
