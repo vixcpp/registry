@@ -1,7 +1,7 @@
 {
   "api": {
     "document": {
-      "commit": "133d565bb167f7bc4270be530528cb17db78dc6a",
+      "commit": "4c6f56b1b8567cb01718f9dd5339f57e77257c1b",
       "format": "vix-api-1",
       "headers": [
         {
@@ -720,11 +720,11 @@
         }
       ],
       "package": "kordexjs/bindings",
-      "version": "0.3.0"
+      "version": "0.3.1"
     },
     "format": "vix-api-1",
     "generatedBy": "vix-cli",
-    "hash": "86fa4395c76fe8c4",
+    "hash": "d95526f8af698eee",
     "path": "vix.api.json",
     "updatedAt": "2026-05-11T19:13:29Z"
   },
@@ -813,6 +813,21 @@
         "type": "library"
       },
       "tag": "v0.3.0"
+    },
+    "0.3.1": {
+      "api": {
+        "format": "vix-api-1",
+        "hash": "d95526f8af698eee",
+        "path": "vix.api.json"
+      },
+      "commit": "4c6f56b1b8567cb01718f9dd5339f57e77257c1b",
+      "manifest": {
+        "include": [
+          "include"
+        ],
+        "type": "library"
+      },
+      "tag": "v0.3.1"
     }
   }
 }
