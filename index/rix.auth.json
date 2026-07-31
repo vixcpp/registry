@@ -722,31 +722,20 @@
   "type": "header-only",
   "versions": {
     "0.1.0": {
-      "commit": "c6628f24ac2fe8eec17f3b5a2129716ee51a95d5",
-      "tag": "v0.1.0"
+      "tag": "v0.1.0",
+      "commit": "c6628f24ac2fe8eec17f3b5a2129716ee51a95d5"
     },
     "0.2.0": {
-      "commit": "dd4d859d5c50ab37d6e31c1e3c1f514bce35d699",
-      "tag": "v0.2.0"
+      "tag": "v0.2.0",
+      "commit": "dd4d859d5c50ab37d6e31c1e3c1f514bce35d699"
     },
     "0.3.0": {
-      "commit": "c7406e0cc5b16e60acb8dfcfd8b33fa249551e18",
-      "tag": "v0.3.0"
+      "tag": "v0.3.0",
+      "commit": "c7406e0cc5b16e60acb8dfcfd8b33fa249551e18"
     },
     "0.4.0": {
-      "api": {
-        "format": "vix-api-1",
-        "hash": "43b7f7a22cf50eca",
-        "path": "vix.api.json"
-      },
-      "commit": "3c437e77d82b51b565f31b0d751867b08bafaacc",
-      "manifest": {
-        "include": [
-          "include"
-        ],
-        "type": "library"
-      },
-      "tag": "v0.4.0"
+      "tag": "v0.4.0",
+      "commit": "3c437e77d82b51b565f31b0d751867b08bafaacc"
     }
   }
 }
