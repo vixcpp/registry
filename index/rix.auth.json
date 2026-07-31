@@ -1,7 +1,668 @@
 {
   "api": {
+    "document": {
+      "commit": "3c437e77d82b51b565f31b0d751867b08bafaacc",
+      "format": "vix-api-1",
+      "headers": [
+        {
+          "includeRoot": "include",
+          "path": "rix/auth/Auth.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 38,
+              "qualifiedName": "rixlib::auth::RegisterRequest",
+              "signature": "struct RegisterRequest"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 54,
+              "qualifiedName": "rixlib::auth::LoginRequest",
+              "signature": "struct LoginRequest"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 70,
+              "qualifiedName": "rixlib::auth::LoginResult",
+              "signature": "struct LoginResult"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 101,
+              "qualifiedName": "rixlib::auth::Auth",
+              "signature": "class Auth"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "rix/auth/AuthConfig.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 32,
+              "qualifiedName": "rixlib::auth::AuthConfig",
+              "signature": "class AuthConfig"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 71,
+              "qualifiedName": "rixlib::auth::set_min_password_length",
+              "signature": "void set_min_password_length(std::size_t value) noexcept;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 85,
+              "qualifiedName": "rixlib::auth::set_max_password_length",
+              "signature": "void set_max_password_length(std::size_t value) noexcept;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 99,
+              "qualifiedName": "rixlib::auth::set_session_ttl_seconds",
+              "signature": "void set_session_ttl_seconds(std::int64_t value) noexcept;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 113,
+              "qualifiedName": "rixlib::auth::set_token_ttl_seconds",
+              "signature": "void set_token_ttl_seconds(std::int64_t value) noexcept;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 127,
+              "qualifiedName": "rixlib::auth::set_password_hash_iterations",
+              "signature": "void set_password_hash_iterations(std::uint32_t value) noexcept;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 141,
+              "qualifiedName": "rixlib::auth::set_password_salt_size",
+              "signature": "void set_password_salt_size(std::size_t value) noexcept;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 155,
+              "qualifiedName": "rixlib::auth::set_password_hash_size",
+              "signature": "void set_password_hash_size(std::size_t value) noexcept;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 169,
+              "qualifiedName": "rixlib::auth::set_issuer",
+              "signature": "void set_issuer(std::string value);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 183,
+              "qualifiedName": "rixlib::auth::set_require_email_verification",
+              "signature": "void set_require_email_verification(bool value) noexcept;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 197,
+              "qualifiedName": "rixlib::auth::set_rotate_sessions",
+              "signature": "void set_rotate_sessions(bool value) noexcept;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 211,
+              "qualifiedName": "rixlib::auth::set_reject_inactive_users",
+              "signature": "void set_reject_inactive_users(bool value) noexcept;"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "rix/auth/AuthError.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "enum class",
+              "line": 31,
+              "qualifiedName": "rixlib::auth::AuthErrorCode",
+              "signature": "enum class AuthErrorCode"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 70,
+              "qualifiedName": "rixlib::auth::AuthError",
+              "signature": "class AuthError"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "rix/auth/AuthModule.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 47,
+              "qualifiedName": "rixlib::auth::AuthErrorModule",
+              "signature": "class AuthErrorModule"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 117,
+              "qualifiedName": "rixlib::auth::AuthConfigModule",
+              "signature": "class AuthConfigModule"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 175,
+              "qualifiedName": "rixlib::auth::AuthPasswordModule",
+              "signature": "class AuthPasswordModule"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 264,
+              "qualifiedName": "rixlib::auth::AuthStoreModule",
+              "signature": "class AuthStoreModule"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 315,
+              "qualifiedName": "rixlib::auth::AuthModule",
+              "signature": "class AuthModule"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "rix/auth/AuthResult.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 47,
+              "qualifiedName": "rixlib::auth::AuthResult",
+              "signature": "class AuthResult"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 113,
+              "qualifiedName": "rixlib::auth::ok",
+              "signature": "return ok();"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 149,
+              "qualifiedName": "std::move",
+              "signature": "return std::move(*value_);"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 181,
+              "qualifiedName": "rixlib::auth::AuthStatus",
+              "signature": "class AuthStatus"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 234,
+              "qualifiedName": "rixlib::auth::ok",
+              "signature": "return ok();"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "rix/auth/ManagedAuth.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 50,
+              "qualifiedName": "rixlib::auth::ManagedAuth",
+              "signature": "class ManagedAuth"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 189,
+              "qualifiedName": "rixlib::auth::rebuild_service",
+              "signature": "void rebuild_service();"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "rix/auth/PasswordHasher.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 39,
+              "qualifiedName": "rixlib::auth::PasswordHasher",
+              "signature": "class PasswordHasher"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 52,
+              "qualifiedName": "rixlib::auth::PasswordHasher",
+              "signature": "explicit PasswordHasher(const AuthConfig &config);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 93,
+              "qualifiedName": "rixlib::auth::set_min_password_length",
+              "signature": "void set_min_password_length(std::size_t value) noexcept;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 107,
+              "qualifiedName": "rixlib::auth::set_max_password_length",
+              "signature": "void set_max_password_length(std::size_t value) noexcept;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 121,
+              "qualifiedName": "rixlib::auth::set_iterations",
+              "signature": "void set_iterations(std::uint32_t value) noexcept;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 135,
+              "qualifiedName": "rixlib::auth::set_salt_size",
+              "signature": "void set_salt_size(std::size_t value) noexcept;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 149,
+              "qualifiedName": "rixlib::auth::set_hash_size",
+              "signature": "void set_hash_size(std::size_t value) noexcept;"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "rix/auth/Session.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 34,
+              "qualifiedName": "rixlib::auth::Session",
+              "signature": "class Session"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 67,
+              "qualifiedName": "rixlib::auth::set_id",
+              "signature": "void set_id(std::string value);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 81,
+              "qualifiedName": "rixlib::auth::set_user_id",
+              "signature": "void set_user_id(std::string value);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 95,
+              "qualifiedName": "rixlib::auth::set_created_at",
+              "signature": "void set_created_at(std::int64_t value) noexcept;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 109,
+              "qualifiedName": "rixlib::auth::set_expires_at",
+              "signature": "void set_expires_at(std::int64_t value) noexcept;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 123,
+              "qualifiedName": "rixlib::auth::set_last_seen_at",
+              "signature": "void set_last_seen_at(std::int64_t value) noexcept;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 137,
+              "qualifiedName": "rixlib::auth::set_revoked",
+              "signature": "void set_revoked(bool value) noexcept;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 210,
+              "qualifiedName": "rixlib::auth::refresh",
+              "signature": "void refresh(std::int64_t now, std::int64_t ttl_seconds) noexcept;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 215,
+              "qualifiedName": "rixlib::auth::revoke",
+              "signature": "void revoke() noexcept;"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "rix/auth/SessionStore.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 38,
+              "qualifiedName": "rixlib::auth::SessionStore",
+              "signature": "class SessionStore"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "rix/auth/Token.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 40,
+              "qualifiedName": "rixlib::auth::Token",
+              "signature": "class Token"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 73,
+              "qualifiedName": "rixlib::auth::set_value",
+              "signature": "void set_value(std::string value);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 87,
+              "qualifiedName": "rixlib::auth::set_user_id",
+              "signature": "void set_user_id(std::string value);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 101,
+              "qualifiedName": "rixlib::auth::set_issuer",
+              "signature": "void set_issuer(std::string value);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 115,
+              "qualifiedName": "rixlib::auth::set_issued_at",
+              "signature": "void set_issued_at(std::int64_t value) noexcept;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 129,
+              "qualifiedName": "rixlib::auth::set_expires_at",
+              "signature": "void set_expires_at(std::int64_t value) noexcept;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 143,
+              "qualifiedName": "rixlib::auth::set_revoked",
+              "signature": "void set_revoked(bool value) noexcept;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 211,
+              "qualifiedName": "rixlib::auth::revoke",
+              "signature": "void revoke() noexcept;"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "rix/auth/User.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 34,
+              "qualifiedName": "rixlib::auth::User",
+              "signature": "class User"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 67,
+              "qualifiedName": "rixlib::auth::set_id",
+              "signature": "void set_id(std::string value);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 81,
+              "qualifiedName": "rixlib::auth::set_email",
+              "signature": "void set_email(std::string value);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 97,
+              "qualifiedName": "rixlib::auth::set_password_hash",
+              "signature": "void set_password_hash(std::string value);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 111,
+              "qualifiedName": "rixlib::auth::set_email_verified",
+              "signature": "void set_email_verified(bool value) noexcept;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 125,
+              "qualifiedName": "rixlib::auth::set_active",
+              "signature": "void set_active(bool value) noexcept;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 139,
+              "qualifiedName": "rixlib::auth::set_created_at",
+              "signature": "void set_created_at(std::int64_t value) noexcept;"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 153,
+              "qualifiedName": "rixlib::auth::set_updated_at",
+              "signature": "void set_updated_at(std::int64_t value) noexcept;"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "rix/auth/UserStore.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 38,
+              "qualifiedName": "rixlib::auth::UserStore",
+              "signature": "class UserStore"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "rix/auth/Version.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "rix/auth/detail/Email.hpp",
+          "symbols": []
+        },
+        {
+          "includeRoot": "include",
+          "path": "rix/auth/stores/DbSessionStore.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 28,
+              "qualifiedName": "vix::db::Database",
+              "signature": "class Database;"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 29,
+              "qualifiedName": "vix::db::ResultRow",
+              "signature": "struct ResultRow;"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 44,
+              "qualifiedName": "rixlib::auth::DbSessionStore",
+              "signature": "class DbSessionStore final : public SessionStore"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 53,
+              "qualifiedName": "rixlib::auth::DbSessionStore",
+              "signature": "explicit DbSessionStore(vix::db::Database &database, bool create_schema = true);"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "rix/auth/stores/DbUserStore.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 27,
+              "qualifiedName": "vix::db::Database",
+              "signature": "class Database;"
+            },
+            {
+              "documentation": "",
+              "kind": "struct",
+              "line": 28,
+              "qualifiedName": "vix::db::ResultRow",
+              "signature": "struct ResultRow;"
+            },
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 42,
+              "qualifiedName": "rixlib::auth::DbUserStore",
+              "signature": "class DbUserStore final : public UserStore"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 51,
+              "qualifiedName": "rixlib::auth::DbUserStore",
+              "signature": "explicit DbUserStore(vix::db::Database &database, bool create_schema = true);"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "rix/auth/stores/MemorySessionStore.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 39,
+              "qualifiedName": "rixlib::auth::MemorySessionStore",
+              "signature": "class MemorySessionStore final : public SessionStore"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 132,
+              "qualifiedName": "rixlib::auth::clear",
+              "signature": "void clear();"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 151,
+              "qualifiedName": "rixlib::auth::index_session_locked",
+              "signature": "void index_session_locked(const Session &session);"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 152,
+              "qualifiedName": "rixlib::auth::unindex_session_locked",
+              "signature": "void unindex_session_locked(const Session &session);"
+            }
+          ]
+        },
+        {
+          "includeRoot": "include",
+          "path": "rix/auth/stores/MemoryUserStore.hpp",
+          "symbols": [
+            {
+              "documentation": "",
+              "kind": "class",
+              "line": 39,
+              "qualifiedName": "rixlib::auth::MemoryUserStore",
+              "signature": "class MemoryUserStore final : public UserStore"
+            },
+            {
+              "documentation": "",
+              "kind": "function",
+              "line": 125,
+              "qualifiedName": "rixlib::auth::clear",
+              "signature": "void clear();"
+            }
+          ]
+        }
+      ],
+      "package": "rix/auth",
+      "version": "0.4.0"
+    },
     "format": "vix-api-1",
     "generatedBy": "vix-cli",
+    "hash": "43b7f7a22cf50eca",
     "path": "vix.api.json",
     "updatedAt": "2026-06-10T06:21:37Z"
   },
@@ -71,6 +732,21 @@
     "0.3.0": {
       "commit": "c7406e0cc5b16e60acb8dfcfd8b33fa249551e18",
       "tag": "v0.3.0"
+    },
+    "0.4.0": {
+      "api": {
+        "format": "vix-api-1",
+        "hash": "43b7f7a22cf50eca",
+        "path": "vix.api.json"
+      },
+      "commit": "3c437e77d82b51b565f31b0d751867b08bafaacc",
+      "manifest": {
+        "include": [
+          "include"
+        ],
+        "type": "library"
+      },
+      "tag": "v0.4.0"
     }
   }
 }
