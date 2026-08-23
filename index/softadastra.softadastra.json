@@ -65,46 +65,5 @@
     "url": "https://github.com/softadastra/softadastra"
   },
   "type": "header-only",
-  "versions": {
-    "0.1.0": {
-      "tag": "v0.1.0",
-      "commit": "b551795e50ef321fe3fcf51b74c2c0f4fc728350"
-    },
-    "0.1.1": {
-      "tag": "v0.1.1",
-      "commit": "372a9dbfe94479d85de83fe3bb2226f6fcc357ed"
-    },
-    "0.1.2": {
-      "tag": "v0.1.2",
-      "commit": "ac102a8a4cef783ccaceef979537b5c86d74f8e8"
-    },
-    "0.1.3": {
-      "tag": "v0.1.3",
-      "commit": "2f15b1379c5e7fa003db8a5d449ff98fbe9d5a5d"
-    },
-    "0.1.4": {
-      "tag": "v0.1.4",
-      "commit": "433df1ab34a68837f31710f452140b9ed7103952"
-    },
-    "0.1.5": {
-      "tag": "v0.1.5",
-      "commit": "fadd878c143e8a51c53df4afad330f84c8f623b8"
-    },
-    "0.1.7": {
-      "tag": "v0.1.7",
-      "commit": "086a256614f3c00c86cf08bb0775c94197fe8f5c"
-    },
-    "0.2.0": {
-      "tag": "v0.2.0",
-      "commit": "297afb911bf111bd61286f572577fc648e7c0204"
-    },
-    "0.2.1": {
-      "tag": "v0.2.1",
-      "commit": "d5bb3f98be3b9ef4ba12a922b1790684ce01fd04"
-    },
-    "0.3.0": {
-      "tag": "v0.3.0",
-      "commit": "ae650e9d5e04c0a37f134ecfd22fe1abee21215c"
-    }
-  }
+  "versions": {}
 }
