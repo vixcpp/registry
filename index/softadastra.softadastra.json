@@ -65,10 +65,5 @@
     "url": "https://github.com/softadastra/softadastra"
   },
   "type": "header-only",
-  "versions": {
-    "0.1.0": {
-      "tag": "v0.1.0",
-      "commit": "21e6170c6945ec3863b2496adebd971515d96a54"
-    }
-  }
+  "versions": {}
 }
